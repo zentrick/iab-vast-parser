@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/iab-vast-parser.svg)](https://www.npmjs.com/package/iab-vast-parser) [![Dependencies](https://img.shields.io/david/zentrick/iab-vast-parser.svg)](https://david-dm.org/zentrick/iab-vast-parser) [![Build Status](https://img.shields.io/travis/zentrick/iab-vast-parser/master.svg)](https://travis-ci.org/zentrick/iab-vast-parser) [![Coverage Status](https://img.shields.io/coveralls/zentrick/iab-vast-parser/master.svg)](https://coveralls.io/r/zentrick/iab-vast-parser) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 Parses IAB VAST tags into
-[iab-vast-model](https://github.com/zentrick/iab-vast-model) objects.
+[iab-vast-model](https://www.npmjs.com/package/iab-vast-model) objects.
 
 ## Usage
 
