@@ -1,0 +1,103 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "adTitle": "Sample title",
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "NonLinearAds",
+              "extensions": [
+              ],
+              "nonLinears": [
+                {
+                  "_type": "NonLinear",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "https://example.com/article"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "height": 0,
+                  "resource": {
+                    "_type": "StaticResource",
+                    "content": "http://example.com/sample.jpg",
+                    "creativeType": "image/jpeg"
+                  },
+                  "width": 0
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            },
+            {
+              "_type": "Linear",
+              "duration": 40,
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+                {
+                  "_type": "MediaFile",
+                  "delivery": "streaming",
+                  "height": 608,
+                  "type": "video/mp4",
+                  "uri": "http://example.com/videos/sample.mp4",
+                  "width": 480
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickTrackings": [
+                ],
+                "customClicks": [
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Test description #hashtag",
+        "extensions": [
+          {
+            "_type": "Extension",
+            "content": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                </Extension>"
+          },
+          {
+            "_type": "Extension",
+            "content": "<Extension>\n                    <CustomExtension>\n                        <![CDATA[Hello]]>\n                    </CustomExtension>\n                </Extension>"
+          }
+        ],
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": {
+            }
+          }
+        ],
+        "sequence": 1
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

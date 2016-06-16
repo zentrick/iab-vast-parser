@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="1" sequence="1">
+        <InLine>
+            <AdSystem version="1.0"><![CDATA[Test Ad Server]]></AdSystem>
+            <AdTitle><![CDATA[Example Title]]></AdTitle>
+            <Description><![CDATA[Example Description]]></Description>
+
+            <Impression></Impression>
+
+            <Creatives>
+                <Creative>
+                    <NonLinearAds>
+                        <NonLinear width="100" height="100">
+                            <StaticResource creativeType="image/jpeg">
+                                <![CDATA[http://example.com/thumb.jpg]]>
+                            </StaticResource>
+                            <NonLinearClickThrough>
+                                <![CDATA[http://example.com/clickthrough.html]]>
+                            </NonLinearClickThrough>
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+            </Creatives>
+
+            <Extensions>
+                <Extension>
+                    <DisclosureMessage>
+                        <![CDATA[Promoted video]]>
+                    </DisclosureMessage>
+                    <SharingUrl>
+                        <![CDATA[http://example.com/share]]>
+                    </SharingUrl>
+                    <CustomTrackingEvents>
+                        <CustomTracking event="viewableImpression">
+                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>
+                        </CustomTracking>
+                    </CustomTrackingEvents>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>

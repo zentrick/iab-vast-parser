@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="55217" sequence="1">
+        <Wrapper>
+            <AdSystem version="1.0">Test Ad Server</AdSystem>
+            <VASTAdTagURI>
+                <![CDATA[http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml]]></VASTAdTagURI>
+            <Impression>
+                <![CDATA[http://example.com/imp?d=[CACHEBUSTER]]]></Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[http://example.com/start?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[http://example.com/q2?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[http://example.com/q3?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[http://example.com/q4?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[http://example.com/complete?d=[CACHEBUSTER]]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickTracking>
+                                <![CDATA[http://example.com/click?d=[CACHEBUSTER]]]></ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+        </Wrapper>
+    </Ad>
+</VAST>

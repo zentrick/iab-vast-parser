@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="1" sequence="1">
+        <Wrapper>
+            <AdSystem version="1.0">Test Ad Server</AdSystem>
+            <VASTAdTagURI><![CDATA[http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml]]></VASTAdTagURI>
+            <Error><![CDATA[http://example.com/error/ERRORCODE]]></Error>
+
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <TrackingEvents>
+                            <Tracking event="start"><![CDATA[http://example.com/start]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickTracking id="video_click"><![CDATA[http://example.com/linear-video-click]]></ClickTracking>
+                            <ClickTracking id="post_video_click"><![CDATA[http://example.com/linear-post-video-click]]></ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+        </Wrapper>
+    </Ad>
+</VAST>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="1" sequence="1">
+        <Wrapper>
+            <AdSystem version="1.0">Test Ad Server</AdSystem>
+            <VASTAdTagURI><![CDATA[http://localhost/test/resources/vast/inlines/vast_wrapper_with-linear-and-non-linear-ads.xml]]></VASTAdTagURI>
+            <Error><![CDATA[http://example.com/error/ERRORCODE]]></Error>
+
+            <Impression><![CDATA[http://example.com/chained-imp?d=[CACHEBUSTER]]]></Impression>
+            <Impression><![CDATA[http://example.com/chained-another-imp?d=[CACHEBUSTER]]]></Impression>
+
+            <Creatives>
+                <Creative>
+                    <NonLinearAds>
+                        <!--<TrackingEvents>-->
+                            <!--<Tracking event="expand">-->
+
+                            <!--</Tracking>-->
+                        <!--</TrackingEvents>-->
+                        <NonLinear>
+                            <NonLinearClickTracking><![CDATA[http://example.com/chained-click]]></NonLinearClickTracking>
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+</VAST>

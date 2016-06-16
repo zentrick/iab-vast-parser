@@ -1,0 +1,69 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Linear",
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "start": [
+                    "http://example.com/start"
+                  ]
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickTrackings": [
+                  {
+                    "_type": "Click",
+                    "id": "video_click",
+                    "uri": "http://example.com/linear-video-click"
+                  },
+                  {
+                    "_type": "Click",
+                    "id": "post_video_click",
+                    "uri": "http://example.com/linear-post-video-click"
+                  }
+                ],
+                "customClicks": [
+                ]
+              }
+            }
+          ]
+        },
+        "error": "http://example.com/error/ERRORCODE",
+        "extensions": [
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "1",
+        "impressions": [
+        ],
+        "sequence": 1,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml"
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

@@ -1,0 +1,92 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Linear",
+              "adID": "111",
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickTrackings": [
+                ],
+                "customClicks": [
+                ]
+              }
+            },
+            {
+              "_type": "CompanionAds",
+              "adID": "111",
+              "companions": [
+                {
+                  "_type": "Companion",
+                  "clickTrackings": [
+                  ],
+                  "height": 0,
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                    }
+                  },
+                  "width": 0
+                }
+              ],
+              "extensions": [
+              ]
+            },
+            {
+              "_type": "NonLinearAds",
+              "adID": "111",
+              "extensions": [
+              ],
+              "nonLinears": [
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            }
+          ]
+        },
+        "error": "https://pixel",
+        "extensions": [
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "2057602",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "https://tags"
+          },
+          {
+            "_type": "Impression",
+            "uri": "https://pixel"
+          }
+        ],
+        "vastAdTagURI": "http://ads"
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "2.0"
+}

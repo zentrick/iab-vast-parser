@@ -1,0 +1,64 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "NonLinearAds",
+              "extensions": [
+              ],
+              "nonLinears": [
+                {
+                  "_type": "NonLinear",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "uri": "http://example.com/click"
+                    }
+                  ]
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            }
+          ]
+        },
+        "error": "http://example.com/error/ERRORCODE",
+        "extensions": [
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
+          },
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
+          }
+        ],
+        "sequence": 1,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_123.xml"
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

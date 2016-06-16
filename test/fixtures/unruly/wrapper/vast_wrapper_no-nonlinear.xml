@@ -1,0 +1,32 @@
+<VAST xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Ad id="2057602">
+        <Wrapper>
+            <VASTAdTagURI><![CDATA[http://ads]]></VASTAdTagURI>
+            <Error><![CDATA[https://pixel]]></Error>
+            <Impression><![CDATA[https://tags]]></Impression>
+            <Impression><![CDATA[https://pixel]]></Impression>
+            <Creatives>
+                <Creative AdID="111">
+                    <Linear>
+                        <TrackingEvents>
+                        </TrackingEvents>
+                        <VideoClicks>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+                <Creative AdID="111">
+                    <CompanionAds>
+                        <Companion height="0" width="0">
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+                <Creative AdID="111">
+                    <NonLinearAds>
+                        <TrackingEvents>
+                        </TrackingEvents>
+                    </NonLinearAds>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+</VAST>

@@ -1,0 +1,33 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+          ]
+        },
+        "extensions": [
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "55217",
+        "impressions": [
+        ],
+        "sequence": 1
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

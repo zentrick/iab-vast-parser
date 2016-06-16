@@ -1,0 +1,110 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "adTitle": "Sample title",
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "NonLinearAds",
+              "extensions": [
+              ],
+              "nonLinears": [
+                {
+                  "_type": "NonLinear",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "https://example.com/banner.html"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "height": 0,
+                  "resource": {
+                    "_type": "StaticResource",
+                    "content": "http://example.com/sample.jpg",
+                    "creativeType": "image/jpeg"
+                  },
+                  "width": 0
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            },
+            {
+              "_type": "Linear",
+              "adParameters": "{\"testString\":\"an ad parameter string\",\"testBoolean\":false,\"test\n                            \n                            \n                            Number\":1345680,\"testURL\":\"http://example.com\",\"testURLWithParams\":\"http\n                            \n                            \n                            %3A%2F%2Fexample.com%3Fparam1%3Dtrue%26param2%3Dfalse\",\"testArray\":[\"e\n                            \n                            \n                            lement1\",\"element2\"],\"testArrayWithObjects\":[{\"key\":\"value\"},{\"key\":\"value\"}]}",
+              "duration": 5,
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+                {
+                  "_type": "MediaFile",
+                  "delivery": "streaming",
+                  "height": 608,
+                  "type": "video/mp4",
+                  "uri": "http://example.com/video.mp4",
+                  "width": 480
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickThrough": {
+                  "_type": "Click",
+                  "uri": "http://example.com/linear-video-clickthrough"
+                },
+                "clickTrackings": [
+                  {
+                    "_type": "Click",
+                    "id": "video_click",
+                    "uri": "http://example.com/inline/linear-video-click"
+                  },
+                  {
+                    "_type": "Click",
+                    "id": "post_video_click",
+                    "uri": "http://example.com/inline/linear-post-video-click"
+                  }
+                ],
+                "customClicks": [
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Test description #hashtag",
+        "extensions": [
+        ],
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": {
+            }
+          }
+        ],
+        "sequence": 1
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

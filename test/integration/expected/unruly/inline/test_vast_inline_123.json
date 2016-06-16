@@ -1,0 +1,69 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "adTitle": "Example Title",
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "NonLinearAds",
+              "extensions": [
+              ],
+              "nonLinears": [
+                {
+                  "_type": "NonLinear",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "http://example.com/clickthrough.html"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "height": 100,
+                  "resource": {
+                    "_type": "StaticResource",
+                    "content": "http://example.com/thumb.jpg",
+                    "creativeType": "image/jpeg"
+                  },
+                  "width": 100
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            }
+          ]
+        },
+        "description": "Example Description",
+        "extensions": [
+          {
+            "_type": "Extension",
+            "content": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>"
+          }
+        ],
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": {
+            }
+          }
+        ],
+        "sequence": 1
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

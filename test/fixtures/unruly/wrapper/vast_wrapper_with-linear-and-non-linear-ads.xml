@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="1" sequence="1">
+        <Wrapper>
+            <AdSystem version="1.0">Test Ad Server</AdSystem>
+            <VASTAdTagURI><![CDATA[http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml]]></VASTAdTagURI>
+            <Error><![CDATA[http://example.com/error/ERRORCODE]]></Error>
+
+            <Impression><![CDATA[http://example.com/imp?d=[CACHEBUSTER]]]></Impression>
+            <Impression><![CDATA[http://example.com/another-imp?d=[CACHEBUSTER]]]></Impression>
+
+            <Creatives>
+                <Creative>
+                    <NonLinearAds>
+                        <!--<TrackingEvents>-->
+                            <!--<Tracking event="expand">-->
+
+                            <!--</Tracking>-->
+                        <!--</TrackingEvents>-->
+                        <NonLinear>
+                            <NonLinearClickTracking><![CDATA[http://example.com/click]]></NonLinearClickTracking>
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+                <Creative>
+                    <Linear>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[http://example.com/start?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="start">
+                                <![CDATA[http://example.com/start2?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[http://example.com/q2?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[http://example.com/q3?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[http://example.com/q4?d=[CACHEBUSTER]]]></Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[http://example.com/complete?d=[CACHEBUSTER]]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickTracking id="video_click"><![CDATA[http://example.com/linear-video-click]]></ClickTracking>
+                            <ClickTracking id="video_click"><![CDATA[http://example.com/linear-video-click2]]></ClickTracking>
+                            <ClickTracking id="video_click"><![CDATA[http://example.com/linear-video-click3]]></ClickTracking>
+                            <ClickTracking id="post_video_click"><![CDATA[http://example.com/linear-post-video-click]]></ClickTracking>
+                            <ClickTracking id="post_video_click"><![CDATA[http://example.com/linear-post-video-click2]]></ClickTracking>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+        </Wrapper>
+    </Ad>
+</VAST>

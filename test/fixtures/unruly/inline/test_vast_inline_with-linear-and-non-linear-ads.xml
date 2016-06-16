@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
+    <Ad id="1" sequence="1">
+        <InLine>
+            <AdSystem version="1.0"><![CDATA[Test Ad Server]]></AdSystem>
+            <AdTitle><![CDATA[Sample title]]></AdTitle>
+            <Description><![CDATA[Test description #hashtag]]></Description>
+
+            <Impression></Impression>
+
+            <Creatives>
+                <Creative>
+                    <NonLinearAds>
+                        <NonLinear width="0" height="0">
+                            <StaticResource creativeType="image/jpeg">
+                                <![CDATA[http://example.com/sample.jpg]]>
+                            </StaticResource>
+                            <NonLinearClickThrough>
+                                <![CDATA[https://example.com/banner.html]]>
+                            </NonLinearClickThrough>
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:05</Duration>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[http://example.com/linear-video-clickthrough]]></ClickThrough>
+                            <ClickTracking id="video_click"><![CDATA[http://example.com/inline/linear-video-click]]></ClickTracking>
+                            <ClickTracking id="post_video_click"><![CDATA[http://example.com/inline/linear-post-video-click]]></ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile delivery="streaming" type="video/mp4" width="480" height="608">
+                                <![CDATA[http://example.com/movie-short.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+
+            <Extensions>
+                <Extension>
+                    <DisclosureMessage>
+                        <![CDATA[Promoted video]]>
+                    </DisclosureMessage>
+                    <SharingUrl>
+                        <![CDATA[http://example.com/partner]]>
+                    </SharingUrl>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>

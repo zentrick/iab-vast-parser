@@ -1,0 +1,68 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "NonLinearAds",
+              "extensions": [
+              ],
+              "nonLinears": [
+                {
+                  "_type": "NonLinear",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "uri": "http://example.com/click"
+                    }
+                  ]
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                }
+              }
+            }
+          ]
+        },
+        "error": "http://example.com/error/ERRORCODE",
+        "extensions": [
+          {
+            "_type": "Extension",
+            "content": "<Extension>\n                    <CustomElement id=\"uuid\">customThing</CustomElement>\n                    <CustomArray>\n                        <CustomElement customId=\"stuff\">\n                            <![CDATA[customData]]>\n                        </CustomElement>\n                        <CustomElement customId=\"things\">\n                            <![CDATA[moreCustomData]]>\n                        </CustomElement>\n                    </CustomArray>\n                </Extension>"
+          }
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
+          },
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
+          }
+        ],
+        "sequence": 1,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_123.xml"
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

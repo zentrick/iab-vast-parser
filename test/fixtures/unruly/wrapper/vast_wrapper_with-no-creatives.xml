@@ -1,0 +1,13 @@
+<VAST version="3.0">
+    <Ad sequence="1">
+        <Wrapper>
+            <AdSystem version="1.0">UnrulyX</AdSystem>
+            <VASTAdTagURI><![CDATA[http://localhost/test/resources/vast/wrappers/vast_wrapper_with-chained-wrappers_innerwrapper.xml]]></VASTAdTagURI>
+            <Impression>
+                <![CDATA[
+http://test.stats3.unrulymedia.com/blank.gif?t=wrapper_imp&apid=75425&aid=2900&cid=6596&crid=14113&pid={pid}&ppid={spid}&autoplay=false&auto_unit=true
+]]>
+            </Impression>
+        </Wrapper>
+    </Ad>
+</VAST>

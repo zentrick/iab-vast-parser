@@ -1,0 +1,78 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Linear",
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "complete": [
+                    "http://example.com/complete?d=[CACHEBUSTER]"
+                  ],
+                  "firstQuartile": [
+                    "http://example.com/q2?d=[CACHEBUSTER]"
+                  ],
+                  "midpoint": [
+                    "http://example.com/q3?d=[CACHEBUSTER]"
+                  ],
+                  "start": [
+                    "http://example.com/start?d=[CACHEBUSTER]"
+                  ],
+                  "thirdQuartile": [
+                    "http://example.com/q4?d=[CACHEBUSTER]"
+                  ]
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickTrackings": [
+                  {
+                    "_type": "Click",
+                    "uri": "http://example.com/click?d=[CACHEBUSTER]"
+                  }
+                ],
+                "customClicks": [
+                ]
+              }
+            }
+          ]
+        },
+        "extensions": [
+        ],
+        "fallbackOnNoAd": false,
+        "followAdditionalWrappers": false,
+        "id": "55217",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
+          }
+        ],
+        "sequence": 1,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml"
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}
