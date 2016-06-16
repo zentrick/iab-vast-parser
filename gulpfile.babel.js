@@ -10,17 +10,13 @@ import stableStringify from 'json-stable-stringify'
 import path from 'path'
 import marshal from './test/lib/marshal'
 
+const COVERAGE_THRESHOLDS = {global: 80}
+
 const $ = loadPlugins()
 
-const plumb = () => $.plumber({
+const plumb = () => $.if(!process.env.CI, $.plumber({
   errorHandler: $.notify.onError('<%= error.message %>')
-})
-
-const test = (strict = false) => {
-  return gulp.src(['test/lib/setup.js', 'test/integration/**/*.js'], {read: false})
-    .pipe($.if(!strict, plumb()))
-    .pipe($.mocha({reporter: 'spec'}))
-}
+}))
 
 gulp.task('clean', () => del('lib'))
 
@@ -37,14 +33,8 @@ gulp.task('lint', () => {
   return gulp.src('src/**/*.js')
     .pipe(plumb())
     .pipe($.standard())
-    .pipe($.standard.reporter('default', {
-      breakOnError: false
-    }))
+    .pipe($.standard.reporter('default', {breakOnError: false}))
 })
-
-gulp.task('build', (cb) => seq('lint', 'test', 'transpile', cb))
-
-gulp.task('cleanbuild', (cb) => seq('clean', 'build', cb))
 
 gulp.task('pre-coverage', () => {
   return gulp.src('src/**/*.js')
@@ -53,50 +43,43 @@ gulp.task('pre-coverage', () => {
 })
 
 gulp.task('coverage', ['pre-coverage'], () => {
-  return test(true)
+  return gulp.src(['test/lib/setup.js', 'test/{unit,integration}/**/*.js', '!**/_*.js'], {read: false})
+    .pipe(plumb())
+    .pipe($.mocha({reporter: 'spec'}))
     .pipe($.istanbul.writeReports())
-    .pipe($.istanbul.enforceThresholds({thresholds: {global: 85}}))
+    .pipe($.istanbul.enforceThresholds({thresholds: COVERAGE_THRESHOLDS}))
 })
 
-gulp.task('coveralls', ['coverage'], () => {
+gulp.task('test', (cb) => seq('lint', 'coverage', cb))
+
+gulp.task('coveralls', () => {
   return gulp.src('coverage/lcov.info')
     .pipe($.coveralls())
 })
 
-gulp.task('test', test)
+gulp.task('build', (cb) => seq('test', 'clean', 'transpile', cb))
 
-gulp.task('write-exp', () => {
+const buildExp = async (filePath, expPath, parse) => {
+  const data = await fsp.readFile(filePath, 'utf8')
+  const parsed = parse(data)
+  const marshaled = marshal(parsed)
+  const stringified = stableStringify(marshaled, {space: 2})
+  await fsp.outputFile(expPath, stringified, 'utf8')
+  gutil.log('Created', gutil.colors.magenta(expPath))
+}
+
+gulp.task('write-exp', async () => {
   const parse = require('./src/').default
-
   const fixturesRoot = path.resolve(__dirname, 'test/fixtures')
   const expectedRoot = path.resolve(__dirname, 'test/integration/expected')
-
-  const promises = []
-  const errors = []
-  for (const relPath of globule.find({cwd: fixturesRoot, src: '**/*.xml'})) {
+  const fixtures = globule.find({cwd: fixturesRoot, src: '**/*.xml'})
+  await Promise.all(fixtures.map((relPath) => {
     const filePath = path.join(fixturesRoot, relPath)
     const expPath = path.join(expectedRoot, gutil.replaceExtension(relPath, '.json'))
-    const working = fsp.readFile(filePath, 'utf8')
-      .then((data) => parse(data))
-      .then((parsed) => marshal(parsed))
-      .then((marshaled) => stableStringify(marshaled, {space: 2}))
-      .then((data) => fsp.outputFile(expPath, data, 'utf8'))
-      .then(() => gutil.log('Created', gutil.colors.magenta(expPath)))
-      .catch((err) => {
-        gutil.log('Error creating', gutil.colors.magenta(expPath) + ':', err.stack)
-        errors.push({path: expPath, error: err})
-      })
-    promises.push(working)
-  }
-
-  return Promise.all(promises)
-    .then(() => {
-      if (errors.length > 0) {
-        throw new gutil.PluginError('write-exp', `Failed to create ${errors.length} file(s)`)
-      }
-    })
+    return buildExp(filePath, expPath, parse)
+  }))
 })
 
-gulp.task('watch', () => gulp.watch('{src,test}/**/*', ['cleanbuild']))
+gulp.task('watch', () => gulp.watch('{src,test}/**/*', ['build']))
 
-gulp.task('default', ['cleanbuild'], () => gulp.start('watch'))
+gulp.task('default', ['build'], () => gulp.start('watch'))

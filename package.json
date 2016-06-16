@@ -21,7 +21,7 @@
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",
-    "prepublish": "npm run clean && npm run build",
+    "prepublish": "npm run build",
     "test": "gulp test"
   },
   "repository": "zentrick/iab-vast-parser",
