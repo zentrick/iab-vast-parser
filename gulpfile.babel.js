@@ -50,12 +50,15 @@ gulp.task('coverage', ['pre-coverage'], () => {
     .pipe($.istanbul.enforceThresholds({thresholds: COVERAGE_THRESHOLDS}))
 })
 
-gulp.task('test', (cb) => seq('lint', 'coverage', cb))
-
 gulp.task('coveralls', () => {
+  if (!process.env.COVERALLS) {
+    return
+  }
   return gulp.src('coverage/lcov.info')
     .pipe($.coveralls())
 })
+
+gulp.task('test', (cb) => seq('lint', 'coverage', 'coveralls', cb))
 
 gulp.task('build', (cb) => seq('test', 'clean', 'transpile', cb))
 
