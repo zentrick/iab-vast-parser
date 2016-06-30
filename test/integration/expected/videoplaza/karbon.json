@@ -27,7 +27,7 @@
                   "bitrate": 538,
                   "delivery": "progressive",
                   "height": 288,
-                  "scalable": "true",
+                  "scalable": true,
                   "type": "video/mp4",
                   "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/3b617267-116d-49cd-8a20-531f3650aeb9.mp4",
                   "width": 512
@@ -37,7 +37,7 @@
                   "bitrate": 293,
                   "delivery": "progressive",
                   "height": 288,
-                  "scalable": "true",
+                  "scalable": true,
                   "type": "video/mp4",
                   "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/49be3f84-048f-47f4-8c4b-03d960d6ef9c.mp4",
                   "width": 512
@@ -47,7 +47,7 @@
                   "bitrate": 804,
                   "delivery": "progressive",
                   "height": 576,
-                  "scalable": "true",
+                  "scalable": true,
                   "type": "video/mp4",
                   "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/b3fe26b0-7dbd-4235-8e9a-59c344095fd1.mp4",
                   "width": 1024

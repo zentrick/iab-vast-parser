@@ -27,8 +27,8 @@
                   "bitrate": 500,
                   "delivery": "progressive",
                   "height": 300,
-                  "maintainAspectRatio": "true",
-                  "scalable": "true",
+                  "maintainAspectRatio": true,
+                  "scalable": true,
                   "type": "video/x-flv",
                   "uri": "http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv",
                   "width": 400

@@ -56,7 +56,9 @@ const types = {
     minBitrate: TYPES.int,
     maxBitrate: TYPES.int,
     width: TYPES.int,
-    height: TYPES.int
+    height: TYPES.int,
+    scalable: TYPES.bool,
+    maintainAspectRatio: TYPES.bool
   },
   NonLinear: {
     width: TYPES.int,
