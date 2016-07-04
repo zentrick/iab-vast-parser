@@ -44,10 +44,12 @@
                 "_value": {
                   "start": [
                     {
-                      "_uri": "http://example.com/start?d=[CACHEBUSTER]"
+                      "_type": "TrackingEvent",
+                      "uri": "http://example.com/start?d=[CACHEBUSTER]"
                     },
                     {
-                      "_uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                      "_type": "TrackingEvent",
+                      "uri": "http://example.com/start2?d=[CACHEBUSTER]"
                     }
                   ]
                 }

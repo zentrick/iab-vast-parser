@@ -27,57 +27,68 @@
                 "_value": {
                   "complete": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/complete"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/complete"
                     }
                   ],
                   "creativeView": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/creativeView"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/creativeView"
                     }
                   ],
                   "firstQuartile": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/firstQuartile"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/firstQuartile"
                     }
                   ],
                   "fullscreen": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/fullscreen"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/fullscreen"
                     }
                   ],
                   "midpoint": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/midpoint"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/midpoint"
                     }
                   ],
                   "mute": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/mute"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/mute"
                     }
                   ],
                   "pause": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/pause"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/pause"
                     }
                   ],
                   "resume": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/resume"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/resume"
                     }
                   ],
                   "start": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/start"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/start"
                     }
                   ],
                   "thirdQuartile": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/thirdQuartile"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/thirdQuartile"
                     }
                   ],
                   "unmute": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/unmute"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/unmute"
                     }
                   ]
                 }

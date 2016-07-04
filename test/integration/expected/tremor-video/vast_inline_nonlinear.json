@@ -59,27 +59,32 @@
                 "_value": {
                   "acceptInvitation": [
                     {
-                      "_uri": "http://myTrackingURL/nonlinear/acceptInvitation"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/nonlinear/acceptInvitation"
                     }
                   ],
                   "close": [
                     {
-                      "_uri": "http://myTrackingURL/nonlinear/close"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/nonlinear/close"
                     }
                   ],
                   "collapse": [
                     {
-                      "_uri": "http://myTrackingURL/nonlinear/collapse"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/nonlinear/collapse"
                     }
                   ],
                   "creativeView": [
                     {
-                      "_uri": "http://myTrackingURL/nonlinear/creativeView"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/nonlinear/creativeView"
                     }
                   ],
                   "expand": [
                     {
-                      "_uri": "http://myTrackingURL/nonlinear/expand"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/nonlinear/expand"
                     }
                   ]
                 }
@@ -129,7 +134,8 @@
                     "_value": {
                       "creativeView": [
                         {
-                          "_uri": "http://myTrackingURL/secondCompanion"
+                          "_type": "TrackingEvent",
+                          "uri": "http://myTrackingURL/secondCompanion"
                         }
                       ]
                     }

@@ -47,27 +47,32 @@
                 "_value": {
                   "acceptInvitation": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation"
                     }
                   ],
                   "close": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/close"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/close"
                     }
                   ],
                   "collapse": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse"
                     }
                   ],
                   "creativeView": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView"
                     }
                   ],
                   "expand": [
                     {
-                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/expand"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/expand"
                     }
                   ]
                 }

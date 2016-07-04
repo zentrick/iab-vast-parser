@@ -39,32 +39,38 @@
                 "_value": {
                   "complete": [
                     {
-                      "_uri": "http://myTrackingURL/complete"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/complete"
                     }
                   ],
                   "creativeView": [
                     {
-                      "_uri": "http://myTrackingURL/creativeView"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/creativeView"
                     }
                   ],
                   "firstQuartile": [
                     {
-                      "_uri": "http://myTrackingURL/firstQuartile"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/firstQuartile"
                     }
                   ],
                   "midpoint": [
                     {
-                      "_uri": "http://myTrackingURL/midpoint"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/midpoint"
                     }
                   ],
                   "start": [
                     {
-                      "_uri": "http://myTrackingURL/start"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/start"
                     }
                   ],
                   "thirdQuartile": [
                     {
-                      "_uri": "http://myTrackingURL/thirdQuartile"
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/thirdQuartile"
                     }
                   ]
                 }
@@ -108,7 +114,8 @@
                     "_value": {
                       "creativeView": [
                         {
-                          "_uri": "http://myTrackingURL/firstCompanionCreativeView"
+                          "_type": "TrackingEvent",
+                          "uri": "http://myTrackingURL/firstCompanionCreativeView"
                         }
                       ]
                     }

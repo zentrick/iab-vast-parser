@@ -27,7 +27,8 @@
                 "_value": {
                   "start": [
                     {
-                      "_uri": "http://example.com/start"
+                      "_type": "TrackingEvent",
+                      "uri": "http://example.com/start"
                     }
                   ]
                 }

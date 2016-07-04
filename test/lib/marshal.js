@@ -42,7 +42,7 @@ const marshalTrackingEvents = (trackingEvents) => {
   result._type = 'TrackingEvents'
   result._value = Object.create(null)
   for (const type of trackingEvents.types) {
-    result._value[type] = trackingEvents.get(type)
+    result._value[type] = marshalAny(trackingEvents.get(type))
   }
   return result
 }
