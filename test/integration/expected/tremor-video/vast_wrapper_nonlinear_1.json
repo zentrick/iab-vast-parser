@@ -46,19 +46,29 @@
                 "_type": "TrackingEvents",
                 "_value": {
                   "acceptInvitation": [
-                    "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation"
+                    }
                   ],
                   "close": [
-                    "http://myTrackingURL/wrapper/nonlinear/creativeView/close"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/close"
+                    }
                   ],
                   "collapse": [
-                    "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse"
+                    }
                   ],
                   "creativeView": [
-                    "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView"
+                    }
                   ],
                   "expand": [
-                    "http://myTrackingURL/wrapper/nonlinear/creativeView/expand"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/expand"
+                    }
                   ]
                 }
               }

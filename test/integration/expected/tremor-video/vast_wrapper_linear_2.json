@@ -57,7 +57,9 @@
                     "_type": "TrackingEvents",
                     "_value": {
                       "creativeView": [
-                        "http://myTrackingURL/wrapper/firstCompanionCreativeView"
+                        {
+                          "_uri": "http://myTrackingURL/wrapper/firstCompanionCreativeView"
+                        }
                       ]
                     }
                   },

@@ -26,37 +26,59 @@
                 "_type": "TrackingEvents",
                 "_value": {
                   "complete": [
-                    "http://myTrackingURL/wrapper/complete"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/complete"
+                    }
                   ],
                   "creativeView": [
-                    "http://myTrackingURL/wrapper/creativeView"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/creativeView"
+                    }
                   ],
                   "firstQuartile": [
-                    "http://myTrackingURL/wrapper/firstQuartile"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/firstQuartile"
+                    }
                   ],
                   "fullscreen": [
-                    "http://myTrackingURL/wrapper/fullscreen"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/fullscreen"
+                    }
                   ],
                   "midpoint": [
-                    "http://myTrackingURL/wrapper/midpoint"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/midpoint"
+                    }
                   ],
                   "mute": [
-                    "http://myTrackingURL/wrapper/mute"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/mute"
+                    }
                   ],
                   "pause": [
-                    "http://myTrackingURL/wrapper/pause"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/pause"
+                    }
                   ],
                   "resume": [
-                    "http://myTrackingURL/wrapper/resume"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/resume"
+                    }
                   ],
                   "start": [
-                    "http://myTrackingURL/wrapper/start"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/start"
+                    }
                   ],
                   "thirdQuartile": [
-                    "http://myTrackingURL/wrapper/thirdQuartile"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/thirdQuartile"
+                    }
                   ],
                   "unmute": [
-                    "http://myTrackingURL/wrapper/unmute"
+                    {
+                      "_uri": "http://myTrackingURL/wrapper/unmute"
+                    }
                   ]
                 }
               },

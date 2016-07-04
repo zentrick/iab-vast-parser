@@ -38,22 +38,34 @@
                 "_type": "TrackingEvents",
                 "_value": {
                   "complete": [
-                    "http://myTrackingURL/complete"
+                    {
+                      "_uri": "http://myTrackingURL/complete"
+                    }
                   ],
                   "creativeView": [
-                    "http://myTrackingURL/creativeView"
+                    {
+                      "_uri": "http://myTrackingURL/creativeView"
+                    }
                   ],
                   "firstQuartile": [
-                    "http://myTrackingURL/firstQuartile"
+                    {
+                      "_uri": "http://myTrackingURL/firstQuartile"
+                    }
                   ],
                   "midpoint": [
-                    "http://myTrackingURL/midpoint"
+                    {
+                      "_uri": "http://myTrackingURL/midpoint"
+                    }
                   ],
                   "start": [
-                    "http://myTrackingURL/start"
+                    {
+                      "_uri": "http://myTrackingURL/start"
+                    }
                   ],
                   "thirdQuartile": [
-                    "http://myTrackingURL/thirdQuartile"
+                    {
+                      "_uri": "http://myTrackingURL/thirdQuartile"
+                    }
                   ]
                 }
               },
@@ -95,7 +107,9 @@
                     "_type": "TrackingEvents",
                     "_value": {
                       "creativeView": [
-                        "http://myTrackingURL/firstCompanionCreativeView"
+                        {
+                          "_uri": "http://myTrackingURL/firstCompanionCreativeView"
+                        }
                       ]
                     }
                   },

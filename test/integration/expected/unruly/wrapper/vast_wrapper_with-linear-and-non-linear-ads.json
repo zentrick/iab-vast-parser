@@ -47,20 +47,32 @@
                 "_type": "TrackingEvents",
                 "_value": {
                   "complete": [
-                    "http://example.com/complete?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/complete?d=[CACHEBUSTER]"
+                    }
                   ],
                   "firstQuartile": [
-                    "http://example.com/q2?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/q2?d=[CACHEBUSTER]"
+                    }
                   ],
                   "midpoint": [
-                    "http://example.com/q3?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/q3?d=[CACHEBUSTER]"
+                    }
                   ],
                   "start": [
-                    "http://example.com/start?d=[CACHEBUSTER]",
-                    "http://example.com/start2?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/start?d=[CACHEBUSTER]"
+                    },
+                    {
+                      "_uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                    }
                   ],
                   "thirdQuartile": [
-                    "http://example.com/q4?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/q4?d=[CACHEBUSTER]"
+                    }
                   ]
                 }
               },

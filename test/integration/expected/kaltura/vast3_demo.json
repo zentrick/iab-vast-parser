@@ -48,29 +48,41 @@
                 ],
                 "sequence": 1,
                 "skipoffset": {
-                  "_type": "RelativeSkipoffset",
+                  "_type": "RelativeTimeOffset",
                   "value": 20
                 },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
                     "complete": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=13;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=13;ecn1=1;etm1=0;"
+                      }
                     ],
                     "fullscreen": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=19;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=19;ecn1=1;etm1=0;"
+                      }
                     ],
                     "midpoint": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=18;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=18;ecn1=1;etm1=0;"
+                      }
                     ],
                     "mute": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=16;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=16;ecn1=1;etm1=0;"
+                      }
                     ],
                     "pause": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=15;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=15;ecn1=1;etm1=0;"
+                      }
                     ],
                     "start": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=11;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=11;ecn1=1;etm1=0;"
+                      }
                     ]
                   }
                 },
@@ -265,22 +277,34 @@
                   "_type": "TrackingEvents",
                   "_value": {
                     "complete": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=13;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=13;ecn1=1;etm1=0;"
+                      }
                     ],
                     "fullscreen": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=19;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=19;ecn1=1;etm1=0;"
+                      }
                     ],
                     "midpoint": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=18;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=18;ecn1=1;etm1=0;"
+                      }
                     ],
                     "mute": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=16;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=16;ecn1=1;etm1=0;"
+                      }
                     ],
                     "pause": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=15;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=15;ecn1=1;etm1=0;"
+                      }
                     ],
                     "start": [
-                      "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=11;ecn1=1;etm1=0;"
+                      {
+                        "_uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=11;ecn1=1;etm1=0;"
+                      }
                     ]
                   }
                 }
@@ -336,7 +360,7 @@
                   }
                 ],
                 "skipoffset": {
-                  "_type": "AbsoluteSkipoffset",
+                  "_type": "AbsoluteTimeOffset",
                   "value": 5
                 },
                 "trackingEvents": {

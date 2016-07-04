@@ -43,8 +43,12 @@
                 "_type": "TrackingEvents",
                 "_value": {
                   "start": [
-                    "http://example.com/start?d=[CACHEBUSTER]",
-                    "http://example.com/start2?d=[CACHEBUSTER]"
+                    {
+                      "_uri": "http://example.com/start?d=[CACHEBUSTER]"
+                    },
+                    {
+                      "_uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                    }
                   ]
                 }
               },

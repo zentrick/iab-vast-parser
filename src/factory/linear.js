@@ -2,7 +2,7 @@ import {Linear} from 'iab-vast-model'
 import createMediaFile from './media-file'
 import createIcon from './icon'
 import createClick from './click'
-import createSkipoffset from './skipoffset'
+import createTimeOffset from './time-offset'
 import inheritCreative from '../inherit/creative'
 import mapTrackingEvents from '../util/map-tracking-events'
 
@@ -23,7 +23,7 @@ export default ($creative) => {
   const linear = new Linear()
   inheritCreative($creative, linear)
   if (typeof $linear.skipoffset === 'string' && $linear.skipoffset.length > 0) {
-    linear.skipoffset = createSkipoffset($linear.skipoffset)
+    linear.skipoffset = createTimeOffset($linear.skipoffset)
   }
   if ($linear.adParameters) {
     linear.adParameters = $linear.adParameters._value
