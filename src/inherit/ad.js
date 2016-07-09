@@ -18,9 +18,9 @@ export default ($ad, $impl, ad) => {
     ad.error = $impl.error._value
   }
   if ($impl.creatives && $impl.creatives.creative) {
-    for (const creative of $impl.creatives.creative.map(createCreative)) {
+    $impl.creatives.creative.map(createCreative).forEach((creative) => {
       ad.creatives.add(creative)
-    }
+    })
   }
   if ($impl.extensions && $impl.extensions.extension) {
     ad.extensions.push(...$impl.extensions.extension.map(createExtension))

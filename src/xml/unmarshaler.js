@@ -51,15 +51,15 @@ export default class Unmarshaler {
 
   _createCollections (node, xml) {
     if (this._collections[xml.nodeName] != null) {
-      for (const childName of this._collections[xml.nodeName]) {
+      this._collections[xml.nodeName].forEach((childName) => {
         node[toProperty(childName)] = []
-      }
+      })
     }
   }
 
   _createChildren (node, xml) {
     const parentName = xml.nodeName
-    for (const child of getChildren(xml, isElement)) {
+    getChildren(xml, isElement).forEach((child) => {
       const childName = child.nodeName
       const prop = toProperty(childName)
       if (this._isFreeform(parentName, childName)) {
@@ -67,7 +67,7 @@ export default class Unmarshaler {
       } else {
         this._addNodeChild(child, prop, node, parentName, childName)
       }
-    }
+    })
   }
 
   _addNodeChild (child, prop, parentNode, parentName, childName) {
