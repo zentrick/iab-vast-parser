@@ -3,26 +3,34 @@ import gutil from 'gulp-util'
 import loadPlugins from 'gulp-load-plugins'
 import {Instrumenter} from 'isparta'
 import del from 'del'
-import globule from 'globule'
 import seq from 'run-sequence'
-import fsp from 'fs-promise'
+import yargs from 'yargs'
+import globule from 'globule'
 import stableStringify from 'json-stable-stringify'
+import fsp from 'fs-promise'
 import path from 'path'
 import marshal from './test/lib/marshal'
 
 const COVERAGE_THRESHOLDS = {global: 80}
+const {COVERALLS} = process.env
 
 const $ = loadPlugins()
+const argv = yargs
+  .string('grep')
+  .boolean('bail')
+  .argv
 
-const plumb = () => $.if(!process.env.CI, $.plumber({
-  errorHandler: $.notify.onError('<%= error.message %>')
-}))
+const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integration/**/*.js'], {read: false})
+  .pipe($.mocha({
+    reporter: 'spec',
+    grep: argv.grep,
+    bail: argv.bail
+  }))
 
 gulp.task('clean', () => del('lib'))
 
-gulp.task('transpile', () => {
+gulp.task('build', ['clean'], () => {
   return gulp.src('src/**/*.js')
-    .pipe(plumb())
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.sourcemaps.write())
@@ -31,27 +39,30 @@ gulp.task('transpile', () => {
 
 gulp.task('lint', () => {
   return gulp.src('{src,test}/**/*.js')
-    .pipe(plumb())
     .pipe($.standard())
-    .pipe($.standard.reporter('default', {breakOnError: false}))
+    .pipe($.standard.reporter('default', {
+      breakOnError: false
+    }))
 })
 
-gulp.task('pre-coverage', () => {
+gulp.task('test:integration', runIntegrationTests)
+
+gulp.task('coverage:instrument', () => {
   return gulp.src('src/**/*.js')
-    .pipe($.istanbul({instrumenter: Instrumenter}))
+    .pipe($.istanbul({
+      instrumenter: Instrumenter
+    }))
     .pipe($.istanbul.hookRequire())
 })
 
-gulp.task('coverage', ['pre-coverage'], () => {
-  return gulp.src(['test/lib/setup.js', 'test/{unit,integration}/**/*.js', '!**/_*.js'], {read: false})
-    .pipe(plumb())
-    .pipe($.mocha({reporter: 'spec'}))
+gulp.task('coverage', ['coverage:instrument'], () => {
+  return runIntegrationTests()
     .pipe($.istanbul.writeReports())
     .pipe($.istanbul.enforceThresholds({thresholds: COVERAGE_THRESHOLDS}))
 })
 
 gulp.task('coveralls', () => {
-  if (!process.env.COVERALLS) {
+  if (!COVERALLS) {
     return
   }
   return gulp.src('coverage/lcov.info')
@@ -60,7 +71,7 @@ gulp.task('coveralls', () => {
 
 gulp.task('test', (cb) => seq('lint', 'coverage', 'coveralls', cb))
 
-gulp.task('build', (cb) => seq('test', 'clean', 'transpile', cb))
+gulp.task('watch', () => gulp.watch('{src,test}/**/*', ['build']))
 
 const buildExp = async (filePath, expPath, parse) => {
   const data = await fsp.readFile(filePath, 'utf8')
@@ -82,7 +93,5 @@ gulp.task('write-exp', async () => {
     return buildExp(filePath, expPath, parse)
   }))
 })
-
-gulp.task('watch', () => gulp.watch('{src,test}/**/*', ['build']))
 
 gulp.task('default', ['build'], () => gulp.start('watch'))
