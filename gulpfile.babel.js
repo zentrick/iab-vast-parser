@@ -27,6 +27,15 @@ const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integrati
     bail: argv.bail
   }))
 
+const buildExpected = async (filePath, expPath, parse) => {
+  const data = await fsp.readFile(filePath, 'utf8')
+  const parsed = parse(data)
+  const marshaled = marshal(parsed)
+  const stringified = stableStringify(marshaled, {space: 2})
+  await fsp.outputFile(expPath, stringified, 'utf8')
+  gutil.log('Created', gutil.colors.magenta(expPath))
+}
+
 gulp.task('clean', () => del('lib'))
 
 gulp.task('build', ['clean'], () => {
@@ -71,16 +80,7 @@ gulp.task('coveralls', () => {
 
 gulp.task('test', (cb) => seq('lint', 'coverage', 'coveralls', cb))
 
-gulp.task('watch', () => gulp.watch('{src,test}/**/*', ['build']))
-
-const buildExp = async (filePath, expPath, parse) => {
-  const data = await fsp.readFile(filePath, 'utf8')
-  const parsed = parse(data)
-  const marshaled = marshal(parsed)
-  const stringified = stableStringify(marshaled, {space: 2})
-  await fsp.outputFile(expPath, stringified, 'utf8')
-  gutil.log('Created', gutil.colors.magenta(expPath))
-}
+gulp.task('watch', () => gulp.watch('src/**/*', ['build']))
 
 gulp.task('write-exp', async () => {
   const parse = require('./src/').default
@@ -90,7 +90,7 @@ gulp.task('write-exp', async () => {
   await Promise.all(fixtures.map((relPath) => {
     const filePath = path.join(fixturesRoot, relPath)
     const expPath = path.join(expectedRoot, gutil.replaceExtension(relPath, '.json'))
-    return buildExp(filePath, expPath, parse)
+    return buildExpected(filePath, expPath, parse)
   }))
 })
 
