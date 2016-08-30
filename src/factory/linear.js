@@ -5,6 +5,7 @@ import createClick from './click'
 import createTimeOffset from './time-offset'
 import inheritCreative from '../inherit/creative'
 import mapTrackingEvents from '../util/map-tracking-events'
+import isNonEmptyString from '../util/is-non-empty-string'
 
 const mapVideoClicks = ($videoClicks, videoClicks) => {
   if ($videoClicks.clickThrough) {
@@ -22,7 +23,7 @@ export default ($creative) => {
   const $linear = $creative.linear
   const linear = new Linear()
   inheritCreative($creative, linear)
-  if (typeof $linear.skipoffset === 'string' && $linear.skipoffset.length > 0) {
+  if (isNonEmptyString($linear.skipoffset)) {
     linear.skipoffset = createTimeOffset($linear.skipoffset)
   }
   if ($linear.adParameters) {

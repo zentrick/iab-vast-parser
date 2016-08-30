@@ -53,11 +53,6 @@
         ],
         "id": "1",
         "impressions": [
-          {
-            "_type": "Impression",
-            "uri": {
-            }
-          }
         ],
         "sequence": 1
       }
