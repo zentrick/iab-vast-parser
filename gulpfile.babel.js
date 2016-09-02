@@ -1,7 +1,7 @@
 import gulp from 'gulp'
 import gutil from 'gulp-util'
 import loadPlugins from 'gulp-load-plugins'
-import {Instrumenter} from 'isparta'
+import { Instrumenter } from 'isparta'
 import del from 'del'
 import seq from 'run-sequence'
 import yargs from 'yargs'
@@ -11,8 +11,8 @@ import fsp from 'fs-promise'
 import path from 'path'
 import marshal from './test/lib/marshal'
 
-const COVERAGE_THRESHOLDS = {global: 80}
-const {COVERALLS} = process.env
+const COVERAGE_THRESHOLDS = { global: 80 }
+const { COVERALLS } = process.env
 
 const $ = loadPlugins()
 const argv = yargs
@@ -20,7 +20,7 @@ const argv = yargs
   .boolean('bail')
   .argv
 
-const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integration/**/*.js'], {read: false})
+const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integration/**/*.js'], { read: false })
   .pipe($.mocha({
     reporter: 'spec',
     grep: argv.grep,
@@ -31,7 +31,7 @@ const buildExpected = async (filePath, expPath, parse) => {
   const data = await fsp.readFile(filePath, 'utf8')
   const parsed = parse(data)
   const marshaled = marshal(parsed)
-  const stringified = stableStringify(marshaled, {space: 2})
+  const stringified = stableStringify(marshaled, { space: 2 })
   await fsp.outputFile(expPath, stringified, 'utf8')
   gutil.log('Created', gutil.colors.magenta(expPath))
 }
@@ -67,7 +67,7 @@ gulp.task('coverage:instrument', () => {
 gulp.task('coverage', ['coverage:instrument'], () => {
   return runIntegrationTests()
     .pipe($.istanbul.writeReports())
-    .pipe($.istanbul.enforceThresholds({thresholds: COVERAGE_THRESHOLDS}))
+    .pipe($.istanbul.enforceThresholds({ thresholds: COVERAGE_THRESHOLDS }))
 })
 
 gulp.task('coveralls', () => {
@@ -86,7 +86,7 @@ gulp.task('write-exp', async () => {
   const parse = require('./src/').default
   const fixturesRoot = path.resolve(__dirname, 'test/fixtures')
   const expectedRoot = path.resolve(__dirname, 'test/integration/expected')
-  const fixtures = globule.find({cwd: fixturesRoot, src: '**/*.xml'})
+  const fixtures = globule.find({ cwd: fixturesRoot, src: '**/*.xml' })
   await Promise.all(fixtures.map((relPath) => {
     const filePath = path.join(fixturesRoot, relPath)
     const expPath = path.join(expectedRoot, gutil.replaceExtension(relPath, '.json'))
