@@ -12,7 +12,7 @@ import path from 'path'
 import marshal from './test/lib/marshal'
 
 const COVERAGE_THRESHOLDS = { global: 80 }
-const { COVERALLS } = process.env
+const { CIRCLECI, CIRCLE_TEST_REPORTS, COVERALLS } = process.env
 
 const $ = loadPlugins()
 const argv = yargs
@@ -22,7 +22,10 @@ const argv = yargs
 
 const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integration/**/*.js'], { read: false })
   .pipe($.mocha({
-    reporter: 'spec',
+    reporter: CIRCLECI ? 'mocha-junit-reporter' : 'spec',
+    reporterOptions: CIRCLECI ? {
+      mochaFile: `${CIRCLE_TEST_REPORTS}/junit/test-results.xml`
+    } : {},
     grep: argv.grep,
     bail: argv.bail
   }))
