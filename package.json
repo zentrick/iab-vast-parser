@@ -41,7 +41,7 @@
     "chai-as-promised": "^5.2.0",
     "del": "^2.2.0",
     "fs-extra": "^0.30.0",
-    "fs-promise": "^0.5.0",
+    "fs-promise": "^1.0.0",
     "globule": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
