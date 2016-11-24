@@ -44,7 +44,10 @@ gulp.task('clean', () => del('lib'))
 gulp.task('build', ['clean'], () => {
   return gulp.src('src/**/*.js')
     .pipe($.sourcemaps.init())
-    .pipe($.babel())
+    .pipe($.babel({
+      presets: ['es2015'],
+      babelrc: false
+    }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('lib'))
 })
