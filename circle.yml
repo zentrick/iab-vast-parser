@@ -1,6 +1,6 @@
 machine:
   environment:
-    npm_config_progress: false
+    npm_config_progress: 'false'
 test:
   override:
     - nvm use 0.12 && npm test
