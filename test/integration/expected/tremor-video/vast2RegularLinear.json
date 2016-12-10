@@ -75,6 +75,8 @@
             }
           ]
         },
+        "errors": [
+        ],
         "extensions": [
         ],
         "id": "preroll-1",

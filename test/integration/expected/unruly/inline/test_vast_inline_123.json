@@ -45,6 +45,8 @@
           ]
         },
         "description": "Example Description",
+        "errors": [
+        ],
         "extensions": [
           {
             "_type": "Extension",

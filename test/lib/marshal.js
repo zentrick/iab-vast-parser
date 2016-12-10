@@ -18,7 +18,7 @@ const getPropertyNames = (proto) => {
 const marshalObject = (obj) => {
   const result = Object.create(null)
   const props = getPropertyNames(Object.getPrototypeOf(obj))
-    .filter((name) => (name !== '$type'))
+    .filter((name) => (name !== '$type' && name !== 'error'))
   for (const prop of props) {
     const value = obj[prop]
     if (value != null) {

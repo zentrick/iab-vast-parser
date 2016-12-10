@@ -19,8 +19,10 @@ export default ($ad, $impl, ad) => {
       .filter(hasValue)
       .map(createImpression))
   }
-  if ($impl.error != null && hasValue($impl.error)) {
-    ad.error = $impl.error._value
+  if ($impl.error != null) {
+    ad.errors.push(...$impl.error
+      .filter(hasValue)
+      .map($err => $err._value))
   }
   if ($impl.creatives != null && Array.isArray($impl.creatives.creative)) {
     $impl.creatives.creative.map(createCreative).forEach((creative) => {

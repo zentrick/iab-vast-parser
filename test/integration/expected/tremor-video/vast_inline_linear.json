@@ -150,7 +150,9 @@
           ]
         },
         "description": "VAST 2.0 Instream Test 1",
-        "error": "http://myErrorURL/error",
+        "errors": [
+          "http://myErrorURL/error"
+        ],
         "extensions": [
         ],
         "id": "601364",

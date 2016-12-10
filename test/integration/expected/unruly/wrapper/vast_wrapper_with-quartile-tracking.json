@@ -71,6 +71,8 @@
             }
           ]
         },
+        "errors": [
+        ],
         "extensions": [
         ],
         "fallbackOnNoAd": false,

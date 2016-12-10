@@ -90,6 +90,8 @@
           ]
         },
         "description": "Test description #hashtag",
+        "errors": [
+        ],
         "extensions": [
         ],
         "id": "1",
