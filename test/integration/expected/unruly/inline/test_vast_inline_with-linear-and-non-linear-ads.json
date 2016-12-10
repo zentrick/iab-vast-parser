@@ -89,6 +89,8 @@
           ]
         },
         "description": "Test description #hashtag",
+        "errors": [
+        ],
         "extensions": [
           {
             "_type": "Extension",

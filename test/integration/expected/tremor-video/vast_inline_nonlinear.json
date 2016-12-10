@@ -149,7 +149,9 @@
           ]
         },
         "description": "NonLinear Test Campaign 1",
-        "error": "http://myErrorURL/error",
+        "errors": [
+          "http://myErrorURL/error"
+        ],
         "extensions": [
         ],
         "id": "602678",

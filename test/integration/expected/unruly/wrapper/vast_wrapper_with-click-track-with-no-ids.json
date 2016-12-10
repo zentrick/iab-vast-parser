@@ -72,7 +72,9 @@
             }
           ]
         },
-        "error": "http://example.com/error/ERRORCODE",
+        "errors": [
+          "http://example.com/error/ERRORCODE"
+        ],
         "extensions": [
         ],
         "fallbackOnNoAd": false,

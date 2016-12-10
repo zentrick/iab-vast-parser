@@ -106,6 +106,8 @@
             }
           ]
         },
+        "errors": [
+        ],
         "extensions": [
         ],
         "fallbackOnNoAd": false,

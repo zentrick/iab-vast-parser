@@ -11,14 +11,14 @@ const collections = {
   Icon: ['IconViewTracking'],
   IconClicks: ['IconClickTracking'],
   Icons: ['Icon'],
-  InLine: ['Impression'],
+  InLine: ['Impression', 'Error'],
   MediaFiles: ['MediaFile'],
   NonLinear: ['NonLinearClickTracking'],
   NonLinearAds: ['NonLinear'],
   TrackingEvents: ['Tracking'],
   VAST: ['Ad'],
   VideoClicks: ['ClickTracking', 'CustomClick'],
-  Wrapper: ['Impression']
+  Wrapper: ['Impression', 'Error']
 }
 
 const freeforms = {

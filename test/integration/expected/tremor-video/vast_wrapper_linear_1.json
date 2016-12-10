@@ -141,7 +141,9 @@
             }
           ]
         },
-        "error": "http://myErrorURL/wrapper/error",
+        "errors": [
+          "http://myErrorURL/wrapper/error"
+        ],
         "extensions": [
         ],
         "fallbackOnNoAd": false,

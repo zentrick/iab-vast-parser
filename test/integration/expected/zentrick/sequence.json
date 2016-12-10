@@ -70,6 +70,8 @@
               }
             ]
           },
+          "errors": [
+          ],
           "extensions": [
           ],
           "id": "preroll-1",
@@ -144,6 +146,8 @@
               }
             ]
           },
+          "errors": [
+          ],
           "extensions": [
           ],
           "id": "preroll-2",

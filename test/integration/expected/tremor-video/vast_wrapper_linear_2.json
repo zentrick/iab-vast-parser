@@ -93,6 +93,8 @@
             }
           ]
         },
+        "errors": [
+        ],
         "extensions": [
         ],
         "fallbackOnNoAd": false,
