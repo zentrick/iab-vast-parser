@@ -17,5 +17,5 @@ export default (xml, options = {}) => {
   const elem = toElement(xml, options)
   const unmarshaler = new Unmarshaler(schema)
   const root = unmarshaler.unmarshal(elem)
-  return createVAST(root)
+  return createVAST(root, options)
 }

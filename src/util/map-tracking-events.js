@@ -2,7 +2,7 @@ import {TrackingEvent} from 'iab-vast-model'
 import createTimeOffset from '../factory/time-offset'
 import isNonEmptyString from './is-non-empty-string'
 
-export default ($trackingEvents, trackingEvents) => {
+export default ($trackingEvents, trackingEvents, options) => {
   if ($trackingEvents == null || !Array.isArray($trackingEvents.tracking)) {
     return
   }
@@ -13,7 +13,11 @@ export default ($trackingEvents, trackingEvents) => {
     const conf = new TrackingEvent()
     conf.uri = $tracking._value
     if ($tracking.event === 'progress' && isNonEmptyString($tracking.offset)) {
-      conf.offset = createTimeOffset($tracking.offset)
+      try {
+        conf.offset = createTimeOffset($tracking.offset)
+      } catch (err) {
+        options.errorHandler(err)
+      }
     }
     trackingEvents.add($tracking.event, conf)
   }
