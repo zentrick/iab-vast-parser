@@ -25,8 +25,11 @@ export default ($ad, $impl, ad) => {
       .map($err => $err._value))
   }
   if ($impl.creatives != null && Array.isArray($impl.creatives.creative)) {
-    $impl.creatives.creative.map(createCreative).forEach((creative) => {
-      ad.creatives.add(creative)
+    $impl.creatives.creative.forEach((creative) => {
+      try {
+        const parsedCreative = createCreative(creative)
+        ad.creatives.add(parsedCreative)
+      } catch (err) {}
     })
   }
   if ($impl.extensions != null && Array.isArray($impl.extensions.extension)) {
