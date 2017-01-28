@@ -1,11 +1,11 @@
 import createInLine from './in-line'
 import createWrapper from './wrapper'
 
-export default ($ad) => {
+export default ($ad, options) => {
   if ($ad.inLine) {
-    return createInLine($ad)
+    return createInLine($ad, options)
   } else if ($ad.wrapper) {
-    return createWrapper($ad)
+    return createWrapper($ad, options)
   } else {
     throw new Error('Unrecognized ad type')
   }

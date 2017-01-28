@@ -6,7 +6,7 @@ import isNonEmptyString from '../util/is-non-empty-string'
 
 const hasValue = ($node) => ($node != null && isNonEmptyString($node._value))
 
-export default ($ad, $impl, ad) => {
+export default ($ad, $impl, ad, options) => {
   ad.id = $ad.id
   ad.sequence = $ad.sequence
   if ($impl.adSystem != null) {
@@ -27,9 +27,11 @@ export default ($ad, $impl, ad) => {
   if ($impl.creatives != null && Array.isArray($impl.creatives.creative)) {
     $impl.creatives.creative.forEach((creative) => {
       try {
-        const parsedCreative = createCreative(creative)
+        const parsedCreative = createCreative(creative, options)
         ad.creatives.add(parsedCreative)
-      } catch (err) {}
+      } catch (err) {
+        options.errorHandler(err)
+      }
     })
   }
   if ($impl.extensions != null && Array.isArray($impl.extensions.extension)) {

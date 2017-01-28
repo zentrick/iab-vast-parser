@@ -19,12 +19,12 @@ const mapVideoClicks = ($videoClicks, videoClicks) => {
   }
 }
 
-export default ($creative) => {
+export default ($creative, options) => {
   const $linear = $creative.linear
   const linear = new Linear()
   inheritCreative($creative, linear)
   if (isNonEmptyString($linear.skipoffset)) {
-    linear.skipoffset = createTimeOffset($linear.skipoffset)
+    linear.skipoffset = createTimeOffset($linear.skipoffset, options)
   }
   if ($linear.adParameters) {
     linear.adParameters = $linear.adParameters._value
@@ -35,7 +35,7 @@ export default ($creative) => {
   if ($linear.mediaFiles && $linear.mediaFiles.mediaFile) {
     linear.mediaFiles.push(...$linear.mediaFiles.mediaFile.map(createMediaFile))
   }
-  mapTrackingEvents($linear.trackingEvents, linear.trackingEvents)
+  mapTrackingEvents($linear.trackingEvents, linear.trackingEvents, options)
   if ($linear.videoClicks) {
     mapVideoClicks($linear.videoClicks, linear.videoClicks)
   }

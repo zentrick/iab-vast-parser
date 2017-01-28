@@ -4,10 +4,12 @@ import fsp from 'fs-promise'
 import marshal from '../lib/marshal'
 import parse from '../../src/'
 
-const fixturesRoot = path.resolve(__dirname, '../fixtures')
-const expectedRoot = path.resolve(__dirname, 'expected')
+const strictFixturesRoot = path.resolve(__dirname, '../fixtures/strict')
+const strictExpectedRoot = path.resolve(__dirname, 'expected/strict')
+const looseFixturesRoot = path.resolve(__dirname, '../fixtures/loose')
+const looseExpectedRoot = path.resolve(__dirname, 'expected/loose')
 
-const describeTree = (node) => {
+const describeTree = (node, expectedRoot, fixturesRoot) => {
   for (const item of Object.keys(node)) {
     if (typeof node[item] === 'string') {
       const expPath = path.join(expectedRoot, node[item])
@@ -20,22 +22,27 @@ const describeTree = (node) => {
       })
     } else {
       describe(item, () => {
-        describeTree(node[item])
+        describeTree(node[item], expectedRoot, fixturesRoot)
       })
     }
   }
 }
 
-const root = Object.create(null)
-for (const expFile of globule.find({cwd: expectedRoot, src: '**/*.json'})) {
-  const dirs = expFile.split('/')
-  const file = dirs.pop()
-  const id = path.basename(file, '.json')
-  let node = root
-  for (const dir of dirs) {
-    node[dir] = node[dir] || Object.create(null)
-    node = node[dir]
+const createTree = dir => {
+  const root = Object.create(null)
+  for (const expFile of globule.find({cwd: dir, src: '**/*.json'})) {
+    const dirs = expFile.split('/')
+    const file = dirs.pop()
+    const id = path.basename(file, '.json')
+    let node = root
+    for (const dir of dirs) {
+      node[dir] = node[dir] || Object.create(null)
+      node = node[dir]
+    }
+    node[id] = expFile
   }
-  node[id] = expFile
+  return root
 }
-describeTree(root)
+
+describeTree(createTree(strictExpectedRoot), strictExpectedRoot, strictFixturesRoot)
+describeTree(createTree(looseExpectedRoot), looseExpectedRoot, looseFixturesRoot)
