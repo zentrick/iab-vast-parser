@@ -9,7 +9,7 @@ const strictExpectedRoot = path.resolve(__dirname, 'expected/strict')
 const looseFixturesRoot = path.resolve(__dirname, '../fixtures/loose')
 const looseExpectedRoot = path.resolve(__dirname, 'expected/loose')
 
-const describeTree = (node, expectedRoot, fixturesRoot) => {
+const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
   for (const item of Object.keys(node)) {
     if (typeof node[item] === 'string') {
       const expPath = path.join(expectedRoot, node[item])
@@ -17,12 +17,15 @@ const describeTree = (node, expectedRoot, fixturesRoot) => {
       it(item, async () => {
         const fixture = await fsp.readFile(fixtPath, 'utf8')
         const expected = JSON.parse(await fsp.readFile(expPath, 'utf8'))
-        const actual = marshal(parse(fixture))
+        const actual = marshal(parse(fixture, {strict: strict}))
         expect(actual).to.eql(expected)
+        if (!strict) {
+          expect(() => parse(fixture, {strict: true})).to.throw(Error)
+        }
       })
     } else {
       describe(item, () => {
-        describeTree(node[item], expectedRoot, fixturesRoot)
+        describeTree(node[item], expectedRoot, fixturesRoot, strict)
       })
     }
   }
@@ -44,5 +47,5 @@ const createTree = dir => {
   return root
 }
 
-describeTree(createTree(strictExpectedRoot), strictExpectedRoot, strictFixturesRoot)
-describeTree(createTree(looseExpectedRoot), looseExpectedRoot, looseFixturesRoot)
+describeTree(createTree(strictExpectedRoot), strictExpectedRoot, strictFixturesRoot, true)
+describeTree(createTree(looseExpectedRoot), looseExpectedRoot, looseFixturesRoot, false)
