@@ -1,0 +1,171 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Acudeo Compatible"
+        },
+        "adTitle": "VAST 2.0 Instream Test 1",
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Linear",
+              "adID": "601364",
+              "duration": 30,
+              "extensions": [
+              ],
+              "icons": [
+              ],
+              "mediaFiles": [
+                {
+                  "_type": "MediaFile",
+                  "bitrate": 500,
+                  "delivery": "progressive",
+                  "height": 300,
+                  "maintainAspectRatio": true,
+                  "scalable": true,
+                  "type": "video/x-flv",
+                  "uri": "http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv",
+                  "width": 400
+                }
+              ],
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "complete": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/complete"
+                    }
+                  ],
+                  "creativeView": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/creativeView"
+                    }
+                  ],
+                  "firstQuartile": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/firstQuartile"
+                    }
+                  ],
+                  "midpoint": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/midpoint"
+                    }
+                  ],
+                  "start": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/start"
+                    }
+                  ],
+                  "thirdQuartile": [
+                    {
+                      "_type": "TrackingEvent",
+                      "uri": "http://myTrackingURL/thirdQuartile"
+                    }
+                  ]
+                }
+              },
+              "videoClicks": {
+                "_type": "VideoClicks",
+                "clickThrough": {
+                  "_type": "Click",
+                  "uri": "http://www.tremormedia.com"
+                },
+                "clickTrackings": [
+                  {
+                    "_type": "Click",
+                    "uri": "http://myTrackingURL/click"
+                  }
+                ],
+                "customClicks": [
+                ]
+              }
+            },
+            {
+              "_type": "CompanionAds",
+              "adID": "601364-Companion",
+              "companions": [
+                {
+                  "_type": "Companion",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "http://www.tremormedia.com"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "height": 250,
+                  "resource": {
+                    "_type": "StaticResource",
+                    "content": "http://demo.tremormedia.com/proddev/vast/Blistex1.jpg",
+                    "creativeType": "image/jpeg"
+                  },
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "creativeView": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://myTrackingURL/firstCompanionCreativeView"
+                        }
+                      ]
+                    }
+                  },
+                  "width": 300
+                },
+                {
+                  "_type": "Companion",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "http://www.tremormedia.com"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "height": 90,
+                  "resource": {
+                    "_type": "StaticResource",
+                    "content": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
+                    "creativeType": "image/jpeg"
+                  },
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                    }
+                  },
+                  "width": 728
+                }
+              ],
+              "extensions": [
+              ]
+            }
+          ]
+        },
+        "description": "VAST 2.0 Instream Test 1",
+        "errors": [
+          "http://myErrorURL/error"
+        ],
+        "extensions": [
+        ],
+        "id": "601364",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/impression"
+          }
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "2.0"
+}
