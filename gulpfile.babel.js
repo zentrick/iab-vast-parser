@@ -27,7 +27,8 @@ const runIntegrationTests = () => gulp.src(['test/lib/setup.js', 'test/integrati
       mochaFile: `${CIRCLE_TEST_REPORTS}/junit/test-results-${process.version}.xml`
     } : {},
     grep: argv.grep,
-    bail: argv.bail
+    bail: argv.bail,
+    compilers: ['js:babel-core/register']
   }))
 
 const buildExpected = async (filePath, expPath, parse) => {
