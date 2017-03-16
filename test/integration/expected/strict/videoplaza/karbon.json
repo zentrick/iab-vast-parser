@@ -170,8 +170,7 @@
             "_type": "Impression",
             "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=0&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p&ua=%5Bua%5D&uc=%5Buc%5D"
           }
-        ],
-        "sequence": 1
+        ]
       }
     ]
   },

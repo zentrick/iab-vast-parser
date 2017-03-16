@@ -71,7 +71,6 @@
             "uri": "http://example.com/another-imp"
           }
         ],
-        "sequence": 1,
         "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml"
       }
     ]

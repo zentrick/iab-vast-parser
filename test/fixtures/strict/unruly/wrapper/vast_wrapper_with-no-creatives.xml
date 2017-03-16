@@ -1,5 +1,5 @@
 <VAST version="3.0">
-    <Ad sequence="1">
+    <Ad>
         <Wrapper>
             <AdSystem version="1.0">UnrulyX</AdSystem>
             <VASTAdTagURI><![CDATA[http://localhost/test/resources/vast/wrappers/vast_wrapper_with-chained-wrappers_innerwrapper.xml]]></VASTAdTagURI>

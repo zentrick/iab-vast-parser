@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VAST version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../vast/vast3_draft.xsd">
-    <Ad id="1" sequence="1">
+    <Ad id="1">
         <InLine>
             <AdSystem version="1.0"><![CDATA[Test Ad Server]]></AdSystem>
             <AdTitle><![CDATA[Sample title]]></AdTitle>
             <Description><![CDATA[Test description #hashtag]]></Description>
 
             <Impression></Impression>
-            
+
             <Creatives>
                 <Creative>
                     <NonLinearAds>
