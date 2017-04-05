@@ -60,7 +60,7 @@
     "mocha-junit-reporter": "^1.13.0",
     "normalize-newline": "^3.0.0",
     "run-sequence": "^1.1.5",
-    "standard": "^9.0.1",
+    "standard": "^10.0.0",
     "yargs": "^7.0.2"
   },
   "standard": {
