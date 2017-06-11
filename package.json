@@ -39,7 +39,7 @@
     "babel-register": "^6.24.0",
     "babel-runtime": "^6.23.0",
     "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
+    "chai-as-promised": "^7.0.0",
     "del": "^2.2.0",
     "fs-extra": "^2.1.2",
     "fs-promise": "^2.0.0",
