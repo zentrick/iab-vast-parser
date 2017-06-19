@@ -1,27 +1,20 @@
-import {VAST, AdPod} from 'iab-vast-model'
+import {VAST} from 'iab-vast-model'
 import createAd from './ad'
 
 const createPod = ($vast, vast, options) => {
   const podAds = $vast.ad
     .filter($ad => typeof $ad.sequence !== 'undefined')
-    .map($ad => createAd($ad, options))
-  if (podAds.length > 0) {
-    vast.adPod = new AdPod()
-    for (let i = 0; i < podAds.length; i++) {
-      vast.adPod.ads.add(podAds[i])
-    }
-  }
+    .map($ad => createAd($ad, vast, options))
+
+  podAds.forEach(podAd => vast.adPod.add(podAd))
 }
 
 const createBuffet = ($vast, vast, options) => {
   const buffetAds = $vast.ad
     .filter($ad => typeof $ad.sequence === 'undefined')
-    .map($ad => createAd($ad, options))
-  if (buffetAds.length > 0) {
-    for (let i = 0; i < buffetAds.length; i++) {
-      vast.ads.add(buffetAds[i])
-    }
-  }
+    .map($ad => createAd($ad, vast, options))
+
+  buffetAds.forEach(buffetAd => vast.adBuffet.add(buffetAd))
 }
 
 export default ($vast, options) => {

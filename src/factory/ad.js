@@ -1,12 +1,17 @@
 import createInLine from './in-line'
 import createWrapper from './wrapper'
 
-export default ($ad, options) => {
+export default ($ad, vast, options) => {
+  let ad
+
   if ($ad.inLine) {
-    return createInLine($ad, options)
+    ad = createInLine($ad, options)
   } else if ($ad.wrapper) {
-    return createWrapper($ad, options)
+    ad = createWrapper($ad, options)
   } else {
     throw new Error('Unrecognized ad type')
   }
+
+  ad.parent = vast
+  return ad
 }
