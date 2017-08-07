@@ -45,7 +45,7 @@
     "fs-promise": "^2.0.0",
     "globule": "^1.0.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
+    "gulp-babel": "^7.0.0",
     "gulp-coveralls": "^0.1.4",
     "gulp-if": "^2.0.2",
     "gulp-istanbul": "^1.0.0",
