@@ -1,39 +1,45 @@
 import {VAST, AdPod} from 'iab-vast-model'
 import createAd from './ad'
 
-const createPod = ($vast, vast, options) => {
-  const podAds = $vast.ad
-    .filter($ad => typeof $ad.sequence !== 'undefined')
-    .map($ad => createAd($ad, options))
-  if (podAds.length > 0) {
-    vast.adPod = new AdPod()
-    for (let i = 0; i < podAds.length; i++) {
-      vast.adPod.ads.add(podAds[i])
+const triageAds = ($$ads) => {
+  const $$adsWithSequence = []
+  const $$adsWithoutSequence = []
+  for (let i = 0; i < $$ads.length; ++i) {
+    const $ad = $$ads[i]
+    if (typeof $ad.sequence !== 'undefined') {
+      $$adsWithSequence.push($ad)
+    } else {
+      $$adsWithoutSequence.push($ad)
     }
   }
+  return [$$adsWithSequence, $$adsWithoutSequence]
 }
 
-const createBuffet = ($vast, vast, options) => {
-  const buffetAds = $vast.ad
-    .filter($ad => typeof $ad.sequence === 'undefined')
-    .map($ad => createAd($ad, options))
-  if (buffetAds.length > 0) {
-    for (let i = 0; i < buffetAds.length; i++) {
-      vast.ads.add(buffetAds[i])
+const createVAST = ($vast, options) => {
+  const vast = new VAST()
+  vast.version = $vast.version
+  const [$$adsWithSequence, $$adsWithoutSequence] = triageAds($vast.ad)
+  if ($$adsWithSequence.length > 0) {
+    if (options.noSingleAdPods &&
+        $vast.ad.length === 1 && $$adsWithSequence.length === 1) {
+      $$adsWithoutSequence.push($$adsWithSequence[0])
+    } else {
+      vast.adPod = new AdPod()
+      for (let i = 0; i < $$adsWithSequence.length; i++) {
+        vast.adPod.ads.add(createAd($$adsWithSequence[i], options))
+      }
     }
   }
+  for (let i = 0; i < $$adsWithoutSequence.length; i++) {
+    vast.ads.add(createAd($$adsWithoutSequence[i], options))
+  }
+  return vast
 }
 
 export default ($vast, options) => {
-  const vast = new VAST()
-  vast.version = $vast.version
-  if ($vast.ad && $vast.ad.length > 0) {
-    try {
-      createPod($vast, vast, options)
-      createBuffet($vast, vast, options)
-    } catch (err) {
-      options.errorHandler(err)
-    }
+  try {
+    return createVAST($vast, options)
+  } catch (err) {
+    options.errorHandler(err)
   }
-  return vast
 }
