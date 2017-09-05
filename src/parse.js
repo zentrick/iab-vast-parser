@@ -5,7 +5,8 @@ import strictHandler from './errors/strict'
 import looseHandler from './errors/loose'
 
 const DEFAULT_OPTIONS = {
-  strict: false
+  strict: false,
+  noSingleAdPods: false
 }
 
 const toElement = (xml, options) => {
