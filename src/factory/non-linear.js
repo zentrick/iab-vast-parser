@@ -1,6 +1,7 @@
 import {NonLinear} from 'iab-vast-model'
 import createResource from './resource'
 import createClick from './click'
+import hasValue from '../util/has-value'
 
 export default ($nonLinear) => {
   const nonLinear = new NonLinear()
@@ -14,11 +15,14 @@ export default ($nonLinear) => {
   nonLinear.minSuggestedDuration = $nonLinear.minSuggestedDuration
   nonLinear.apiFramework = $nonLinear.apiFramework
   nonLinear.resource = createResource($nonLinear)
-  if ($nonLinear.nonLinearClickThrough) {
+  if ($nonLinear.nonLinearClickThrough && hasValue($nonLinear.nonLinearClickThrough)) {
     nonLinear.clickThrough = createClick($nonLinear.nonLinearClickThrough)
   }
   if ($nonLinear.nonLinearClickTracking) {
-    nonLinear.clickTrackings.push(...$nonLinear.nonLinearClickTracking.map(createClick))
+    nonLinear.clickTrackings.push(
+      ...$nonLinear.nonLinearClickTracking
+      .filter(hasValue)
+      .map(createClick))
   }
   if ($nonLinear.adParameters) {
     nonLinear.adParameters = $nonLinear.adParameters._value

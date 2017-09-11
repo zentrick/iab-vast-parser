@@ -6,16 +6,23 @@ import createTimeOffset from './time-offset'
 import inheritCreative from '../inherit/creative'
 import mapTrackingEvents from '../util/map-tracking-events'
 import isNonEmptyString from '../util/is-non-empty-string'
+import hasValue from '../util/has-value'
 
 const mapVideoClicks = ($videoClicks, videoClicks) => {
-  if ($videoClicks.clickThrough) {
+  if ($videoClicks.clickThrough && hasValue($videoClicks.clickThrough)) {
     videoClicks.clickThrough = createClick($videoClicks.clickThrough)
   }
   if ($videoClicks.clickTracking) {
-    videoClicks.clickTrackings.push(...$videoClicks.clickTracking.map(createClick))
+    videoClicks.clickTrackings.push(
+      ...$videoClicks.clickTracking
+      .filter(hasValue)
+      .map(createClick))
   }
   if ($videoClicks.customClick) {
-    videoClicks.customClicks.push(...$videoClicks.customClick.map(createClick))
+    videoClicks.customClicks.push(
+      ...$videoClicks.customClick
+      .filter(hasValue)
+      .map(createClick))
   }
 }
 

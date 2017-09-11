@@ -2,6 +2,7 @@ import {Companion} from 'iab-vast-model'
 import createClick from './click'
 import createResource from './resource'
 import mapTrackingEvents from '../util/map-tracking-events'
+import hasValue from '../util/has-value'
 
 export default ($companion) => {
   const companion = new Companion()
@@ -21,11 +22,14 @@ export default ($companion) => {
   if ($companion.altText) {
     companion.altText = $companion.altText._value
   }
-  if ($companion.companionClickThrough) {
+  if ($companion.companionClickThrough && hasValue($companion.companionClickThrough)) {
     companion.clickThrough = createClick($companion.companionClickThrough)
   }
   if ($companion.companionClickTracking) {
-    companion.clickTrackings.push(...$companion.companionClickTracking.map(createClick))
+    companion.clickTrackings.push(
+      ...$companion.companionClickTracking
+      .filter(hasValue)
+      .map(createClick))
   }
   mapTrackingEvents($companion.trackingEvents, companion.trackingEvents)
   return companion
