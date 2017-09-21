@@ -7,19 +7,19 @@ const createPod = ($vast, vast, options) => {
   if (!(options.noSingleAdPods && isSingleAdPod($vast))) {
     $vast.ad
       .filter($ad => typeof $ad.sequence !== 'undefined')
-      .map($ad => createAd($ad, vast, options))
+      .map($ad => createAd($ad, options))
       .forEach(podAd => vast.adPod.add(podAd))
   }
 }
 
 const createBuffet = ($vast, vast, options) => {
   if (options.noSingleAdPods && isSingleAdPod($vast)) {
-    const singlePodAd = createAd($vast.ad[0], vast, options)
+    const singlePodAd = createAd($vast.ad[0], options)
     vast.adBuffet.add(singlePodAd)
   } else {
     $vast.ad
       .filter($ad => typeof $ad.sequence === 'undefined')
-      .map($ad => createAd($ad, vast, options))
+      .map($ad => createAd($ad, options))
       .forEach(buffetAd => vast.adBuffet.add(buffetAd))
   }
 }
