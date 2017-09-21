@@ -1,37 +1,39 @@
-import {VAST, AdPod} from 'iab-vast-model'
+import {VAST} from 'iab-vast-model'
 import createAd from './ad'
 
-const triageAds = ($$ads) => {
-  const $$adsWithSequence = []
-  const $$adsWithoutSequence = []
-  for (let i = 0; i < $$ads.length; ++i) {
-    const $ad = $$ads[i]
-    if (typeof $ad.sequence !== 'undefined') {
-      $$adsWithSequence.push($ad)
-    } else {
-      $$adsWithoutSequence.push($ad)
-    }
+const isSingleAdPod = $vast => $vast.ad.length === 1 && $vast.ad[0].sequence !== 'undefined'
+
+const createPod = ($vast, vast, options) => {
+  if (!(options.noSingleAdPods && isSingleAdPod($vast))) {
+    $vast.ad
+      .filter($ad => typeof $ad.sequence !== 'undefined')
+      .map($ad => createAd($ad, options))
+      .forEach(podAd => vast.adPod.add(podAd))
   }
-  return [$$adsWithSequence, $$adsWithoutSequence]
+}
+
+const createBuffet = ($vast, vast, options) => {
+  if (options.noSingleAdPods && isSingleAdPod($vast)) {
+    const singlePodAd = createAd($vast.ad[0], options)
+    vast.adBuffet.add(singlePodAd)
+  } else {
+    $vast.ad
+      .filter($ad => typeof $ad.sequence === 'undefined')
+      .map($ad => createAd($ad, options))
+      .forEach(buffetAd => vast.adBuffet.add(buffetAd))
+  }
 }
 
 const createVAST = ($vast, options) => {
   const vast = new VAST()
   vast.version = $vast.version
-  const [$$adsWithSequence, $$adsWithoutSequence] = triageAds($vast.ad)
-  if ($$adsWithSequence.length > 0) {
-    if (options.noSingleAdPods &&
-        $vast.ad.length === 1 && $$adsWithSequence.length === 1) {
-      $$adsWithoutSequence.push($$adsWithSequence[0])
-    } else {
-      vast.adPod = new AdPod()
-      for (let i = 0; i < $$adsWithSequence.length; i++) {
-        vast.adPod.ads.add(createAd($$adsWithSequence[i], options))
-      }
+  if ($vast.ad && $vast.ad.length > 0) {
+    try {
+      createPod($vast, vast, options)
+      createBuffet($vast, vast, options)
+    } catch (err) {
+      options.errorHandler(err)
     }
-  }
-  for (let i = 0; i < $$adsWithoutSequence.length; i++) {
-    vast.ads.add(createAd($$adsWithoutSequence[i], options))
   }
   return vast
 }

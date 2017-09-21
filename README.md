@@ -31,6 +31,7 @@ on the fly.
 ## Maintainer
 
 [Tim De Pauw](https://github.com/timdp)
+[Laurent De Smet](https://github.com/laurentdesmet)
 
 ## License
 

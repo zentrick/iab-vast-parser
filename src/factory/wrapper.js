@@ -8,8 +8,8 @@ export default ($ad, options) => {
   wrapper.vastAdTagURI = ($wrapper.vastAdTagURI != null)
     ? $wrapper.vastAdTagURI._value
     : null
-  wrapper.followAdditionalWrappers = !!$wrapper.followAdditionalWrappers
-  wrapper.allowMultipleAds = !!$wrapper.allowMultipleAds
-  wrapper.fallbackOnNoAd = !!$wrapper.fallbackOnNoAd
+  wrapper.followAdditionalWrappers = $wrapper.followAdditionalWrappers
+  wrapper.allowMultipleAds = $wrapper.allowMultipleAds
+  wrapper.fallbackOnNoAd = $wrapper.fallbackOnNoAd
   return wrapper
 }
