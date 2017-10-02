@@ -8,9 +8,8 @@ const toProperty = (() => {
   return (str) => str.replace(re, insert)
 })()
 
-const hasPair = (map, parentName, childName) => {
-  return (map[parentName] != null && ~map[parentName].indexOf(childName))
-}
+const hasPair = (map, parentName, childName) =>
+  (map[parentName] != null && ~map[parentName].indexOf(childName))
 
 export default class Unmarshaler {
   constructor ({collections, freeforms, types}) {
@@ -62,8 +61,10 @@ export default class Unmarshaler {
     getChildren(xml, isElement).forEach((child) => {
       const childName = child.nodeName
       const prop = toProperty(childName)
-      if (this._isFreeform(parentName, childName)) {
-        this._addFreeformChild(child, prop, node)
+      if (this._isFreeformParent(parentName)) {
+        if (this._isFreeformChild(parentName, childName)) {
+          this._addFreeformChild(child, prop, node)
+        }
       } else {
         this._addNodeChild(child, prop, node, parentName, childName)
       }
@@ -95,7 +96,11 @@ export default class Unmarshaler {
     return hasPair(this._collections, parentName, childName)
   }
 
-  _isFreeform (parentName, childName) {
+  _isFreeformParent (name) {
+    return (this._freeforms[name] != null)
+  }
+
+  _isFreeformChild (parentName, childName) {
     return hasPair(this._freeforms, parentName, childName)
   }
 }
