@@ -16,7 +16,7 @@ const collections = {
   NonLinear: ['NonLinearClickTracking'],
   NonLinearAds: ['NonLinear'],
   TrackingEvents: ['Tracking'],
-  VAST: ['Ad'],
+  VAST: ['Error', 'Ad'],
   VideoClicks: ['ClickTracking', 'CustomClick'],
   Wrapper: ['Impression', 'Error']
 }

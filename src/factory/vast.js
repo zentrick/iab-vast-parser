@@ -18,6 +18,9 @@ const triageAds = ($$ads) => {
 const createVAST = ($vast, options) => {
   const vast = new VAST()
   vast.version = $vast.version
+  vast.errors.push(...$vast.error
+    .map((err) => err._value)
+    .filter((uri) => (uri !== '')))
   const [$$adsWithSequence, $$adsWithoutSequence] = triageAds($vast.ad)
   if ($$adsWithSequence.length > 0) {
     if (options.noSingleAdPods &&

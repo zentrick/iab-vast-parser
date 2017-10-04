@@ -1,0 +1,4 @@
+<VAST version="3.0">
+  <Error>http://example.com/error1</Error>
+  <Error>http://example.com/error2</Error>
+</VAST>
