@@ -1,94 +1,83 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
-    "_value": [
-      {
-        "_type": "Wrapper",
-        "allowMultipleAds": false,
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [
-            {
-              "_type": "Linear",
-              "adID": "111",
-              "extensions": [
-              ],
-              "icons": [
-              ],
-              "mediaFiles": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
-                ],
-                "customClicks": [
-                ]
-              }
-            },
-            {
-              "_type": "CompanionAds",
-              "adID": "111",
-              "companions": [
-                {
-                  "_type": "Companion",
-                  "clickTrackings": [
-                  ],
-                  "height": 0,
-                  "trackingEvents": {
-                    "_type": "TrackingEvents",
-                    "_value": {
-                    }
-                  },
-                  "width": 0
-                }
-              ],
-              "extensions": [
-              ]
-            },
-            {
-              "_type": "NonLinearAds",
-              "adID": "111",
-              "extensions": [
-              ],
-              "nonLinears": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              }
-            }
-          ]
-        },
-        "errors": [
-          "https://pixel"
-        ],
-        "extensions": [
-        ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
-        "id": "2057602",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "https://tags"
+    "_value": [{
+      "followAdditionalWrappers": true,
+      "allowMultipleAds": false,
+      "vastAdTagURI": "http://ads",
+      "id": "2057602",
+      "impressions": [{
+        "uri": "https://tags",
+        "_type": "Impression"
+      }, {
+        "uri": "https://pixel",
+        "_type": "Impression"
+      }],
+      "errors": ["https://pixel"],
+      "adVerifications": [],
+      "extensions": [],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "adID": "111",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
           },
-          {
-            "_type": "Impression",
-            "uri": "https://pixel"
-          }
-        ],
-        "vastAdTagURI": "http://ads"
-      }
-    ]
+          "creativeExtensions": [],
+          "linear": {
+            "mediaFiles": {
+              "mediaFileList": [],
+              "interactiveCreativeFiles": [],
+              "_type": "MediaFiles"
+            },
+            "videoClicks": {
+              "customClicks": [],
+              "clickTrackings": [],
+              "_type": "VideoClicks"
+            },
+            "icons": [],
+            "_type": "Linear"
+          },
+          "_type": "Creative"
+        }, {
+          "adID": "111",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "companionAds": {
+            "companions": [{
+              "width": 0,
+              "height": 0,
+              "companionClickTracking": [],
+              "_type": "Companion"
+            }],
+            "_type": "CompanionAds"
+          },
+          "_type": "Creative"
+        }, {
+          "adID": "111",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "nonLinearAds": {
+            "nonLinears": [],
+            "_type": "NonLinearAds"
+          },
+          "_type": "Creative"
+        }]
+      },
+      "_type": "Wrapper"
+    }]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

@@ -15,17 +15,17 @@ export default ($nonLinear) => {
   nonLinear.minSuggestedDuration = $nonLinear.minSuggestedDuration
   nonLinear.apiFramework = $nonLinear.apiFramework
   nonLinear.resource = createResource($nonLinear)
+  if ($nonLinear.adParameters) {
+    nonLinear.adParameters = $nonLinear.adParameters._value
+  }
   if ($nonLinear.nonLinearClickThrough && hasValue($nonLinear.nonLinearClickThrough)) {
-    nonLinear.clickThrough = createClick($nonLinear.nonLinearClickThrough)
+    nonLinear.nonLinearClickThrough = createClick($nonLinear.nonLinearClickThrough)
   }
   if ($nonLinear.nonLinearClickTracking) {
-    nonLinear.clickTrackings.push(
+    nonLinear.nonLinearClickTracking.push(
       ...$nonLinear.nonLinearClickTracking
       .filter(hasValue)
       .map(createClick))
-  }
-  if ($nonLinear.adParameters) {
-    nonLinear.adParameters = $nonLinear.adParameters._value
   }
   return nonLinear
 }

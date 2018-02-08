@@ -1,7 +1,9 @@
 import {Icon} from 'iab-vast-model'
 import createResource from './resource'
 import createClick from './click'
+import createIconClicks from './icon-clicks'
 import hasValue from '../util/has-value'
+import isNonEmptyArray from '../util/is-non-empty-array'
 
 export default ($icon) => {
   const icon = new Icon()
@@ -13,17 +15,12 @@ export default ($icon) => {
   icon.duration = $icon.duration
   icon.offset = $icon.offset
   icon.apiFramework = $icon.apiFramework
-  icon.resource = createResource($icon)
-  if ($icon.iconClicks) {
-    if ($icon.iconClicks.iconClickThrough && hasValue($icon.iconClicks.iconClickThrough)) {
-      icon.clicks.clickThrough = createClick($icon.iconClicks.iconClickThrough)
-    }
-    if ($icon.iconClicks.iconClickTracking) {
-      icon.clicks.clickTrackings.push(
-        ...$icon.iconClicks.iconClickTracking
-        .filter(hasValue)
-        .map(createClick))
-    }
+  icon.pxratio = $icon.pxratio
+  icon.resources = createResource($icon)
+  if ($icon.iconClicks != null &&
+      (hasValue($icon.iconClicks.iconClickThrough) ||
+        isNonEmptyArray($icon.iconClicks.iconClickTracking))) {
+    icon.iconClicks = createIconClicks($icon.iconClicks)
   }
   if ($icon.iconViewTracking) {
     icon.viewTrackings.push(

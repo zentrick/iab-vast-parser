@@ -1,0 +1,32 @@
+<VAST version="3.0">
+  <Ad id="602833">
+    <Wrapper>
+      <AdSystem>Testing</AdSystem>
+      <VASTAdTagURI>
+        <![CDATA[https://vast.inline.url]]>
+      </VASTAdTagURI>
+      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <VideoClicks>
+              <ClickTracking>http://myTrackingURL/wrapper/click</ClickTracking>
+            </VideoClicks>
+            <Icons>
+              <Icon program="AdChoices" height="15" width="100" xPosition="10" yPosition="20">
+                <StaticResource creativeType="image/png">
+                  <![CDATA[https://www.example.com/logo.png]]>
+                </StaticResource>
+                <IconClicks>
+                  <IconClickThrough>
+                    <![CDATA[http://example.com/more_info]]>
+                  </IconClickThrough>
+                </IconClicks>
+              </Icon>
+            </Icons>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </Wrapper>
+  </Ad>
+</VAST>

@@ -1,180 +1,149 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
-    "_value": [
-      {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Videoplaza Karbon"
-        },
-        "adTitle": "Preroll green",
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [
-            {
-              "_type": "Linear",
-              "duration": 4,
-              "extensions": [
-              ],
-              "icons": [
-              ],
-              "id": "video",
-              "mediaFiles": [
-                {
-                  "_type": "MediaFile",
-                  "bitrate": 538,
-                  "delivery": "progressive",
-                  "height": 288,
-                  "scalable": true,
-                  "type": "video/mp4",
-                  "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/3b617267-116d-49cd-8a20-531f3650aeb9.mp4",
-                  "width": 512
-                },
-                {
-                  "_type": "MediaFile",
-                  "bitrate": 293,
-                  "delivery": "progressive",
-                  "height": 288,
-                  "scalable": true,
-                  "type": "video/mp4",
-                  "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/49be3f84-048f-47f4-8c4b-03d960d6ef9c.mp4",
-                  "width": 512
-                },
-                {
-                  "_type": "MediaFile",
-                  "bitrate": 804,
-                  "delivery": "progressive",
-                  "height": 576,
-                  "scalable": true,
-                  "type": "video/mp4",
-                  "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/b3fe26b0-7dbd-4235-8e9a-59c344095fd1.mp4",
-                  "width": 1024
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "closeLinear": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=7&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "complete": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=18&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "firstQuartile": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=15&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "fullscreen": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=37&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "midpoint": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=16&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "mute": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=32&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "pause": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=34&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "resume": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=36&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "rewind": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=35&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "skip": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=23&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "start": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=14&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "thirdQuartile": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=17&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ],
-                  "unmute": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=33&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                    }
-                  ]
-                }
+    "_value": [{
+      "adTitle": "Preroll green",
+      "categories": [],
+      "surveys": [],
+      "id": "41039f00-6127-418b-a22a-0d31c46f92a5",
+      "adSystem": {
+        "name": "Videoplaza Karbon",
+        "_type": "AdSystem"
+      },
+      "impressions": [{
+        "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=0&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p&ua=%5Bua%5D&uc=%5Buc%5D",
+        "_type": "Impression"
+      }],
+      "errors": ["https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=0&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=0&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p&ua=%5Bua%5D&uc=%5Buc%5D"],
+      "adVerifications": [],
+      "extensions": [{
+        "type": "AdServer",
+        "xmlElement": "<Extension xsi:type=\"VPAdServerExtension_type\" type=\"AdServer\" name=\"Videoplaza\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><AdInfo showSkipButton=\"never\" lastImpression=\"1460648862886\" skipReset=\"24:00:00.0\" requestType=\"lazy\" gid=\"6ef2e3d8-f4f1-4a90-870b-89d2b07cd341\" cid=\"bf1a76a8-c28d-47f6-9d55-199250f1a3e3\" format=\"spot_standard\" variant=\"NORMAL\" exclusive=\"false\"/></Extension>",
+        "_type": "Extension"
+      }],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "id": "video",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "linear": {
+            "duration": 4,
+            "mediaFiles": {
+              "mediaFileList": [{
+                "delivery": "progressive",
+                "type": "video/mp4",
+                "width": 512,
+                "height": 288,
+                "bitrate": 538,
+                "scalable": true,
+                "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/3b617267-116d-49cd-8a20-531f3650aeb9.mp4",
+                "_type": "MediaFile"
+              }, {
+                "delivery": "progressive",
+                "type": "video/mp4",
+                "width": 512,
+                "height": 288,
+                "bitrate": 293,
+                "scalable": true,
+                "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/49be3f84-048f-47f4-8c4b-03d960d6ef9c.mp4",
+                "_type": "MediaFile"
+              }, {
+                "delivery": "progressive",
+                "type": "video/mp4",
+                "width": 1024,
+                "height": 576,
+                "bitrate": 804,
+                "scalable": true,
+                "uri": "https://vp.videoplaza.tv/creatives/assets/1691464c-6017-4c76-b23d-ff45a947df8c/b3fe26b0-7dbd-4235-8e9a-59c344095fd1.mp4",
+                "_type": "MediaFile"
+              }],
+              "interactiveCreativeFiles": [],
+              "_type": "MediaFiles"
+            },
+            "videoClicks": {
+              "customClicks": [],
+              "clickThrough": {
+                "uri": "https://www.google.se/search?q=green+color",
+                "_type": "Click"
               },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickThrough": {
-                  "_type": "Click",
-                  "uri": "https://www.google.se/search?q=green+color"
-                },
-                "clickTrackings": [
-                  {
-                    "_type": "Click",
-                    "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=20&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p"
-                  }
-                ],
-                "customClicks": [
-                ]
+              "clickTrackings": [{
+                "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=20&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                "_type": "Click"
+              }],
+              "_type": "VideoClicks"
+            },
+            "trackingEvents": {
+              "_type": "TrackingEvents",
+              "_value": {
+                "resume": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=36&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "start": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=14&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "thirdQuartile": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=17&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "mute": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=32&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "skip": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=23&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "pause": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=34&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "rewind": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=35&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "fullscreen": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=37&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "firstQuartile": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=15&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "midpoint": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=16&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "unmute": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=33&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "complete": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=18&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }],
+                "closeLinear": [{
+                  "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=7&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p",
+                  "_type": "TrackingEvent"
+                }]
               }
-            }
-          ]
-        },
-        "errors": [
-          "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=0&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=0&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p&ua=%5Bua%5D&uc=%5Buc%5D"
-        ],
-        "extensions": [
-          {
-            "_type": "Extension",
-            "content": "<Extension xsi:type=\"VPAdServerExtension_type\" type=\"AdServer\" name=\"Videoplaza\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><AdInfo showSkipButton=\"never\" lastImpression=\"1460648862886\" skipReset=\"24:00:00.0\" requestType=\"lazy\" gid=\"6ef2e3d8-f4f1-4a90-870b-89d2b07cd341\" cid=\"bf1a76a8-c28d-47f6-9d55-199250f1a3e3\" format=\"spot_standard\" variant=\"NORMAL\" exclusive=\"false\"/></Extension>",
-            "type": "AdServer"
-          }
-        ],
-        "id": "41039f00-6127-418b-a22a-0d31c46f92a5",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "https://pulse-demo.videoplaza.tv/proxy/tracker/v2?aid=41039f00-6127-418b-a22a-0d31c46f92a5&cd=52&cf=long_form&dcid=d25462f4-ea19-4eaf-99b9-85de3f29d059&e=0&pid=test&rnd=%5BCACHEBUSTING%5D&tid=f05be29c-0258-11e6-aa5e-002590e80b87&tt=p&ua=%5Bua%5D&uc=%5Buc%5D"
-          }
-        ]
-      }
-    ]
+            },
+            "icons": [],
+            "_type": "Linear"
+          },
+          "_type": "Creative"
+        }]
+      },
+      "_type": "InLine"
+    }]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

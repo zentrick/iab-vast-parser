@@ -1,0 +1,82 @@
+{
+  "version": "4.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": []
+  },
+  "adPod": {
+    "ads": {
+      "_type": "SortedList",
+      "_value": [{
+        "followAdditionalWrappers": false,
+        "allowMultipleAds": true,
+        "fallbackOnNoAd": false,
+        "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
+        "id": "20010",
+        "conditionalAd": "false",
+        "adSystem": {
+          "version": "4.0",
+          "name": "iabtechlab",
+          "_type": "AdSystem"
+        },
+        "impressions": [{
+          "id": "Impression-ID",
+          "uri": "http://example.com/track/impression",
+          "_type": "Impression"
+        }],
+        "errors": ["http://example.com/error"],
+        "viewableImpression": {
+          "id": "1543",
+          "viewables": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
+          "notViewables": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
+          "viewUndetermined": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
+          "_type": "ViewableImpression"
+        },
+        "adVerifications": [],
+        "extensions": [],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [{
+            "id": "5480",
+            "adID": "2447226",
+            "universalAdId": {
+              "idRegistry": "unknown",
+              "idValue": "unknown",
+              "_type": "UniversalAdId"
+            },
+            "creativeExtensions": [],
+            "linear": {
+              "mediaFiles": {
+                "mediaFileList": [],
+                "interactiveCreativeFiles": [],
+                "_type": "MediaFiles"
+              },
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "start": [{
+                    "uri": "http://example.com/tracking/start",
+                    "offset": {
+                      "value": 32410,
+                      "_type": "AbsoluteTimeOffset"
+                    },
+                    "_type": "TrackingEvent"
+                  }]
+                }
+              },
+              "icons": [],
+              "_type": "Linear"
+            },
+            "sequence": 1,
+            "_type": "Creative"
+          }]
+        },
+        "sequence": 1,
+        "_type": "Wrapper"
+      }]
+    },
+    "_type": "AdPod"
+  },
+  "_type": "VAST"
+}

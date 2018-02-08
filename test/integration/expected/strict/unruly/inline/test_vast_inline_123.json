@@ -1,65 +1,58 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
-    "_value": [
-      {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Test Ad Server",
-          "version": "1.0"
-        },
-        "adTitle": "Example Title",
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [
-            {
-              "_type": "NonLinearAds",
-              "extensions": [
-              ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "uri": "http://example.com/clickthrough.html"
-                  },
-                  "clickTrackings": [
-                  ],
-                  "height": 100,
-                  "resource": {
-                    "_type": "StaticResource",
-                    "content": "http://example.com/thumb.jpg",
-                    "creativeType": "image/jpeg"
-                  },
-                  "width": 100
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              }
-            }
-          ]
-        },
-        "description": "Example Description",
-        "errors": [
-        ],
-        "extensions": [
-          {
-            "_type": "Extension",
-            "content": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>"
-          }
-        ],
-        "id": "1",
-        "impressions": [
-        ]
-      }
-    ]
+    "_value": [{
+      "adTitle": "Example Title",
+      "categories": [],
+      "description": "Example Description",
+      "surveys": [],
+      "id": "1",
+      "adSystem": {
+        "version": "1.0",
+        "name": "Test Ad Server",
+        "_type": "AdSystem"
+      },
+      "impressions": [],
+      "errors": [],
+      "adVerifications": [],
+      "extensions": [{
+        "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>",
+        "_type": "Extension"
+      }],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "nonLinearAds": {
+            "nonLinears": [{
+              "width": 100,
+              "height": 100,
+              "resource": {
+                "creativeType": "image/jpeg",
+                "uri": "http://example.com/thumb.jpg",
+                "_type": "StaticResource"
+              },
+              "nonLinearClickThrough": {
+                "uri": "http://example.com/clickthrough.html",
+                "_type": "Click"
+              },
+              "nonLinearClickTracking": [],
+              "_type": "NonLinear"
+            }],
+            "_type": "NonLinearAds"
+          },
+          "_type": "Creative"
+        }]
+      },
+      "_type": "InLine"
+    }]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

@@ -1,0 +1,130 @@
+{
+  "version": "4.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": []
+  },
+  "adPod": {
+    "ads": {
+      "_type": "SortedList",
+      "_value": [{
+        "adTitle": "iabtechlab video ad",
+        "categories": [],
+        "surveys": [],
+        "id": "20001",
+        "conditionalAd": "false",
+        "adSystem": {
+          "version": "4.0",
+          "name": "iabtechlab",
+          "_type": "AdSystem"
+        },
+        "impressions": [{
+          "id": "Impression-ID",
+          "uri": "http://example.com/track/impression",
+          "_type": "Impression"
+        }],
+        "pricing": {
+          "model": "cpm",
+          "currency": "USD",
+          "value": 25,
+          "_type": "Pricing"
+        },
+        "errors": ["http://example.com/error"],
+        "adVerifications": [],
+        "extensions": [{
+          "type": "iab-Count",
+          "xmlElement": "<Extension type=\"iab-Count\" xmlns=\"http://www.iab.com/VAST\">\n          <total_available>\n            <![CDATA[ 2 ]]>\n          </total_available>\n        </Extension>",
+          "_type": "Extension"
+        }],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [{
+            "id": "5480",
+            "adID": "2447226",
+            "universalAdId": {
+              "idRegistry": "Ad-ID",
+              "idValue": "8465",
+              "creativeIdentifier": "8465",
+              "_type": "UniversalAdId"
+            },
+            "creativeExtensions": [],
+            "linear": {
+              "duration": 16,
+              "mediaFiles": {
+                "mezzanine": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235",
+                "mediaFileList": [{
+                  "delivery": "progressive",
+                  "type": "video/mp4",
+                  "width": 1280,
+                  "height": 720,
+                  "codec": "0",
+                  "id": "5241",
+                  "bitrate": 2500,
+                  "minBitrate": 1800,
+                  "maxBitrate": 2500,
+                  "scalable": true,
+                  "maintainAspectRatio": true,
+                  "uri": "http://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4",
+                  "_type": "MediaFile"
+                }],
+                "interactiveCreativeFiles": [{
+                  "uri": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235",
+                  "_type": "InteractiveCreativeFile"
+                }],
+                "_type": "MediaFiles"
+              },
+              "videoClicks": {
+                "customClicks": [],
+                "clickThrough": {
+                  "id": "blog",
+                  "uri": "https://iabtechlab.com",
+                  "_type": "Click"
+                },
+                "clickTrackings": [],
+                "_type": "VideoClicks"
+              },
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "start": [{
+                    "uri": "http://example.com/tracking/start",
+                    "offset": {
+                      "value": 37943,
+                      "_type": "AbsoluteTimeOffset"
+                    },
+                    "_type": "TrackingEvent"
+                  }],
+                  "firstQuartile": [{
+                    "uri": "http://example.com/tracking/firstQuartile",
+                    "_type": "TrackingEvent"
+                  }],
+                  "midpoint": [{
+                    "uri": "http://example.com/tracking/midpoint",
+                    "_type": "TrackingEvent"
+                  }],
+                  "thirdQuartile": [{
+                    "uri": "http://example.com/tracking/thirdQuartile",
+                    "_type": "TrackingEvent"
+                  }],
+                  "complete": [{
+                    "uri": "http://example.com/tracking/complete",
+                    "_type": "TrackingEvent"
+                  }]
+                }
+              },
+              "icons": [],
+              "_type": "Linear"
+            },
+            "sequence": 1,
+            "_type": "Creative"
+          }]
+        },
+        "sequence": 1,
+        "_type": "InLine"
+      }]
+    },
+    "_type": "AdPod"
+  },
+  "_type": "VAST"
+}

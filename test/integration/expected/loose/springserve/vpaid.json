@@ -1,69 +1,58 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
-    "_value": [
-      {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "SpringServe"
-        },
-        "adTitle": "SpringServe",
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [
-            {
-              "_type": "Linear",
-              "adParameters": "{\"supplyTagId\":57877,\"domain\":\"chartsinfrance.net\",\"uuid\":\"2daee748-450a-4510-9bdc-fb0fc634a922\",\"width\":0,\"height\":0,\"country\":\"US\",\"aid\":159,\"secure\":false,\"to\":-1,\"ol\":2,\"v\":\"082477c1e719d64e4c867\",\"host\":\"vd-engine.production.iad.03.rhinoserve.com\",\"td\":false,\"ts\":false,\"ov\":1,\"wo_to\":0,\"df\":[[{\"url\":\"http://vid.springserve.com/vast/53967?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":71908,\"to\":20000,\"a_cc\":\"57877-81389_61895-71908\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/qsV0Vi5jF+5Ts6Lw3P_WMmWoTaqfbMrq?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&url=chartsinfrance.net&eov=eov\",\"id\":66907,\"to\":20000,\"a_cc\":\"57877-81389_61895-66907\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ltbVszF0P1Fr9Cp8g+6YGeeXJmjJRb3PzzQCfYEHN_pSZ7h66wf+ug==?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":71194,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-71194\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzl+b80buPk7Y4=?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77341,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77341\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzlmSx9PKbxGrMBi3ceXl4eXA==?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77339,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77339\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzlXP9OxlW_Fvs=?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77337,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77337\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ltbVszF0P1FbXpYKOZkUAQzF7Va38kmxQBYzEPsycJ8_jiwntbGzFw==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=&keywords=VIDEO_KEYWORDS&title=&url=chartsinfrance.net&eov=eov\",\"id\":39935,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-39935\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOloDi5xVQQC47_X9vm49BIQig7+Vq_E_J72aG7iJVoMQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":26705,\"to\":12000,\"a_cc\":\"57877-82315_62691-26705\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOEA60+1s_u4UgHUBee8pbkSHfh_F5fV1ly+TFIi7TI3Q==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":29391,\"to\":20000,\"a_cc\":\"57877-82315_62691-29391\"}],[{\"url\":\"http://vast.ssp.optimatic.com/vast/getVast.aspx?id=2L3lQC8uxY9C&zone=default&pageURL=chartsinfrance.net&pageTitle=&cb=1485578482301\",\"id\":78850,\"to\":20000,\"a_cc\":\"57877-82315_62691-78850\"}],[{\"url\":\"http://ssp.lkqd.net/ad?pid=234&sid=128666&output=vastvpaid&support=html5flash&execution=any&placement=&playinit=auto&volume=100&width=0&height=0&dnt=&ip=69.84.102.77&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36&pageurl=chartsinfrance.net&contentid=[CONTENT_ID]&contenttitle=[CONTENT_TITLE]&contentlength=&contenturl=chartsinfrance.net&rnd=1485578482301\",\"id\":73527,\"to\":20000,\"a_cc\":\"57877-82315_62691-73527\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOloDi5xVQQC47_X9vm49BIQig7+Vq_E_J72aG7iJVoMQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":27705,\"to\":5000,\"a_cc\":\"57877-82315_62691-27705\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ZktmkloShnPaOpv2v42qVVyn2NP2o2qegHsepiYrIXLhixIGu5oRdQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=chartsinfrance.net&eov=eov\",\"id\":27702,\"to\":20000,\"a_cc\":\"57877-82315_62691-27702\"}],[{\"url\":\"http://video.cynogage.com/vast?i=976&h=645b29fd&page_url=chartsinfrance.net&video_url=chartsinfrance.net&title=VIDEO_TITLE\",\"id\":38612,\"to\":20000,\"a_cc\":\"57877-82315_62691-38612\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/frNm2rk27lp6wUGmEZnl5jX9Iv7UnSau?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=chartsinfrance.net&eov=eov\",\"id\":69430,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-69430\",\"wo_f\":true}],[{\"url\":\"http://ad.afy11.net/ad?enc=4&asId=2000005365107&sf=0&ct=256&ru=chartsinfrance.net&width=0&height=0\",\"id\":73204,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-73204\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/YmtVH2+w7SiLMcXCv4K7hWsTOx7JZhrM+0eT5Ppd8C4=?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=VIDEO_URL&eov=eov\",\"id\":62890,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-62890\",\"wo_f\":true}],[{\"url\":\"http://vast.ssp.optimatic.com/vast/getVast.aspx?id=xlvIglBceNIT&zone=default&pageURL=chartsinfrance.net&pageTitle=[PAGE_TITLE]&cb=1485578482301\",\"id\":81260,\"to\":20000,\"a_cc\":\"57877-81260\"}],[{\"url\":\"https://ssp.streamrail.net/ssp/vpaid/57012026524fcb000200003e/586d018d0215f400026486cb?cb=1485578482301&width=0&height=0&dnt=&sub_id=&page_url=chartsinfrance.net\",\"id\":80554,\"to\":20000,\"a_cc\":\"57877-80554\"}],[{\"url\":\"http://vast.vertamedia.com/?aid=43698&content_page_url=chartsinfrance.net&player_width=0&player_height=0&video_duration=&cb=1485578482301&vpaid_type=3\",\"id\":81936,\"to\":20000,\"a_cc\":\"57877-81936\"}],[{\"url\":\"http://8v8wy-hfvvu.ads.tremorhub.com/ad/tag?adCode=8v8wy-8pr2t&playerWidth=0&playerHeight=0&srcPageUrl=chartsinfrance.net\",\"id\":80800,\"to\":20000,\"a_cc\":\"57877-80800\"}],[{\"url\":\"http://vast.vertamedia.com/?aid=43702&content_page_url=chartsinfrance.net&player_width=0&player_height=0&video_duration=&cb=1485578482301&vpaid_type=3\",\"id\":81929,\"to\":20000,\"a_cc\":\"57877-81929\"}],[{\"url\":\"http://vid.springserve.com/vast/59572?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":80547,\"to\":20000,\"a_cc\":\"57877-80547\"}],[{\"url\":\"http://search.spotxchange.com/vast/2.00/166375?VPAID=1&content_page_url=chartsinfrance.net&cb=1485578482301&player_width=0&player_height=0&vid_duration=&vid_url=chartsinfrance.net&vid_id=REPLACE_ME&vid_title=REPLACE_ME&vid_description=&content_type=REPLACE_ME&vidip=69.84.102.77\",\"id\":80797,\"to\":20000,\"a_cc\":\"57877-80797\"}],[{\"url\":\"http://vast.vms.cignalio.com/?aid=37740&content_page_url=chartsinfrance.net&player_width=0&player_height=0&cb=1485578482301&vpaid_type=1\",\"id\":74346,\"to\":20000,\"a_cc\":\"57877-74346\"}],[{\"url\":\"http://vid.springserve.com/vast/40003?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":81267,\"to\":20000,\"a_cc\":\"57877-81267\"}],[{\"url\":\"http://search.spotxchange.com/vast/2.00/179406?VPAID=1&content_page_url=chartsinfrance.net&cb=1485578482301&player_width=0&player_height=0&vid_duration=&vid_url=chartsinfrance.net&vid_id=REPLACE_ME&vid_title=REPLACE_ME&vid_description=&content_type=REPLACE_ME&vidip=REPLACE_ME\",\"id\":77008,\"to\":20000,\"a_cc\":\"57877-77008\"}]],\"dto\":{\"82315\":20000,\"81389\":20000}}",
-              "duration": 30,
-              "extensions": [
-              ],
-              "icons": [
-              ],
-              "mediaFiles": [
-                {
-                  "_type": "MediaFile",
-                  "apiFramework": "VPAID",
-                  "delivery": "progressive",
-                  "height": 0,
-                  "type": "application/x-shockwave-flash",
-                  "uri": "http://cdn.springserve.com/vd/vd-1.0.79.swf",
-                  "width": 0
-                }
-              ],
-              "sequence": 1,
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
-                ],
-                "customClicks": [
-                ]
-              }
-            }
-          ]
-        },
-        "errors": [
-          "http://vid-io.springserve.com/vd/i?event=vast_flash_error&size=0x0&id=57877&w=0&h=0&cb=[CACHEBUSTING]&v=082477c1e719d64e4c867&uuid=2daee748-450a-4510-9bdc-fb0fc634a922&cc=US&aid=159&d=chartsinfrance.net&flash=1&js=0&ec=[ERRORCODE]"
-        ],
-        "extensions": [
-        ],
-        "id": "1",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://vid-io.springserve.com/vd/i?event=vast_flash_impression&size=0x0&id=57877&w=0&h=0&cb=[CACHEBUSTING]&v=082477c1e719d64e4c867&uuid=2daee748-450a-4510-9bdc-fb0fc634a922&cc=US&aid=159&d=chartsinfrance.net&flash=1&js=0"
-          }
-        ]
-      }
-    ]
+    "_value": [{
+      "adTitle": "SpringServe",
+      "categories": [],
+      "surveys": [],
+      "id": "1",
+      "adSystem": {
+        "name": "SpringServe",
+        "_type": "AdSystem"
+      },
+      "impressions": [{
+        "uri": "http://vid-io.springserve.com/vd/i?event=vast_flash_impression&size=0x0&id=57877&w=0&h=0&cb=[CACHEBUSTING]&v=082477c1e719d64e4c867&uuid=2daee748-450a-4510-9bdc-fb0fc634a922&cc=US&aid=159&d=chartsinfrance.net&flash=1&js=0",
+        "_type": "Impression"
+      }],
+      "errors": ["http://vid-io.springserve.com/vd/i?event=vast_flash_error&size=0x0&id=57877&w=0&h=0&cb=[CACHEBUSTING]&v=082477c1e719d64e4c867&uuid=2daee748-450a-4510-9bdc-fb0fc634a922&cc=US&aid=159&d=chartsinfrance.net&flash=1&js=0&ec=[ERRORCODE]"],
+      "adVerifications": [],
+      "extensions": [],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "linear": {
+            "duration": 30,
+            "mediaFiles": {
+              "mediaFileList": [{
+                "delivery": "progressive",
+                "type": "application/x-shockwave-flash",
+                "width": 0,
+                "height": 0,
+                "apiFramework": "VPAID",
+                "uri": "http://cdn.springserve.com/vd/vd-1.0.79.swf",
+                "_type": "MediaFile"
+              }],
+              "interactiveCreativeFiles": [],
+              "_type": "MediaFiles"
+            },
+            "adParameters": "{\"supplyTagId\":57877,\"domain\":\"chartsinfrance.net\",\"uuid\":\"2daee748-450a-4510-9bdc-fb0fc634a922\",\"width\":0,\"height\":0,\"country\":\"US\",\"aid\":159,\"secure\":false,\"to\":-1,\"ol\":2,\"v\":\"082477c1e719d64e4c867\",\"host\":\"vd-engine.production.iad.03.rhinoserve.com\",\"td\":false,\"ts\":false,\"ov\":1,\"wo_to\":0,\"df\":[[{\"url\":\"http://vid.springserve.com/vast/53967?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":71908,\"to\":20000,\"a_cc\":\"57877-81389_61895-71908\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/qsV0Vi5jF+5Ts6Lw3P_WMmWoTaqfbMrq?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&url=chartsinfrance.net&eov=eov\",\"id\":66907,\"to\":20000,\"a_cc\":\"57877-81389_61895-66907\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ltbVszF0P1Fr9Cp8g+6YGeeXJmjJRb3PzzQCfYEHN_pSZ7h66wf+ug==?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":71194,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-71194\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzl+b80buPk7Y4=?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77341,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77341\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzlmSx9PKbxGrMBi3ceXl4eXA==?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77339,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77339\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/1xPzqK4poMnpxCHobIfH4R0xpSW6xkzlXP9OxlW_Fvs=?cb=1485578482301&pageUrl=chartsinfrance.net&a.ip=69.84.102.77&a.ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36description=&duration=&eov=eov\",\"id\":77337,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-77337\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ltbVszF0P1FbXpYKOZkUAQzF7Va38kmxQBYzEPsycJ8_jiwntbGzFw==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=&keywords=VIDEO_KEYWORDS&title=&url=chartsinfrance.net&eov=eov\",\"id\":39935,\"to\":20000,\"a_cc\":\"57877-82315_62691-66289_49609-39935\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOloDi5xVQQC47_X9vm49BIQig7+Vq_E_J72aG7iJVoMQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":26705,\"to\":12000,\"a_cc\":\"57877-82315_62691-26705\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOEA60+1s_u4UgHUBee8pbkSHfh_F5fV1ly+TFIi7TI3Q==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":29391,\"to\":20000,\"a_cc\":\"57877-82315_62691-29391\"}],[{\"url\":\"http://vast.ssp.optimatic.com/vast/getVast.aspx?id=2L3lQC8uxY9C&zone=default&pageURL=chartsinfrance.net&pageTitle=&cb=1485578482301\",\"id\":78850,\"to\":20000,\"a_cc\":\"57877-82315_62691-78850\"}],[{\"url\":\"http://ssp.lkqd.net/ad?pid=234&sid=128666&output=vastvpaid&support=html5flash&execution=any&placement=&playinit=auto&volume=100&width=0&height=0&dnt=&ip=69.84.102.77&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_12_2%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F55.0.2883.95+Safari%2F537.36&pageurl=chartsinfrance.net&contentid=[CONTENT_ID]&contenttitle=[CONTENT_TITLE]&contentlength=&contenturl=chartsinfrance.net&rnd=1485578482301\",\"id\":73527,\"to\":20000,\"a_cc\":\"57877-82315_62691-73527\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/3Hqvk5ktAHOloDi5xVQQC47_X9vm49BIQig7+Vq_E_J72aG7iJVoMQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=[video_id]&keywords=VIDEO_KEYWORDS&title=[video_title]&url=chartsinfrance.net&eov=eov\",\"id\":27705,\"to\":5000,\"a_cc\":\"57877-82315_62691-27705\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/ZktmkloShnPaOpv2v42qVVyn2NP2o2qegHsepiYrIXLhixIGu5oRdQ==?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=chartsinfrance.net&eov=eov\",\"id\":27702,\"to\":20000,\"a_cc\":\"57877-82315_62691-27702\"}],[{\"url\":\"http://video.cynogage.com/vast?i=976&h=645b29fd&page_url=chartsinfrance.net&video_url=chartsinfrance.net&title=VIDEO_TITLE\",\"id\":38612,\"to\":20000,\"a_cc\":\"57877-82315_62691-38612\"}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/frNm2rk27lp6wUGmEZnl5jX9Iv7UnSau?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=chartsinfrance.net&eov=eov\",\"id\":69430,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-69430\",\"wo_f\":true}],[{\"url\":\"http://ad.afy11.net/ad?enc=4&asId=2000005365107&sf=0&ct=256&ru=chartsinfrance.net&width=0&height=0\",\"id\":73204,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-73204\",\"wo_f\":true}],[{\"url\":\"http://ads.adaptv.advertising.com/a/h/YmtVH2+w7SiLMcXCv4K7hWsTOx7JZhrM+0eT5Ppd8C4=?cb=1485578482301&pageUrl=chartsinfrance.net&description=&duration=&id=VIDEO_ID&keywords=VIDEO_KEYWORDS&title=VIDEO_TITLE&url=VIDEO_URL&eov=eov\",\"id\":62890,\"to\":20000,\"a_cc\":\"57877-82315_62691-71528_53960-62890\",\"wo_f\":true}],[{\"url\":\"http://vast.ssp.optimatic.com/vast/getVast.aspx?id=xlvIglBceNIT&zone=default&pageURL=chartsinfrance.net&pageTitle=[PAGE_TITLE]&cb=1485578482301\",\"id\":81260,\"to\":20000,\"a_cc\":\"57877-81260\"}],[{\"url\":\"https://ssp.streamrail.net/ssp/vpaid/57012026524fcb000200003e/586d018d0215f400026486cb?cb=1485578482301&width=0&height=0&dnt=&sub_id=&page_url=chartsinfrance.net\",\"id\":80554,\"to\":20000,\"a_cc\":\"57877-80554\"}],[{\"url\":\"http://vast.vertamedia.com/?aid=43698&content_page_url=chartsinfrance.net&player_width=0&player_height=0&video_duration=&cb=1485578482301&vpaid_type=3\",\"id\":81936,\"to\":20000,\"a_cc\":\"57877-81936\"}],[{\"url\":\"http://8v8wy-hfvvu.ads.tremorhub.com/ad/tag?adCode=8v8wy-8pr2t&playerWidth=0&playerHeight=0&srcPageUrl=chartsinfrance.net\",\"id\":80800,\"to\":20000,\"a_cc\":\"57877-80800\"}],[{\"url\":\"http://vast.vertamedia.com/?aid=43702&content_page_url=chartsinfrance.net&player_width=0&player_height=0&video_duration=&cb=1485578482301&vpaid_type=3\",\"id\":81929,\"to\":20000,\"a_cc\":\"57877-81929\"}],[{\"url\":\"http://vid.springserve.com/vast/59572?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":80547,\"to\":20000,\"a_cc\":\"57877-80547\"}],[{\"url\":\"http://search.spotxchange.com/vast/2.00/166375?VPAID=1&content_page_url=chartsinfrance.net&cb=1485578482301&player_width=0&player_height=0&vid_duration=&vid_url=chartsinfrance.net&vid_id=REPLACE_ME&vid_title=REPLACE_ME&vid_description=&content_type=REPLACE_ME&vidip=69.84.102.77\",\"id\":80797,\"to\":20000,\"a_cc\":\"57877-80797\"}],[{\"url\":\"http://vast.vms.cignalio.com/?aid=37740&content_page_url=chartsinfrance.net&player_width=0&player_height=0&cb=1485578482301&vpaid_type=1\",\"id\":74346,\"to\":20000,\"a_cc\":\"57877-74346\"}],[{\"url\":\"http://vid.springserve.com/vast/40003?w=0&h=0&url=chartsinfrance.net&cb=1485578482301\",\"id\":81267,\"to\":20000,\"a_cc\":\"57877-81267\"}],[{\"url\":\"http://search.spotxchange.com/vast/2.00/179406?VPAID=1&content_page_url=chartsinfrance.net&cb=1485578482301&player_width=0&player_height=0&vid_duration=&vid_url=chartsinfrance.net&vid_id=REPLACE_ME&vid_title=REPLACE_ME&vid_description=&content_type=REPLACE_ME&vidip=REPLACE_ME\",\"id\":77008,\"to\":20000,\"a_cc\":\"57877-77008\"}]],\"dto\":{\"82315\":20000,\"81389\":20000}}",
+            "icons": [],
+            "_type": "Linear"
+          },
+          "sequence": 1,
+          "_type": "Creative"
+        }]
+      },
+      "_type": "InLine"
+    }]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

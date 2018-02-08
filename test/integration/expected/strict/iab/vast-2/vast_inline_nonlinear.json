@@ -1,0 +1,152 @@
+{
+  "version": "2.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": [{
+      "adTitle": "NonLinear Test Campaign 1",
+      "adVerifications": [],
+      "categories": [],
+      "description": "NonLinear Test Campaign 1",
+      "surveys": [{
+        "uri": "http://mySurveyURL/survey",
+        "_type": "Survey"
+      }],
+      "id": "602678",
+      "adSystem": {
+        "name": "Acudeo Compatible",
+        "_type": "AdSystem"
+      },
+      "impressions": [{
+        "uri": "http://myTrackingURL/impression",
+        "_type": "Impression"
+      }],
+      "errors": ["http://myErrorURL/error"],
+      "extensions": [],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "adID": "602678-NonLinear",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "nonLinearAds": {
+            "nonLinears": [{
+              "width": 300,
+              "height": 50,
+              "minSuggestedDuration": 15,
+              "resource": {
+                "creativeType": "image/jpeg",
+                "uri": "http://demo.tremormedia.com/proddev/vast/50x300_static.jpg",
+                "_type": "StaticResource"
+              },
+              "nonLinearClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "nonLinearClickTracking": [],
+              "_type": "NonLinear"
+            }, {
+              "width": 450,
+              "height": 50,
+              "minSuggestedDuration": 20,
+              "resource": {
+                "creativeType": "image/jpeg",
+                "uri": "http://demo.tremormedia.com/proddev/vast/50x450_static.jpg",
+                "_type": "StaticResource"
+              },
+              "nonLinearClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "nonLinearClickTracking": [],
+              "_type": "NonLinear"
+            }],
+            "trackingEvents": {
+              "_type": "TrackingEvents",
+              "_value": {
+                "creativeView": [{
+                  "uri": "http://myTrackingURL/nonlinear/creativeView",
+                  "_type": "TrackingEvent"
+                }],
+                "expand": [{
+                  "uri": "http://myTrackingURL/nonlinear/expand",
+                  "_type": "TrackingEvent"
+                }],
+                "collapse": [{
+                  "uri": "http://myTrackingURL/nonlinear/collapse",
+                  "_type": "TrackingEvent"
+                }],
+                "acceptInvitation": [{
+                  "uri": "http://myTrackingURL/nonlinear/acceptInvitation",
+                  "_type": "TrackingEvent"
+                }],
+                "close": [{
+                  "uri": "http://myTrackingURL/nonlinear/close",
+                  "_type": "TrackingEvent"
+                }]
+              }
+            },
+            "_type": "NonLinearAds"
+          },
+          "_type": "Creative"
+        }, {
+          "adID": "602678-Companion",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "companionAds": {
+            "companions": [{
+              "width": 300,
+              "height": 250,
+              "resource": {
+                "creativeType": "application/x-shockwave-flash",
+                "uri": "http://demo.tremormedia.com/proddev/vast/300x250_companion_1.swf",
+                "_type": "StaticResource"
+              },
+              "companionClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "companionClickTracking": [],
+              "_type": "Companion"
+            }, {
+              "width": 728,
+              "height": 90,
+              "resource": {
+                "creativeType": "image/jpeg",
+                "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
+                "_type": "StaticResource"
+              },
+              "trackingEvents": {
+                "_type": "TrackingEvents",
+                "_value": {
+                  "creativeView": [{
+                    "uri": "http://myTrackingURL/secondCompanion",
+                    "_type": "TrackingEvent"
+                  }]
+                }
+              },
+              "companionClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "companionClickTracking": [],
+              "_type": "Companion"
+            }],
+            "_type": "CompanionAds"
+          },
+          "_type": "Creative"
+        }]
+      },
+      "_type": "InLine"
+    }]
+  },
+  "_type": "VAST"
+}

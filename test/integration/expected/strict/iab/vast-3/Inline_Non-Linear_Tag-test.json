@@ -1,0 +1,77 @@
+{
+  "version": "3.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": [{
+      "adTitle": "NonLinear Image",
+      "adVerifications": [],
+      "categories": [],
+      "description": "VAST 3.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.",
+      "surveys": [],
+      "id": "20005",
+      "adSystem": {
+        "version": "4.0",
+        "name": "iabtechlab",
+        "_type": "AdSystem"
+      },
+      "impressions": [{
+        "id": "Impression-ID",
+        "uri": "http://example.com/track/impression",
+        "_type": "Impression"
+      }],
+      "pricing": {
+        "model": "cpm",
+        "currency": "USD",
+        "value": 25,
+        "_type": "Pricing"
+      },
+      "errors": ["http://example.com/error"],
+      "extensions": [{
+        "type": "iab-Count",
+        "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>",
+        "_type": "Extension"
+      }],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "id": "5480",
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "nonLinearAds": {
+            "nonLinears": [{
+              "width": 480,
+              "height": 150,
+              "scalable": true,
+              "maintainAspectRatio": true,
+              "minSuggestedDuration": 5,
+              "resource": {
+                "creativeType": "image/png",
+                "uri": "http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg",
+                "_type": "StaticResource"
+              },
+              "nonLinearClickThrough": {
+                "uri": "http://iabtechlab.com",
+                "_type": "Click"
+              },
+              "nonLinearClickTracking": [{
+                "uri": "http://example.com/trackingurl/clickTracking",
+                "_type": "Click"
+              }],
+              "_type": "NonLinear"
+            }],
+            "_type": "NonLinearAds"
+          },
+          "sequence": 1,
+          "_type": "Creative"
+        }]
+      },
+      "_type": "InLine"
+    }]
+  },
+  "_type": "VAST"
+}

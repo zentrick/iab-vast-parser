@@ -1,0 +1,71 @@
+{
+  "version": "3.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": [{
+      "followAdditionalWrappers": true,
+      "allowMultipleAds": false,
+      "vastAdTagURI": "https://vast.inline.url",
+      "id": "602833",
+      "adSystem": {
+        "name": "Testing",
+        "_type": "AdSystem"
+      },
+      "impressions": [{
+        "uri": "http://myTrackingURL/wrapper/impression",
+        "_type": "Impression"
+      }],
+      "errors": [],
+      "adVerifications": [],
+      "extensions": [],
+      "creatives": {
+        "_type": "SortedList",
+        "_value": [{
+          "universalAdId": {
+            "idRegistry": "unknown",
+            "idValue": "unknown",
+            "_type": "UniversalAdId"
+          },
+          "creativeExtensions": [],
+          "linear": {
+            "mediaFiles": {
+              "mediaFileList": [],
+              "interactiveCreativeFiles": [],
+              "_type": "MediaFiles"
+            },
+            "videoClicks": {
+              "customClicks": [],
+              "clickTrackings": [{
+                "uri": "http://myTrackingURL/wrapper/click",
+                "_type": "Click"
+              }],
+              "_type": "VideoClicks"
+            },
+            "icons": [{
+              "program": "AdChoices",
+              "width": 100,
+              "height": 15,
+              "xPosition": "10",
+              "yPosition": "20",
+              "iconClicks": {
+                "iconClickThrough": {
+                  "uri": "http://example.com/more_info",
+                  "_type": "Click"
+                },
+                "iconClickTracking": [],
+                "_type": "IconClicks"
+              },
+              "viewTrackings": [],
+              "_type": "Icon"
+            }],
+            "_type": "Linear"
+          },
+          "_type": "Creative"
+        }]
+      },
+      "_type": "Wrapper"
+    }]
+  },
+  "_type": "VAST"
+}
