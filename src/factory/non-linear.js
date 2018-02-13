@@ -15,13 +15,13 @@ export default ($nonLinear) => {
   nonLinear.minSuggestedDuration = $nonLinear.minSuggestedDuration
   nonLinear.apiFramework = $nonLinear.apiFramework
   nonLinear.resource = createResource($nonLinear)
-  if ($nonLinear.adParameters) {
+  if ($nonLinear.adParameters != null) {
     nonLinear.adParameters = $nonLinear.adParameters._value
   }
-  if ($nonLinear.nonLinearClickThrough && hasValue($nonLinear.nonLinearClickThrough)) {
+  if ($nonLinear.nonLinearClickThrough != null && hasValue($nonLinear.nonLinearClickThrough)) {
     nonLinear.nonLinearClickThrough = createClick($nonLinear.nonLinearClickThrough)
   }
-  if ($nonLinear.nonLinearClickTracking) {
+  if ($nonLinear.nonLinearClickTracking != null) {
     nonLinear.nonLinearClickTracking.push(
       ...$nonLinear.nonLinearClickTracking
       .filter(hasValue)

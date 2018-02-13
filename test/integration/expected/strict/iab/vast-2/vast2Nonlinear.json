@@ -25,7 +25,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-1",
               "width": 380,
@@ -40,7 +40,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -67,7 +67,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-2",
               "width": 380,
@@ -82,7 +82,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -109,7 +109,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-3",
               "width": 380,
@@ -124,7 +124,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -151,7 +151,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-4",
               "width": 380,
@@ -166,7 +166,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -193,7 +193,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-5",
               "width": 380,
@@ -208,7 +208,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -235,7 +235,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-6",
               "width": 380,
@@ -250,7 +250,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -277,7 +277,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-7",
               "width": 380,
@@ -292,7 +292,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -319,7 +319,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-8",
               "width": 380,
@@ -334,7 +334,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -361,7 +361,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-9",
               "width": 380,
@@ -376,7 +376,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
@@ -403,7 +403,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "id": "overlay-10",
               "width": 380,
@@ -418,7 +418,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

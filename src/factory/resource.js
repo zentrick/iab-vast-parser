@@ -3,8 +3,8 @@ import createIFrameResource from './iframe-resource'
 import createHTMLResource from './html-resource'
 
 export default ($parent) => {
-  return $parent.staticResource ? createStaticResource($parent.staticResource)
-    : $parent.iFrameResource ? createIFrameResource($parent.iFrameResource)
-    : $parent.htmlResource ? createHTMLResource($parent.htmlResource)
+  return $parent.staticResource != null ? createStaticResource($parent.staticResource)
+    : $parent.iFrameResource != null ? createIFrameResource($parent.iFrameResource)
+    : $parent.htmlResource != null ? createHTMLResource($parent.htmlResource)
     : null
 }

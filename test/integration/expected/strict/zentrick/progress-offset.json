@@ -29,7 +29,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "duration": 30,
             "mediaFiles": {
               "mediaFileList": [{
@@ -69,7 +69,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }, {
           "universalAdId": {
@@ -78,7 +78,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "id": "555750",
               "width": 300,
@@ -91,7 +91,7 @@
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

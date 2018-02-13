@@ -49,7 +49,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "linear": {
+            "creativeAds": [{
               "duration": 16,
               "mediaFiles": {
                 "mezzanine": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235",
@@ -115,7 +115,7 @@
               },
               "icons": [],
               "_type": "Linear"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }]

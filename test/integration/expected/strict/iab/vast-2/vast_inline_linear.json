@@ -5,7 +5,6 @@
     "_type": "SortedList",
     "_value": [{
       "adTitle": "VAST 2.0 Instream Test 1",
-      "adVerifications": [],
       "categories": [],
       "description": "VAST 2.0 Instream Test 1",
       "surveys": [],
@@ -19,6 +18,7 @@
         "_type": "Impression"
       }],
       "errors": ["http://myErrorURL/error"],
+      "adVerifications": [],
       "extensions": [],
       "creatives": {
         "_type": "SortedList",
@@ -30,7 +30,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "duration": 30,
             "mediaFiles": {
               "mediaFileList": [{
@@ -90,7 +90,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "601364-Companion",
@@ -100,7 +100,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "width": 300,
               "height": 250,
@@ -109,6 +109,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/Blistex1.jpg",
                 "_type": "StaticResource"
               },
+              "companionClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "companionClickTracking": [],
               "trackingEvents": {
                 "_type": "TrackingEvents",
                 "_value": {
@@ -118,11 +123,6 @@
                   }]
                 }
               },
-              "companionClickThrough": {
-                "uri": "http://www.tremormedia.com",
-                "_type": "Click"
-              },
-              "companionClickTracking": [],
               "_type": "Companion"
             }, {
               "width": 728,
@@ -140,7 +140,7 @@
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

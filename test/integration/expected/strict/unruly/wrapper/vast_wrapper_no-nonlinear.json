@@ -28,7 +28,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "mediaFiles": {
               "mediaFileList": [],
               "interactiveCreativeFiles": [],
@@ -41,7 +41,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "111",
@@ -51,7 +51,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "width": 0,
               "height": 0,
@@ -59,7 +59,7 @@
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "111",
@@ -69,10 +69,10 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

@@ -5,7 +5,6 @@
     "_type": "SortedList",
     "_value": [{
       "adTitle": "NonLinear Test Campaign 1",
-      "adVerifications": [],
       "categories": [],
       "description": "NonLinear Test Campaign 1",
       "surveys": [{
@@ -22,6 +21,7 @@
         "_type": "Impression"
       }],
       "errors": ["http://myErrorURL/error"],
+      "adVerifications": [],
       "extensions": [],
       "creatives": {
         "_type": "SortedList",
@@ -33,7 +33,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "width": 300,
               "height": 50,
@@ -91,7 +91,7 @@
               }
             },
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "602678-Companion",
@@ -101,7 +101,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "width": 300,
               "height": 250,
@@ -124,6 +124,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
                 "_type": "StaticResource"
               },
+              "companionClickThrough": {
+                "uri": "http://www.tremormedia.com",
+                "_type": "Click"
+              },
+              "companionClickTracking": [],
               "trackingEvents": {
                 "_type": "TrackingEvents",
                 "_value": {
@@ -133,15 +138,10 @@
                   }]
                 }
               },
-              "companionClickThrough": {
-                "uri": "http://www.tremormedia.com",
-                "_type": "Click"
-              },
-              "companionClickTracking": [],
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

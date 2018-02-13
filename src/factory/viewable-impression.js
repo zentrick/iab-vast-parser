@@ -4,13 +4,16 @@ export default ($viewableImpression) => {
   const viewableImpression = new ViewableImpression()
   viewableImpression.id = $viewableImpression.id
   if ($viewableImpression.viewable != null) {
-    viewableImpression.viewables.push(...$viewableImpression.viewable.map(i => i._value))
+    viewableImpression.viewables
+      .push(...$viewableImpression.viewable.map(imp => imp._value))
   }
   if ($viewableImpression.notViewable != null) {
-    viewableImpression.notViewables.push(...$viewableImpression.notViewable.map(i => i._value))
+    viewableImpression.notViewables
+      .push(...$viewableImpression.notViewable.map(imp => imp._value))
   }
   if ($viewableImpression.viewUndetermined != null) {
-    viewableImpression.viewUndetermined.push(...$viewableImpression.viewUndetermined.map(i => i._value))
+    viewableImpression.viewUndetermined
+      .push(...$viewableImpression.viewUndetermined.map(imp => imp._value))
   }
   return viewableImpression
 }

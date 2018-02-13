@@ -29,7 +29,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "mediaFiles": {
               "mediaFileList": [],
               "interactiveCreativeFiles": [],
@@ -37,7 +37,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "602867-NonLinearTracking",
@@ -47,7 +47,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [],
             "trackingEvents": {
               "_type": "TrackingEvents",
@@ -75,7 +75,7 @@
               }
             },
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

@@ -5,7 +5,6 @@
     "_type": "SortedList",
     "_value": [{
       "adTitle": "NonLinear Image",
-      "adVerifications": [],
       "categories": [],
       "description": "VAST 3.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.",
       "surveys": [],
@@ -27,6 +26,7 @@
         "_type": "Pricing"
       },
       "errors": ["http://example.com/error"],
+      "adVerifications": [],
       "extensions": [{
         "type": "iab-Count",
         "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>",
@@ -42,7 +42,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "width": 480,
               "height": 150,
@@ -65,7 +65,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "sequence": 1,
           "_type": "Creative"
         }]

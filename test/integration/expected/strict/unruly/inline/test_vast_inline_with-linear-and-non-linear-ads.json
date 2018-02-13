@@ -30,7 +30,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "width": 0,
               "height": 0,
@@ -47,7 +47,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }, {
           "universalAdId": {
@@ -56,7 +56,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "duration": 5,
             "mediaFiles": {
               "mediaFileList": [{
@@ -89,7 +89,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }]
       },

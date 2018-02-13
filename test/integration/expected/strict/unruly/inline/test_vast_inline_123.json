@@ -30,7 +30,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "width": 100,
               "height": 100,
@@ -47,7 +47,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

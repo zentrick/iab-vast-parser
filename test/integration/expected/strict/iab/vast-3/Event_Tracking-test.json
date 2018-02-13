@@ -41,7 +41,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "duration": 16,
             "mediaFiles": {
               "mediaFileList": [{
@@ -104,7 +104,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "sequence": 1,
           "_type": "Creative"
         }]

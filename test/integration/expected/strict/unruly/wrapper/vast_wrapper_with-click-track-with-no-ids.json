@@ -32,13 +32,13 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "nonLinearClickTracking": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }, {
           "universalAdId": {
@@ -47,7 +47,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "mediaFiles": {
               "mediaFileList": [],
               "interactiveCreativeFiles": [],
@@ -78,7 +78,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }]
       },

@@ -32,7 +32,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "mediaFiles": {
               "mediaFileList": [],
               "interactiveCreativeFiles": [],
@@ -62,7 +62,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }]
       },

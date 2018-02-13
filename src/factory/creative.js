@@ -12,21 +12,23 @@ export default ($creative, options) => {
   // VAST3 XSD specifies AdID and that seems to be what parsers have agreed on
   creative.adID = $creative.AdID || $creative.adID || $creative.adId
   creative.apiFramework = $creative.apiFramework
-  if ($creative.universalAdId) {
+  if ($creative.universalAdId != null) {
     setUniversalAdId(creative.universalAdId, $creative.universalAdId)
   }
-  if ($creative.creativeExtensions && $creative.creativeExtensions.creativeExtension) {
+  if ($creative.creativeExtensions != null && $creative.creativeExtensions.creativeExtension) {
     creative.creativeExtensions
       .push(...$creative.creativeExtensions.creativeExtension.map(createCreativeExtension))
   }
-  if ($creative.linear) {
-    creative.linear = createLinear($creative, options)
-  } else if ($creative.nonLinearAds) {
-    creative.nonLinearAds = createNonLinearAds($creative)
-  } else if ($creative.companionAds) {
-    creative.companionAds = createCompanionAds($creative)
-  } else {
-    throw new Error('Unrecognized creative type')
+  if ($creative.linear != null) {
+    creative.creativeAds.push(createLinear($creative, options))
+  } else if ($creative.nonLinearAds != null) {
+    creative.creativeAds.push(createNonLinearAds($creative))
+  }
+  if ($creative.companionAds != null) {
+    creative.creativeAds.push(createCompanionAds($creative))
+  }
+  if (creative.creativeAds.length === 0) {
+    throw new Error('Unrecognized or missing creative ad')
   }
   return creative
 }

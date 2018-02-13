@@ -40,7 +40,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "linear": {
+            "creativeAds": [{
               "skipoffset": {
                 "value": 20,
                 "_type": "RelativeTimeOffset"
@@ -114,7 +114,7 @@
               },
               "icons": [],
               "_type": "Linear"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }, {
@@ -124,7 +124,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "companionAds": {
+            "creativeAds": [{
               "companions": [{
                 "id": "1",
                 "width": 300,
@@ -187,7 +187,7 @@
                 "_type": "Companion"
               }],
               "_type": "CompanionAds"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }, {
@@ -197,7 +197,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "nonLinearAds": {
+            "creativeAds": [{
               "nonLinears": [{
                 "id": "1",
                 "width": 400,
@@ -282,7 +282,7 @@
                 }
               },
               "_type": "NonLinearAds"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }]
@@ -311,7 +311,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "linear": {
+            "creativeAds": [{
               "skipoffset": {
                 "value": 5,
                 "_type": "AbsoluteTimeOffset"
@@ -343,7 +343,7 @@
               },
               "icons": [],
               "_type": "Linear"
-            },
+            }],
             "_type": "Creative"
           }]
         },

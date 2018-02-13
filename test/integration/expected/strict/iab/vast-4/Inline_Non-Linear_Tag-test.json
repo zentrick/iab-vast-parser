@@ -50,7 +50,7 @@
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "nonLinearAds": {
+            "creativeAds": [{
               "nonLinears": [{
                 "resource": {
                   "creativeType": "image/png",
@@ -68,7 +68,7 @@
                 "_type": "NonLinear"
               }],
               "_type": "NonLinearAds"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }]

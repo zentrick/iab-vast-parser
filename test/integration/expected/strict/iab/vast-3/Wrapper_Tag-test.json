@@ -30,7 +30,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "id": "1232",
               "width": 100,
@@ -52,7 +52,7 @@
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "sequence": 1,
           "_type": "Creative"
         }]

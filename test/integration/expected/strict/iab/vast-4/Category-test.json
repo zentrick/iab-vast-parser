@@ -51,13 +51,13 @@
             "id": "5480",
             "adID": "2447226",
             "universalAdId": {
-              "creativeIdentifier": "8465",
               "idRegistry": "Ad-ID",
               "idValue": "8465",
+              "creativeIdentifier": "8465",
               "_type": "UniversalAdId"
             },
             "creativeExtensions": [],
-            "linear": {
+            "creativeAds": [{
               "duration": 16,
               "mediaFiles": {
                 "mediaFileList": [{
@@ -147,7 +147,7 @@
               },
               "icons": [],
               "_type": "Linear"
-            },
+            }],
             "sequence": 1,
             "_type": "Creative"
           }]

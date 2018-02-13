@@ -57,7 +57,7 @@
             "xmlElement": "<CreativeExtension type=\"metrics\">\n              <FeEventId>MubmWKCWLs_tiQPYiYrwBw</FeEventId>\n              <AdEventId>CIGpsPCTkdMCFdN-Ygod-xkCKQ</AdEventId>\n            </CreativeExtension>",
             "_type": "CreativeExtension"
           }],
-          "linear": {
+          "creativeAds": [{
             "duration": 16,
             "mediaFiles": {
               "mediaFileList": [{
@@ -122,7 +122,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "sequence": 1,
           "_type": "Creative"
         }]

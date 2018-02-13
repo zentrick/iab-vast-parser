@@ -18,22 +18,22 @@ export default ($companion) => {
   companion.adSlotID = $companion.adSlotID
   companion.pxratio = $companion.pxratio
   companion.resource = createResource($companion)
-  if ($companion.adParameters && hasValue($companion.adParameters)) {
+  if ($companion.adParameters != null && hasValue($companion.adParameters)) {
     companion.adParameters = $companion.adParameters._value
   }
-  if ($companion.altText && hasValue($companion.altText._value)) {
+  if ($companion.altText != null && hasValue($companion.altText._value)) {
     companion.altText = $companion.altText._value
   }
-  if ($companion.companionClickThrough && hasValue($companion.companionClickThrough)) {
+  if ($companion.companionClickThrough != null && hasValue($companion.companionClickThrough)) {
     companion.companionClickThrough = createClick($companion.companionClickThrough)
   }
-  if ($companion.companionClickTracking) {
+  if ($companion.companionClickTracking != null) {
     companion.companionClickTracking.push(
       ...$companion.companionClickTracking
       .filter(hasValue)
       .map(createClick))
   }
-  if ($companion.trackingEvents && isNonEmptyArray($companion.trackingEvents.tracking)) {
+  if ($companion.trackingEvents != null && isNonEmptyArray($companion.trackingEvents.tracking)) {
     companion.trackingEvents = new TrackingEvents()
     mapTrackingEvents($companion.trackingEvents, companion.trackingEvents)
   }

@@ -7,7 +7,8 @@
   "browser": "browser.js",
   "author": "Zentrick nv (https://www.zentrick.com/)",
   "contributors": [
-    "Tim De Pauw <tim.depauw@zentrick.com>"
+    "Tim De Pauw <tim.depauw@zentrick.com>",
+    "Christophe Bonello <christophe.bonello@zentrick.com>"
   ],
   "engines": {
     "node": ">=4"
@@ -33,35 +34,30 @@
     "xmldom": "^0.1.22"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-3": "^6.22.0",
-    "babel-register": "^6.24.0",
-    "babel-runtime": "^6.23.0",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
-    "del": "^2.2.0",
-    "fs-extra": "^2.1.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "del": "^3.0.0",
     "fs-promise": "^2.0.0",
     "globule": "^1.0.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
+    "gulp-babel": "^7.0.1",
     "gulp-coveralls": "^0.1.4",
-    "gulp-if": "^2.0.2",
     "gulp-istanbul": "^1.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-mocha": "^3.0.1",
     "gulp-sourcemaps": "^2.4.1",
-    "gulp-standard": "^9.0.0",
+    "gulp-standard": "^10.1.2",
     "gulp-util": "^3.0.8",
     "in-publish": "^2.0.0",
     "isparta": "^4.0.0",
     "json-stable-stringify": "^1.0.1",
-    "mocha-junit-reporter": "^1.13.0",
     "normalize-newline": "^3.0.0",
-    "run-sequence": "^1.1.5",
-    "standard": "^9.0.1",
-    "yargs": "^7.0.2"
+    "run-sequence": "^2.2.1",
+    "yargs": "^11.0.0"
   },
   "standard": {
     "globals": [

@@ -35,7 +35,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [{
               "nonLinearClickTracking": [{
                 "uri": "http://example.com/click",
@@ -44,7 +44,7 @@
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },

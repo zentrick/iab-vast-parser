@@ -4,10 +4,10 @@ import hasValue from '../util/has-value'
 
 export default ($iconClicks) => {
   const iconClicks = new IconClicks()
-  if ($iconClicks.iconClickThrough && hasValue($iconClicks.iconClickThrough)) {
+  if ($iconClicks.iconClickThrough != null && hasValue($iconClicks.iconClickThrough)) {
     iconClicks.iconClickThrough = createClick($iconClicks.iconClickThrough)
   }
-  if ($iconClicks.iconClickTracking) {
+  if ($iconClicks.iconClickTracking != null) {
     iconClicks.iconClickTracking.push(
       ...$iconClicks.iconClickTracking
         .filter(hasValue)

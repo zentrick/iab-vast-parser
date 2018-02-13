@@ -11,9 +11,7 @@ export default ($ad, options) => {
   if ($wrapper.allowMultipleAds != null) {
     wrapper.allowMultipleAds = $wrapper.allowMultipleAds
   }
-  if ($wrapper.fallbackOnNoAd != null) {
-    wrapper.fallbackOnNoAd = $wrapper.fallbackOnNoAd
-  }
+  wrapper.fallbackOnNoAd = $wrapper.fallbackOnNoAd
   wrapper.vastAdTagURI = ($wrapper.vastAdTagURI != null)
     ? $wrapper.vastAdTagURI._value
     : null

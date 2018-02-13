@@ -22,7 +22,7 @@ export default ($icon) => {
         isNonEmptyArray($icon.iconClicks.iconClickTracking))) {
     icon.iconClicks = createIconClicks($icon.iconClicks)
   }
-  if ($icon.iconViewTracking) {
+  if ($icon.iconViewTracking != null) {
     icon.viewTrackings.push(
       ...$icon.iconViewTracking
       .filter(hasValue)

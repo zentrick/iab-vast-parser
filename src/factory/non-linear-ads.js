@@ -6,10 +6,10 @@ import isNonEmptyArray from '../util/is-non-empty-array'
 export default ($creative) => {
   const $nonLinearAds = $creative.nonLinearAds
   const nonLinearAds = new NonLinearAds()
-  if ($nonLinearAds.nonLinear) {
+  if ($nonLinearAds.nonLinear != null) {
     nonLinearAds.nonLinears.push(...$nonLinearAds.nonLinear.map(createNonLinear))
   }
-  if ($nonLinearAds.trackingEvents && isNonEmptyArray($nonLinearAds.trackingEvents.tracking)) {
+  if ($nonLinearAds.trackingEvents != null && isNonEmptyArray($nonLinearAds.trackingEvents.tracking)) {
     nonLinearAds.trackingEvents = new TrackingEvents()
     mapTrackingEvents($nonLinearAds.trackingEvents, nonLinearAds.trackingEvents)
   }

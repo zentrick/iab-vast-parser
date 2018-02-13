@@ -29,7 +29,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "linear": {
+          "creativeAds": [{
             "mediaFiles": {
               "mediaFileList": [],
               "interactiveCreativeFiles": [],
@@ -37,7 +37,7 @@
             },
             "icons": [],
             "_type": "Linear"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "602867-NonLinearTracking",
@@ -47,10 +47,10 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "nonLinearAds": {
+          "creativeAds": [{
             "nonLinears": [],
             "_type": "NonLinearAds"
-          },
+          }],
           "_type": "Creative"
         }, {
           "adID": "602867-Companion",
@@ -60,7 +60,7 @@
             "_type": "UniversalAdId"
           },
           "creativeExtensions": [],
-          "companionAds": {
+          "creativeAds": [{
             "companions": [{
               "width": 300,
               "height": 250,
@@ -100,7 +100,7 @@
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
-          },
+          }],
           "_type": "Creative"
         }]
       },
