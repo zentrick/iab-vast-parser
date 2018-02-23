@@ -27,11 +27,11 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "duration": 30,
             "mediaFiles": {
-              "mediaFileList": [{
+              "mediaFiles": [{
                 "delivery": "progressive",
                 "type": "application/x-shockwave-flash",
                 "width": 0,

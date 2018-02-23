@@ -41,7 +41,7 @@ export default ($creative, options) => {
       linear.mediaFiles.mezzanine = $linear.mediaFiles.mezzanine._value
     }
     if ($linear.mediaFiles.mediaFile != null) {
-      linear.mediaFiles.mediaFileList
+      linear.mediaFiles.mediaFiles
         .push(...$linear.mediaFiles.mediaFile.map(createMediaFile))
     }
     if ($linear.mediaFiles.interactiveCreativeFile != null) {

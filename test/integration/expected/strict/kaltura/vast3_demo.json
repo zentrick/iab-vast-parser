@@ -39,15 +39,15 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "skipoffset": {
                 "value": 20,
                 "_type": "RelativeTimeOffset"
               },
               "duration": 52,
               "mediaFiles": {
-                "mediaFileList": [{
+                "mediaFiles": [{
                   "delivery": "progressive",
                   "type": "video/mp4",
                   "width": 720,
@@ -123,8 +123,8 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "companions": [{
                 "id": "1",
                 "width": 300,
@@ -134,11 +134,11 @@
                   "uri": "http://s0.2mdn.net/1248596/PID_1472073_1290217213786_PID_1244559_1265644904000_parisian_love_300x250.jpg",
                   "_type": "StaticResource"
                 },
-                "companionClickThrough": {
+                "clickThrough": {
                   "uri": "http://www.google.com",
                   "_type": "Click"
                 },
-                "companionClickTracking": [],
+                "clickTrackings": [],
                 "_type": "Companion"
               }, {
                 "id": "2",
@@ -149,11 +149,11 @@
                   "uri": "http://s0.2mdn.net/1248596/PID_1472074_1290217231811_PID_1244559_1265644932000_parisian_love_728x90.jpg",
                   "_type": "StaticResource"
                 },
-                "companionClickThrough": {
+                "clickThrough": {
                   "uri": "http://www.google.com",
                   "_type": "Click"
                 },
-                "companionClickTracking": [],
+                "clickTrackings": [],
                 "_type": "Companion"
               }, {
                 "id": "3",
@@ -164,11 +164,11 @@
                   "uri": "http://s0.2mdn.net/1248596/PID_1485267_1291327077547_parisian_love_300x250_click.swf",
                   "_type": "StaticResource"
                 },
-                "companionClickThrough": {
+                "clickThrough": {
                   "uri": "http://www.google.com",
                   "_type": "Click"
                 },
-                "companionClickTracking": [],
+                "clickTrackings": [],
                 "_type": "Companion"
               }, {
                 "id": "4",
@@ -179,11 +179,11 @@
                   "uri": "http://s0.2mdn.net/1248596/PID_1485268_1291327112590_parisian_love_728x90_click.swf",
                   "_type": "StaticResource"
                 },
-                "companionClickThrough": {
+                "clickThrough": {
                   "uri": "http://www.google.com",
                   "_type": "Click"
                 },
-                "companionClickTracking": [],
+                "clickTrackings": [],
                 "_type": "Companion"
               }],
               "_type": "CompanionAds"
@@ -196,8 +196,8 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "nonLinears": [{
                 "id": "1",
                 "width": 400,
@@ -210,11 +210,11 @@
                   "_type": "StaticResource"
                 },
                 "adParameters": "",
-                "nonLinearClickThrough": {
+                "clickThrough": {
                   "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com",
                   "_type": "Click"
                 },
-                "nonLinearClickTracking": [],
+                "clickTrackings": [],
                 "_type": "NonLinear"
               }, {
                 "id": "3",
@@ -228,11 +228,11 @@
                   "_type": "StaticResource"
                 },
                 "adParameters": "",
-                "nonLinearClickThrough": {
+                "clickThrough": {
                   "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com",
                   "_type": "Click"
                 },
-                "nonLinearClickTracking": [],
+                "clickTrackings": [],
                 "_type": "NonLinear"
               }, {
                 "id": "3",
@@ -245,11 +245,11 @@
                   "_type": "HTMLResource"
                 },
                 "adParameters": "",
-                "nonLinearClickThrough": {
+                "clickThrough": {
                   "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://www.teracent.com/",
                   "_type": "Click"
                 },
-                "nonLinearClickTracking": [],
+                "clickTrackings": [],
                 "_type": "NonLinear"
               }],
               "trackingEvents": {
@@ -310,15 +310,15 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "skipoffset": {
                 "value": 5,
                 "_type": "AbsoluteTimeOffset"
               },
               "duration": 135,
               "mediaFiles": {
-                "mediaFileList": [{
+                "mediaFiles": [{
                   "delivery": "progressive",
                   "type": "video/mp4",
                   "width": 720,

@@ -12,7 +12,7 @@ export default ($viewableImpression) => {
       .push(...$viewableImpression.notViewable.map(imp => imp._value))
   }
   if ($viewableImpression.viewUndetermined != null) {
-    viewableImpression.viewUndetermined
+    viewableImpression.viewUndetermineds
       .push(...$viewableImpression.viewUndetermined.map(imp => imp._value))
   }
   return viewableImpression

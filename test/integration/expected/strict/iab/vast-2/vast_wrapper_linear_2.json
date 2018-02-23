@@ -28,10 +28,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "mediaFiles": {
-              "mediaFileList": [],
+              "mediaFiles": [],
               "interactiveCreativeFiles": [],
               "_type": "MediaFiles"
             },
@@ -46,8 +46,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "companions": [{
               "width": 300,
               "height": 250,
@@ -56,11 +56,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/300x250_banner1.jpg",
                 "_type": "StaticResource"
               },
-              "companionClickThrough": {
+              "clickThrough": {
                 "uri": "http://www.tremormedia.com",
                 "_type": "Click"
               },
-              "companionClickTracking": [],
+              "clickTrackings": [],
               "trackingEvents": {
                 "_type": "TrackingEvents",
                 "_value": {
@@ -79,11 +79,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
                 "_type": "StaticResource"
               },
-              "companionClickThrough": {
+              "clickThrough": {
                 "uri": "http://www.tremormedia.com",
                 "_type": "Click"
               },
-              "companionClickTracking": [],
+              "clickTrackings": [],
               "_type": "Companion"
             }],
             "_type": "CompanionAds"

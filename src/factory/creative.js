@@ -16,18 +16,18 @@ export default ($creative, options) => {
     setUniversalAdId(creative.universalAdId, $creative.universalAdId)
   }
   if ($creative.creativeExtensions != null && $creative.creativeExtensions.creativeExtension) {
-    creative.creativeExtensions
+    creative.extensions
       .push(...$creative.creativeExtensions.creativeExtension.map(createCreativeExtension))
   }
   if ($creative.linear != null) {
-    creative.creativeAds.push(createLinear($creative, options))
+    creative.ads.push(createLinear($creative, options))
   } else if ($creative.nonLinearAds != null) {
-    creative.creativeAds.push(createNonLinearAds($creative))
+    creative.ads.push(createNonLinearAds($creative))
   }
   if ($creative.companionAds != null) {
-    creative.creativeAds.push(createCompanionAds($creative))
+    creative.ads.push(createCompanionAds($creative))
   }
-  if (creative.creativeAds.length === 0) {
+  if (creative.ads.length === 0) {
     throw new Error('Unrecognized or missing creative ad')
   }
   return creative

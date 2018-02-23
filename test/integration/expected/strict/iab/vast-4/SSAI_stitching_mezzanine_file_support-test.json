@@ -45,12 +45,12 @@
               "creativeIdentifier": "1234",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "duration": 16,
               "mediaFiles": {
                 "mezzanine": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235",
-                "mediaFileList": [{
+                "mediaFiles": [{
                   "delivery": "progressive",
                   "type": "video/mp4",
                   "width": 1280,

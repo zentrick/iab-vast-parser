@@ -34,10 +34,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
-              "nonLinearClickTracking": [{
+              "clickTrackings": [{
                 "uri": "http://example.com/click",
                 "_type": "Click"
               }],

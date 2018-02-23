@@ -30,7 +30,7 @@
           "id": "1543",
           "viewables": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
           "notViewables": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
-          "viewUndetermined": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
+          "viewUndetermineds": ["http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"],
           "_type": "ViewableImpression"
         },
         "adVerifications": [],
@@ -45,10 +45,10 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "mediaFiles": {
-                "mediaFileList": [],
+                "mediaFiles": [],
                 "interactiveCreativeFiles": [],
                 "_type": "MediaFiles"
               },

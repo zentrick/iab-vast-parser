@@ -29,8 +29,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "width": 100,
               "height": 100,
@@ -39,11 +39,11 @@
                 "uri": "http://example.com/thumb.jpg",
                 "_type": "StaticResource"
               },
-              "nonLinearClickThrough": {
+              "clickThrough": {
                 "uri": "http://example.com/clickthrough.html",
                 "_type": "Click"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"

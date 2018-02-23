@@ -27,10 +27,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "mediaFiles": {
-              "mediaFileList": [],
+              "mediaFiles": [],
               "interactiveCreativeFiles": [],
               "_type": "MediaFiles"
             },
@@ -48,12 +48,12 @@
               "height": 15,
               "xPosition": "10",
               "yPosition": "20",
-              "iconClicks": {
-                "iconClickThrough": {
+              "clicks": {
+                "clickThrough": {
                   "uri": "http://example.com/more_info",
                   "_type": "Click"
                 },
-                "iconClickTracking": [],
+                "clickTrackings": [],
                 "_type": "IconClicks"
               },
               "viewTrackings": [],

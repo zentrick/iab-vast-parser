@@ -49,19 +49,19 @@
               "creativeIdentifier": "8465",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "nonLinears": [{
                 "resource": {
                   "creativeType": "image/png",
                   "uri": "http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg",
                   "_type": "StaticResource"
                 },
-                "nonLinearClickThrough": {
+                "clickThrough": {
                   "uri": "http://iabtechlab.com",
                   "_type": "Click"
                 },
-                "nonLinearClickTracking": [{
+                "clickTrackings": [{
                   "uri": "http://example.com/trackingurl/clickTracking",
                   "_type": "Click"
                 }],

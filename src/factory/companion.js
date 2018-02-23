@@ -25,10 +25,10 @@ export default ($companion) => {
     companion.altText = $companion.altText._value
   }
   if ($companion.companionClickThrough != null && hasValue($companion.companionClickThrough)) {
-    companion.companionClickThrough = createClick($companion.companionClickThrough)
+    companion.clickThrough = createClick($companion.companionClickThrough)
   }
   if ($companion.companionClickTracking != null) {
-    companion.companionClickTracking.push(
+    companion.clickTrackings.push(
       ...$companion.companionClickTracking
       .filter(hasValue)
       .map(createClick))

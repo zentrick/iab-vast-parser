@@ -20,7 +20,7 @@ export default ($icon) => {
   if ($icon.iconClicks != null &&
       (hasValue($icon.iconClicks.iconClickThrough) ||
         isNonEmptyArray($icon.iconClicks.iconClickTracking))) {
-    icon.iconClicks = createIconClicks($icon.iconClicks)
+    icon.clicks = createIconClicks($icon.iconClicks)
   }
   if ($icon.iconViewTracking != null) {
     icon.viewTrackings.push(

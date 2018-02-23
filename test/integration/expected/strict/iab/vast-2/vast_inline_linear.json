@@ -29,11 +29,11 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "duration": 30,
             "mediaFiles": {
-              "mediaFileList": [{
+              "mediaFiles": [{
                 "delivery": "progressive",
                 "type": "video/x-flv",
                 "width": 400,
@@ -99,8 +99,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "companions": [{
               "width": 300,
               "height": 250,
@@ -109,11 +109,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/Blistex1.jpg",
                 "_type": "StaticResource"
               },
-              "companionClickThrough": {
+              "clickThrough": {
                 "uri": "http://www.tremormedia.com",
                 "_type": "Click"
               },
-              "companionClickTracking": [],
+              "clickTrackings": [],
               "trackingEvents": {
                 "_type": "TrackingEvents",
                 "_value": {
@@ -132,11 +132,11 @@
                 "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
                 "_type": "StaticResource"
               },
-              "companionClickThrough": {
+              "clickThrough": {
                 "uri": "http://www.tremormedia.com",
                 "_type": "Click"
               },
-              "companionClickTracking": [],
+              "clickTrackings": [],
               "_type": "Companion"
             }],
             "_type": "CompanionAds"

@@ -6,11 +6,11 @@ export default ($verification) => {
   const verification = new Verification()
   verification.vendor = $verification.vendor
   if ($verification.javaScriptResource != null) {
-    verification.javaScriptResource
+    verification.javaScriptResources
       .push(...$verification.javaScriptResource.map(createJavaScriptResource))
   }
   if ($verification.flashResource != null) {
-    verification.flashResource
+    verification.flashResources
       .push(...$verification.flashResource.map(createFlashResource))
   }
   if ($verification.viewableImpression != null) {

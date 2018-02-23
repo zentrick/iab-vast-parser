@@ -38,8 +38,8 @@
               "idValue": "unknown",
               "_type": "UniversalAdId"
             },
-            "creativeExtensions": [],
-            "creativeAds": [{
+            "extensions": [],
+            "ads": [{
               "companions": [{
                 "id": "1232",
                 "width": 100,
@@ -56,11 +56,11 @@
                   "uri": "https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png",
                   "_type": "StaticResource"
                 },
-                "companionClickThrough": {
+                "clickThrough": {
                   "uri": "https://iabtechlab.com",
                   "_type": "Click"
                 },
-                "companionClickTracking": [],
+                "clickTrackings": [],
                 "_type": "Companion"
               }],
               "_type": "CompanionAds"

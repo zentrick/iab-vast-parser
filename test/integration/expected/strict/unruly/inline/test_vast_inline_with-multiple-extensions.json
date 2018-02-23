@@ -32,8 +32,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "width": 0,
               "height": 0,
@@ -42,11 +42,11 @@
                 "uri": "http://example.com/sample.jpg",
                 "_type": "StaticResource"
               },
-              "nonLinearClickThrough": {
+              "clickThrough": {
                 "uri": "https://example.com/article",
                 "_type": "Click"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -58,11 +58,11 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "duration": 40,
             "mediaFiles": {
-              "mediaFileList": [{
+              "mediaFiles": [{
                 "delivery": "streaming",
                 "type": "video/mp4",
                 "width": 480,

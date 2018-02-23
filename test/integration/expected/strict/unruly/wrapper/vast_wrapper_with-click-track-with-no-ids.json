@@ -31,10 +31,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -46,10 +46,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "mediaFiles": {
-              "mediaFileList": [],
+              "mediaFiles": [],
               "interactiveCreativeFiles": [],
               "_type": "MediaFiles"
             },

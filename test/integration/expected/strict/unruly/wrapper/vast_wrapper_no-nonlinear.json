@@ -27,10 +27,10 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "mediaFiles": {
-              "mediaFileList": [],
+              "mediaFiles": [],
               "interactiveCreativeFiles": [],
               "_type": "MediaFiles"
             },
@@ -50,12 +50,12 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "companions": [{
               "width": 0,
               "height": 0,
-              "companionClickTracking": [],
+              "clickTrackings": [],
               "_type": "Companion"
             }],
             "_type": "CompanionAds"
@@ -68,8 +68,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [],
             "_type": "NonLinearAds"
           }],

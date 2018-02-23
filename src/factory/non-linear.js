@@ -19,10 +19,10 @@ export default ($nonLinear) => {
     nonLinear.adParameters = $nonLinear.adParameters._value
   }
   if ($nonLinear.nonLinearClickThrough != null && hasValue($nonLinear.nonLinearClickThrough)) {
-    nonLinear.nonLinearClickThrough = createClick($nonLinear.nonLinearClickThrough)
+    nonLinear.clickThrough = createClick($nonLinear.nonLinearClickThrough)
   }
   if ($nonLinear.nonLinearClickTracking != null) {
-    nonLinear.nonLinearClickTracking.push(
+    nonLinear.clickTrackings.push(
       ...$nonLinear.nonLinearClickTracking
       .filter(hasValue)
       .map(createClick))

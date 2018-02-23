@@ -40,7 +40,7 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [{
+          "extensions": [{
             "type": "geo",
             "xmlElement": "<CreativeExtension type=\"geo\">\n              <Country>US</Country>\n              <Bandwidth>3</Bandwidth>\n              <BandwidthKbps>1680</BandwidthKbps>\n            </CreativeExtension>",
             "_type": "CreativeExtension"
@@ -57,10 +57,10 @@
             "xmlElement": "<CreativeExtension type=\"metrics\">\n              <FeEventId>MubmWKCWLs_tiQPYiYrwBw</FeEventId>\n              <AdEventId>CIGpsPCTkdMCFdN-Ygod-xkCKQ</AdEventId>\n            </CreativeExtension>",
             "_type": "CreativeExtension"
           }],
-          "creativeAds": [{
+          "ads": [{
             "duration": 16,
             "mediaFiles": {
-              "mediaFileList": [{
+              "mediaFiles": [{
                 "delivery": "progressive",
                 "type": "video/mp4",
                 "width": 400,

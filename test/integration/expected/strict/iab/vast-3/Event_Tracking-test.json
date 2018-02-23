@@ -40,11 +40,11 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "duration": 16,
             "mediaFiles": {
-              "mediaFileList": [{
+              "mediaFiles": [{
                 "delivery": "progressive",
                 "type": "video/mp4",
                 "width": 400,

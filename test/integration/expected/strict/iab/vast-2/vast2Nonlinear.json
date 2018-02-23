@@ -24,8 +24,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-1",
               "width": 380,
@@ -36,7 +36,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D0",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -66,8 +66,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-2",
               "width": 380,
@@ -78,7 +78,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D1",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -108,8 +108,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-3",
               "width": 380,
@@ -120,7 +120,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D2",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -150,8 +150,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-4",
               "width": 380,
@@ -162,7 +162,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D3",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -192,8 +192,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-5",
               "width": 380,
@@ -204,7 +204,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D4",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -234,8 +234,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-6",
               "width": 380,
@@ -246,7 +246,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D5",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -276,8 +276,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-7",
               "width": 380,
@@ -288,7 +288,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D6",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -318,8 +318,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-8",
               "width": 380,
@@ -330,7 +330,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D7",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -360,8 +360,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-9",
               "width": 380,
@@ -372,7 +372,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D8",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
@@ -402,8 +402,8 @@
             "idValue": "unknown",
             "_type": "UniversalAdId"
           },
-          "creativeExtensions": [],
-          "creativeAds": [{
+          "extensions": [],
+          "ads": [{
             "nonLinears": [{
               "id": "overlay-10",
               "width": 380,
@@ -414,7 +414,7 @@
                 "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D9",
                 "_type": "StaticResource"
               },
-              "nonLinearClickTracking": [],
+              "clickTrackings": [],
               "_type": "NonLinear"
             }],
             "_type": "NonLinearAds"
