@@ -99,11 +99,6 @@
                   "customClicks": [
                   ]
                 }
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             },
             {
@@ -158,12 +153,7 @@
                 ]
               },
               "extensions": [
-              ],
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
-              }
+              ]
             }
           ]
         },

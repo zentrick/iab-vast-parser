@@ -57,11 +57,6 @@
                   "customClicks": [
                   ]
                 }
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             }
           ]

@@ -52,12 +52,7 @@
                 "extensions": [
                 ],
                 "id": "5480",
-                "sequence": 1,
-                "universalAdId": {
-                  "_type": "UniversalAdId",
-                  "idRegistry": "unknown",
-                  "idValue": "unknown"
-                }
+                "sequence": 1
               }
             ]
           },

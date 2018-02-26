@@ -1,4 +1,7 @@
-export default (universalAdId, $universalAdId) => {
+import { UniversalAdId } from 'iab-vast-model'
+
+export default ($universalAdId) => {
+  const universalAdId = new UniversalAdId()
   if ($universalAdId.idRegistry != null) {
     universalAdId.idRegistry = $universalAdId.idRegistry
   }
@@ -6,4 +9,5 @@ export default (universalAdId, $universalAdId) => {
     universalAdId.idValue = $universalAdId.idValue
   }
   universalAdId.creativeIdentifier = $universalAdId._value
+  return universalAdId
 }

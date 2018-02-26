@@ -40,11 +40,6 @@
                     "width": 0
                   }
                 ]
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             },
             {
@@ -92,11 +87,6 @@
                   "customClicks": [
                   ]
                 }
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             }
           ]

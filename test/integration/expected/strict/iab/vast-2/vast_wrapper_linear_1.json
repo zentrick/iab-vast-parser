@@ -100,11 +100,6 @@
                     ]
                   }
                 }
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             },
             {
@@ -133,11 +128,6 @@
                   "customClicks": [
                   ]
                 }
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             },
             {
@@ -149,11 +139,6 @@
                 "_type": "NonLinearAds",
                 "nonLinears": [
                 ]
-              },
-              "universalAdId": {
-                "_type": "UniversalAdId",
-                "idRegistry": "unknown",
-                "idValue": "unknown"
               }
             }
           ]

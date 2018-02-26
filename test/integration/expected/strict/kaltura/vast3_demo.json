@@ -117,12 +117,7 @@
                     ]
                   }
                 },
-                "sequence": 1,
-                "universalAdId": {
-                  "_type": "UniversalAdId",
-                  "idRegistry": "unknown",
-                  "idValue": "unknown"
-                }
+                "sequence": 1
               },
               {
                 "_type": "Creative",
@@ -201,12 +196,7 @@
                 },
                 "extensions": [
                 ],
-                "sequence": 1,
-                "universalAdId": {
-                  "_type": "UniversalAdId",
-                  "idRegistry": "unknown",
-                  "idValue": "unknown"
-                }
+                "sequence": 1
               },
               {
                 "_type": "Creative",
@@ -317,12 +307,7 @@
                     }
                   }
                 },
-                "sequence": 1,
-                "universalAdId": {
-                  "_type": "UniversalAdId",
-                  "idRegistry": "unknown",
-                  "idValue": "unknown"
-                }
+                "sequence": 1
               }
             ]
           },
@@ -404,11 +389,6 @@
                     "customClicks": [
                     ]
                   }
-                },
-                "universalAdId": {
-                  "_type": "UniversalAdId",
-                  "idRegistry": "unknown",
-                  "idValue": "unknown"
                 }
               }
             ]

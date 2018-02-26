@@ -1,5 +1,5 @@
 import {Creative} from 'iab-vast-model'
-import setUniversalAdId from '../factory/universal-ad-id'
+import createUniversalAdId from '../factory/universal-ad-id'
 import createCreativeExtension from '../factory/creative-extension'
 import createLinear from './linear'
 import createNonLinearAds from './non-linear-ads'
@@ -13,7 +13,7 @@ export default ($creative, options) => {
   creative.adID = $creative.AdID || $creative.adID || $creative.adId
   creative.apiFramework = $creative.apiFramework
   if ($creative.universalAdId != null) {
-    setUniversalAdId(creative.universalAdId, $creative.universalAdId)
+    creative.universalAdId = createUniversalAdId($creative.universalAdId)
   }
   if ($creative.creativeExtensions != null && $creative.creativeExtensions.creativeExtension) {
     creative.extensions
@@ -26,6 +26,10 @@ export default ($creative, options) => {
   }
   if ($creative.companionAds != null) {
     creative.companionAds = createCompanionAds($creative)
+  }
+  if (creative.linear == null && creative.nonLinearAds == null &&
+      creative.companionAds == null) {
+    options.errorHandler(new Error('Creative has no ads'))
   }
   return creative
 }

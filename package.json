@@ -57,6 +57,7 @@
     "json-stable-stringify": "^1.0.1",
     "normalize-newline": "^3.0.0",
     "run-sequence": "^2.2.1",
+    "standard": "^11.0.0",
     "yargs": "^11.0.0"
   },
   "standard": {
