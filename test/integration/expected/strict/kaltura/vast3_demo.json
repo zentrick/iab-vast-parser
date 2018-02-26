@@ -1,357 +1,440 @@
 {
-  "version": "3.0",
-  "errors": [],
-  "ads": {
-    "_type": "SortedList",
-    "_value": []
-  },
+  "_type": "VAST",
   "adPod": {
+    "_type": "AdPod",
     "ads": {
       "_type": "SortedList",
-      "_value": [{
-        "adTitle": "",
-        "categories": [],
-        "description": "",
-        "surveys": [],
-        "id": "preroll-1",
-        "adSystem": {
-          "version": "2.0",
-          "name": "DART_DFP",
-          "_type": "AdSystem"
-        },
-        "impressions": [{
-          "id": "DART",
-          "uri": "http://ad.doubleclick.net/imp;v7;x;232859236;0-0;1;13452535;200/200;39455789/39473576/1;;~aopt=2/1/ff/1;~okv=;kw=angelahtml5;sz=200x200;dcmt=text/xml;~cs=l%3fhttp://s0.2mdn.net/dot.gif",
-          "_type": "Impression"
-        }],
-        "errors": [],
-        "adVerifications": [],
-        "extensions": [{
-          "type": "DART",
-          "xmlElement": "<Extension type=\"DART\">\n\t\t\t\t\t<AdServingData>\n\t\t\t\t\t\t<DeliveryData>\n\n\t\t\t\t\t\t\t<GeoData>\n\t\t\t\t\t\t\t\t<![CDATA[ct=US&st=VA&ac=703&zp=20151&bw=4&dma=13&city=15719]]>\n\t\t\t\t\t\t\t</GeoData>\n\t\t\t\t\t\t</DeliveryData>\n\t\t\t\t\t</AdServingData>\n\t\t\t\t</Extension>",
-          "_type": "Extension"
-        }],
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [{
-            "universalAdId": {
-              "idRegistry": "unknown",
-              "idValue": "unknown",
-              "_type": "UniversalAdId"
-            },
-            "extensions": [],
-            "ads": [{
-              "skipoffset": {
-                "value": 20,
-                "_type": "RelativeTimeOffset"
-              },
-              "duration": 52,
-              "mediaFiles": {
-                "mediaFiles": [{
-                  "delivery": "progressive",
-                  "type": "video/mp4",
-                  "width": 720,
-                  "height": 480,
-                  "id": "1",
-                  "bitrate": 1500,
-                  "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_g0vnoj5i/format/url/protocol/http/a.mp4",
-                  "_type": "MediaFile"
-                }, {
-                  "delivery": "progressive",
-                  "type": "video/mp4",
-                  "width": 480,
-                  "height": 260,
-                  "id": "2",
-                  "bitrate": 356,
-                  "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_ve7wy5mt/format/url/protocol/http/a.mp4",
-                  "_type": "MediaFile"
-                }],
-                "interactiveCreativeFiles": [],
-                "_type": "MediaFiles"
-              },
-              "adParameters": "",
-              "videoClicks": {
-                "customClicks": [],
-                "clickThrough": {
-                  "uri": "http://www.google.com",
-                  "_type": "Click"
+      "_value": [
+        {
+          "_type": "InLine",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "DART_DFP",
+            "version": "2.0"
+          },
+          "adTitle": "",
+          "categories": [
+          ],
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "extensions": [
+                ],
+                "linear": {
+                  "_type": "Linear",
+                  "adParameters": "",
+                  "duration": 52,
+                  "icons": [
+                  ],
+                  "mediaFiles": {
+                    "_type": "MediaFiles",
+                    "interactiveCreativeFiles": [
+                    ],
+                    "mediaFiles": [
+                      {
+                        "_type": "MediaFile",
+                        "bitrate": 1500,
+                        "delivery": "progressive",
+                        "height": 480,
+                        "id": "1",
+                        "type": "video/mp4",
+                        "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_g0vnoj5i/format/url/protocol/http/a.mp4",
+                        "width": 720
+                      },
+                      {
+                        "_type": "MediaFile",
+                        "bitrate": 356,
+                        "delivery": "progressive",
+                        "height": 260,
+                        "id": "2",
+                        "type": "video/mp4",
+                        "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_ve7wy5mt/format/url/protocol/http/a.mp4",
+                        "width": 480
+                      }
+                    ]
+                  },
+                  "skipoffset": {
+                    "_type": "RelativeTimeOffset",
+                    "value": 20
+                  },
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "complete": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=13;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "fullscreen": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=19;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "midpoint": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=18;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "mute": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=16;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "pause": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=15;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "start": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=11;ecn1=1;etm1=0;"
+                        }
+                      ]
+                    }
+                  },
+                  "videoClicks": {
+                    "_type": "VideoClicks",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://www.google.com"
+                    },
+                    "clickTrackings": [
+                      {
+                        "_type": "Click",
+                        "id": "DART",
+                        "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/r%3B232859236%3B0-0%3B1%3B13452535%3B496-200/200%3B39455789/39473576/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://s0.2mdn.net/dot.gif"
+                      }
+                    ],
+                    "customClicks": [
+                    ]
+                  }
                 },
-                "clickTrackings": [{
-                  "id": "DART",
-                  "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/r%3B232859236%3B0-0%3B1%3B13452535%3B496-200/200%3B39455789/39473576/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://s0.2mdn.net/dot.gif",
-                  "_type": "Click"
-                }],
-                "_type": "VideoClicks"
-              },
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "start": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=11;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "midpoint": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=18;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "complete": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=13;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "mute": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=16;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "pause": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=15;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "fullscreen": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=232859236;ko=1;cid=39455789;rid=39473576;rv=1;timestamp=1768586;eid1=19;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }]
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "idRegistry": "unknown",
+                  "idValue": "unknown"
                 }
               },
-              "icons": [],
-              "_type": "Linear"
-            }],
-            "sequence": 1,
-            "_type": "Creative"
-          }, {
-            "universalAdId": {
-              "idRegistry": "unknown",
-              "idValue": "unknown",
-              "_type": "UniversalAdId"
-            },
-            "extensions": [],
-            "ads": [{
-              "companions": [{
-                "id": "1",
-                "width": 300,
-                "height": 250,
-                "resource": {
-                  "creativeType": "image/jpeg",
-                  "uri": "http://s0.2mdn.net/1248596/PID_1472073_1290217213786_PID_1244559_1265644904000_parisian_love_300x250.jpg",
-                  "_type": "StaticResource"
+              {
+                "_type": "Creative",
+                "companionAds": {
+                  "_type": "CompanionAds",
+                  "companions": [
+                    {
+                      "_type": "Companion",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://www.google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 250,
+                      "id": "1",
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "image/jpeg",
+                        "uri": "http://s0.2mdn.net/1248596/PID_1472073_1290217213786_PID_1244559_1265644904000_parisian_love_300x250.jpg"
+                      },
+                      "width": 300
+                    },
+                    {
+                      "_type": "Companion",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://www.google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 90,
+                      "id": "2",
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "image/jpeg",
+                        "uri": "http://s0.2mdn.net/1248596/PID_1472074_1290217231811_PID_1244559_1265644932000_parisian_love_728x90.jpg"
+                      },
+                      "width": 728
+                    },
+                    {
+                      "_type": "Companion",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://www.google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 250,
+                      "id": "3",
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "application/x-shockwave-flash",
+                        "uri": "http://s0.2mdn.net/1248596/PID_1485267_1291327077547_parisian_love_300x250_click.swf"
+                      },
+                      "width": 300
+                    },
+                    {
+                      "_type": "Companion",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://www.google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 90,
+                      "id": "4",
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "application/x-shockwave-flash",
+                        "uri": "http://s0.2mdn.net/1248596/PID_1485268_1291327112590_parisian_love_728x90_click.swf"
+                      },
+                      "width": 728
+                    }
+                  ]
                 },
-                "clickThrough": {
-                  "uri": "http://www.google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "Companion"
-              }, {
-                "id": "2",
-                "width": 728,
-                "height": 90,
-                "resource": {
-                  "creativeType": "image/jpeg",
-                  "uri": "http://s0.2mdn.net/1248596/PID_1472074_1290217231811_PID_1244559_1265644932000_parisian_love_728x90.jpg",
-                  "_type": "StaticResource"
-                },
-                "clickThrough": {
-                  "uri": "http://www.google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "Companion"
-              }, {
-                "id": "3",
-                "width": 300,
-                "height": 250,
-                "resource": {
-                  "creativeType": "application/x-shockwave-flash",
-                  "uri": "http://s0.2mdn.net/1248596/PID_1485267_1291327077547_parisian_love_300x250_click.swf",
-                  "_type": "StaticResource"
-                },
-                "clickThrough": {
-                  "uri": "http://www.google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "Companion"
-              }, {
-                "id": "4",
-                "width": 728,
-                "height": 90,
-                "resource": {
-                  "creativeType": "application/x-shockwave-flash",
-                  "uri": "http://s0.2mdn.net/1248596/PID_1485268_1291327112590_parisian_love_728x90_click.swf",
-                  "_type": "StaticResource"
-                },
-                "clickThrough": {
-                  "uri": "http://www.google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "Companion"
-              }],
-              "_type": "CompanionAds"
-            }],
-            "sequence": 1,
-            "_type": "Creative"
-          }, {
-            "universalAdId": {
-              "idRegistry": "unknown",
-              "idValue": "unknown",
-              "_type": "UniversalAdId"
-            },
-            "extensions": [],
-            "ads": [{
-              "nonLinears": [{
-                "id": "1",
-                "width": 400,
-                "height": 150,
-                "scalable": false,
-                "maintainAspectRatio": false,
-                "resource": {
-                  "creativeType": "application/x-shockwave-flash",
-                  "uri": "http://s0.2mdn.net/1248596/nonlinear_400x150_1297278849367.swf?clickTag=http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://www.google.com",
-                  "_type": "StaticResource"
-                },
-                "adParameters": "",
-                "clickThrough": {
-                  "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "NonLinear"
-              }, {
-                "id": "3",
-                "width": 400,
-                "height": 150,
-                "scalable": false,
-                "maintainAspectRatio": false,
-                "resource": {
-                  "creativeType": "image/jpeg",
-                  "uri": "http://s0.2mdn.net/1248596/PID_1244559_1281625520000_google_1297278827773.jpg",
-                  "_type": "StaticResource"
-                },
-                "adParameters": "",
-                "clickThrough": {
-                  "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "NonLinear"
-              }, {
-                "id": "3",
-                "width": 300,
-                "height": 250,
-                "scalable": false,
-                "maintainAspectRatio": false,
-                "resource": {
-                  "uri": "<div><iframe src=\"http://adserver.teracent.net/tase/ad?AdBoxType=16&url=test.test&fmt=html&rnd=insert_random_number_macro_here&esc=0&rcu=insert_click_macro_for_clear_text_here\" width=\"300\" height=\"250\" align=\"center\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\"></iframe></div>",
-                  "_type": "HTMLResource"
-                },
-                "adParameters": "",
-                "clickThrough": {
-                  "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://www.teracent.com/",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "NonLinear"
-              }],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "start": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=11;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "midpoint": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=18;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "complete": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=13;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "mute": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=16;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "pause": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=15;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }],
-                  "fullscreen": [{
-                    "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=19;ecn1=1;etm1=0;",
-                    "_type": "TrackingEvent"
-                  }]
+                "extensions": [
+                ],
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "idRegistry": "unknown",
+                  "idValue": "unknown"
                 }
               },
-              "_type": "NonLinearAds"
-            }],
-            "sequence": 1,
-            "_type": "Creative"
-          }]
-        },
-        "sequence": 1,
-        "_type": "InLine"
-      }, {
-        "adTitle": "IPhone ad",
-        "categories": [],
-        "surveys": [],
-        "id": "preroll-2",
-        "adSystem": {
-          "name": "Test",
-          "_type": "AdSystem"
-        },
-        "impressions": [],
-        "errors": [],
-        "adVerifications": [],
-        "extensions": [],
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [{
-            "universalAdId": {
-              "idRegistry": "unknown",
-              "idValue": "unknown",
-              "_type": "UniversalAdId"
-            },
-            "extensions": [],
-            "ads": [{
-              "skipoffset": {
-                "value": 5,
-                "_type": "AbsoluteTimeOffset"
-              },
-              "duration": 135,
-              "mediaFiles": {
-                "mediaFiles": [{
-                  "delivery": "progressive",
-                  "type": "video/mp4",
-                  "width": 720,
-                  "height": 480,
-                  "id": "1",
-                  "bitrate": 1500,
-                  "uri": "http://cdnbakmi.kaltura.com/p/524241/sp/52424100/serveFlavor/entryId/0_mb7d3bcg/flavorId/0_xwolbf6p/name/a.mp4",
-                  "_type": "MediaFile"
-                }],
-                "interactiveCreativeFiles": [],
-                "_type": "MediaFiles"
-              },
-              "videoClicks": {
-                "customClicks": [],
-                "clickThrough": {
-                  "id": "scanscout",
-                  "uri": "http://www.target.com",
-                  "_type": "Click"
+              {
+                "_type": "Creative",
+                "extensions": [
+                ],
+                "nonLinearAds": {
+                  "_type": "NonLinearAds",
+                  "nonLinears": [
+                    {
+                      "_type": "NonLinear",
+                      "adParameters": "",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 150,
+                      "id": "1",
+                      "maintainAspectRatio": false,
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "application/x-shockwave-flash",
+                        "uri": "http://s0.2mdn.net/1248596/nonlinear_400x150_1297278849367.swf?clickTag=http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://www.google.com"
+                      },
+                      "scalable": false,
+                      "width": 400
+                    },
+                    {
+                      "_type": "NonLinear",
+                      "adParameters": "",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://google.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 150,
+                      "id": "3",
+                      "maintainAspectRatio": false,
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "image/jpeg",
+                        "uri": "http://s0.2mdn.net/1248596/PID_1244559_1281625520000_google_1297278827773.jpg"
+                      },
+                      "scalable": false,
+                      "width": 400
+                    },
+                    {
+                      "_type": "NonLinear",
+                      "adParameters": "",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://ad.doubleclick.net/click%3Bh%3Dv8/3ac0/3/0/%2a/b%3B236336770%3B0-0%3B1%3B13452535%3B267-300/300%3B40670887/40688674/1%3B%3B%7Eaopt%3D2/1/ff/1%3B%7Esscs%3D%3fhttp://www.teracent.com/"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "height": 250,
+                      "id": "3",
+                      "maintainAspectRatio": false,
+                      "resource": {
+                        "_type": "HTMLResource",
+                        "uri": "<div><iframe src=\"http://adserver.teracent.net/tase/ad?AdBoxType=16&url=test.test&fmt=html&rnd=insert_random_number_macro_here&esc=0&rcu=insert_click_macro_for_clear_text_here\" width=\"300\" height=\"250\" align=\"center\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\"></iframe></div>"
+                      },
+                      "scalable": false,
+                      "width": 300
+                    }
+                  ],
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "complete": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=13;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "fullscreen": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=19;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "midpoint": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=18;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "mute": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=16;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "pause": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=15;ecn1=1;etm1=0;"
+                        }
+                      ],
+                      "start": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://ad.doubleclick.net/activity;src=1248596;met=1;v=1;pid=13452535;aid=236336770;ko=1;cid=40670887;rid=40688674;rv=1;timestamp=1763492;eid1=11;ecn1=1;etm1=0;"
+                        }
+                      ]
+                    }
+                  }
                 },
-                "clickTrackings": [],
-                "_type": "VideoClicks"
-              },
-              "icons": [],
-              "_type": "Linear"
-            }],
-            "_type": "Creative"
-          }]
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "idRegistry": "unknown",
+                  "idValue": "unknown"
+                }
+              }
+            ]
+          },
+          "description": "",
+          "errors": [
+          ],
+          "extensions": [
+            {
+              "_type": "Extension",
+              "type": "DART",
+              "xmlElement": "<Extension type=\"DART\">\n\t\t\t\t\t<AdServingData>\n\t\t\t\t\t\t<DeliveryData>\n\n\t\t\t\t\t\t\t<GeoData>\n\t\t\t\t\t\t\t\t<![CDATA[ct=US&st=VA&ac=703&zp=20151&bw=4&dma=13&city=15719]]>\n\t\t\t\t\t\t\t</GeoData>\n\t\t\t\t\t\t</DeliveryData>\n\t\t\t\t\t</AdServingData>\n\t\t\t\t</Extension>"
+            }
+          ],
+          "id": "preroll-1",
+          "impressions": [
+            {
+              "_type": "Impression",
+              "id": "DART",
+              "uri": "http://ad.doubleclick.net/imp;v7;x;232859236;0-0;1;13452535;200/200;39455789/39473576/1;;~aopt=2/1/ff/1;~okv=;kw=angelahtml5;sz=200x200;dcmt=text/xml;~cs=l%3fhttp://s0.2mdn.net/dot.gif"
+            }
+          ],
+          "sequence": 1,
+          "surveys": [
+          ],
+          "verifications": [
+          ]
         },
-        "sequence": 2,
-        "_type": "InLine"
-      }]
-    },
-    "_type": "AdPod"
+        {
+          "_type": "InLine",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "Test"
+          },
+          "adTitle": "IPhone ad",
+          "categories": [
+          ],
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "extensions": [
+                ],
+                "linear": {
+                  "_type": "Linear",
+                  "duration": 135,
+                  "icons": [
+                  ],
+                  "mediaFiles": {
+                    "_type": "MediaFiles",
+                    "interactiveCreativeFiles": [
+                    ],
+                    "mediaFiles": [
+                      {
+                        "_type": "MediaFile",
+                        "bitrate": 1500,
+                        "delivery": "progressive",
+                        "height": 480,
+                        "id": "1",
+                        "type": "video/mp4",
+                        "uri": "http://cdnbakmi.kaltura.com/p/524241/sp/52424100/serveFlavor/entryId/0_mb7d3bcg/flavorId/0_xwolbf6p/name/a.mp4",
+                        "width": 720
+                      }
+                    ]
+                  },
+                  "skipoffset": {
+                    "_type": "AbsoluteTimeOffset",
+                    "value": 5
+                  },
+                  "videoClicks": {
+                    "_type": "VideoClicks",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "id": "scanscout",
+                      "uri": "http://www.target.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "customClicks": [
+                    ]
+                  }
+                },
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "idRegistry": "unknown",
+                  "idValue": "unknown"
+                }
+              }
+            ]
+          },
+          "errors": [
+          ],
+          "extensions": [
+          ],
+          "id": "preroll-2",
+          "impressions": [
+          ],
+          "sequence": 2,
+          "surveys": [
+          ],
+          "verifications": [
+          ]
+        }
+      ]
+    }
   },
-  "_type": "VAST"
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
 }

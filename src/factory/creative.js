@@ -20,15 +20,12 @@ export default ($creative, options) => {
       .push(...$creative.creativeExtensions.creativeExtension.map(createCreativeExtension))
   }
   if ($creative.linear != null) {
-    creative.ads.push(createLinear($creative, options))
+    creative.linear = createLinear($creative, options)
   } else if ($creative.nonLinearAds != null) {
-    creative.ads.push(createNonLinearAds($creative))
+    creative.nonLinearAds = createNonLinearAds($creative)
   }
   if ($creative.companionAds != null) {
-    creative.ads.push(createCompanionAds($creative))
-  }
-  if (creative.ads.length === 0) {
-    throw new Error('Unrecognized or missing creative ad')
+    creative.companionAds = createCompanionAds($creative)
   }
   return creative
 }

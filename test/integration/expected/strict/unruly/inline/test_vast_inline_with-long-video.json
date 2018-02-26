@@ -1,83 +1,105 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "adTitle": "Sample title",
-      "categories": [],
-      "description": "Test description #hashtag",
-      "surveys": [],
-      "id": "1",
-      "adSystem": {
-        "version": "1.0",
-        "name": "Test Ad Server",
-        "_type": "AdSystem"
-      },
-      "impressions": [],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [{
-        "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                </Extension>",
-        "_type": "Extension"
-      }],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "nonLinears": [{
-              "width": 0,
-              "height": 0,
-              "resource": {
-                "creativeType": "image/jpeg",
-                "uri": "http://example.com/sample.jpg",
-                "_type": "StaticResource"
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "adTitle": "Sample title",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "https://example.com/article"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 0,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://example.com/sample.jpg"
+                    },
+                    "width": 0
+                  }
+                ]
               },
-              "clickThrough": {
-                "uri": "https://example.com/article",
-                "_type": "Click"
-              },
-              "clickTrackings": [],
-              "_type": "NonLinear"
-            }],
-            "_type": "NonLinearAds"
-          }],
-          "_type": "Creative"
-        }, {
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "duration": 40,
-            "mediaFiles": {
-              "mediaFiles": [{
-                "delivery": "streaming",
-                "type": "video/mp4",
-                "width": 480,
-                "height": 608,
-                "uri": "http://example.com/videos/sample.mp4",
-                "_type": "MediaFile"
-              }],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
             },
-            "icons": [],
-            "_type": "Linear"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "InLine"
-    }]
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "duration": 40,
+                "icons": [
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "delivery": "streaming",
+                      "height": 608,
+                      "type": "video/mp4",
+                      "uri": "http://example.com/videos/sample.mp4",
+                      "width": 480
+                    }
+                  ]
+                }
+              },
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "description": "Test description #hashtag",
+        "errors": [
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                </Extension>"
+          }
+        ],
+        "id": "1",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

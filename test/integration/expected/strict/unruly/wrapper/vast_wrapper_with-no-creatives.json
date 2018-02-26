@@ -1,30 +1,39 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "vastAdTagURI": "http://localhost/test/resources/vast/wrappers/vast_wrapper_with-chained-wrappers_innerwrapper.xml",
-      "adSystem": {
-        "version": "1.0",
-        "name": "UnrulyX",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "uri": "http://test.stats3.unrulymedia.com/blank.gif?t=wrapper_imp&apid=75425&aid=2900&cid=6596&crid=14113&pid={pid}&ppid={spid}&autoplay=false&auto_unit=true",
-        "_type": "Impression"
-      }],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": []
-      },
-      "_type": "Wrapper"
-    }]
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "UnrulyX",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://test.stats3.unrulymedia.com/blank.gif?t=wrapper_imp&apid=75425&aid=2900&cid=6596&crid=14113&pid={pid}&ppid={spid}&autoplay=false&auto_unit=true"
+          }
+        ],
+        "vastAdTagURI": "http://localhost/test/resources/vast/wrappers/vast_wrapper_with-chained-wrappers_innerwrapper.xml",
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

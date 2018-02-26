@@ -1,111 +1,137 @@
 {
-  "version": "2.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear3.xml",
-      "id": "602867",
-      "adSystem": {
-        "name": "Acudeo Compatible",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "uri": "http://myTrackingURL/wrapper/impression",
-        "_type": "Impression"
-      }],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "adID": "602867",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "mediaFiles": {
-              "mediaFiles": [],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
-            },
-            "icons": [],
-            "_type": "Linear"
-          }],
-          "_type": "Creative"
-        }, {
-          "adID": "602867-NonLinearTracking",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "nonLinears": [],
-            "_type": "NonLinearAds"
-          }],
-          "_type": "Creative"
-        }, {
-          "adID": "602867-Companion",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "companions": [{
-              "width": 300,
-              "height": 250,
-              "resource": {
-                "creativeType": "image/jpeg",
-                "uri": "http://demo.tremormedia.com/proddev/vast/300x250_banner1.jpg",
-                "_type": "StaticResource"
-              },
-              "clickThrough": {
-                "uri": "http://www.tremormedia.com",
-                "_type": "Click"
-              },
-              "clickTrackings": [],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "creativeView": [{
-                    "uri": "http://myTrackingURL/wrapper/firstCompanionCreativeView",
-                    "_type": "TrackingEvent"
-                  }]
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Acudeo Compatible"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "adID": "602867",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                  ]
                 }
               },
-              "_type": "Companion"
-            }, {
-              "width": 728,
-              "height": 90,
-              "resource": {
-                "creativeType": "image/jpeg",
-                "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
-                "_type": "StaticResource"
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            },
+            {
+              "_type": "Creative",
+              "adID": "602867-NonLinearTracking",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                ]
               },
-              "clickThrough": {
-                "uri": "http://www.tremormedia.com",
-                "_type": "Click"
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            },
+            {
+              "_type": "Creative",
+              "adID": "602867-Companion",
+              "companionAds": {
+                "_type": "CompanionAds",
+                "companions": [
+                  {
+                    "_type": "Companion",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://www.tremormedia.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 250,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://demo.tremormedia.com/proddev/vast/300x250_banner1.jpg"
+                    },
+                    "trackingEvents": {
+                      "_type": "TrackingEvents",
+                      "_value": {
+                        "creativeView": [
+                          {
+                            "_type": "TrackingEvent",
+                            "uri": "http://myTrackingURL/wrapper/firstCompanionCreativeView"
+                          }
+                        ]
+                      }
+                    },
+                    "width": 300
+                  },
+                  {
+                    "_type": "Companion",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://www.tremormedia.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 90,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg"
+                    },
+                    "width": 728
+                  }
+                ]
               },
-              "clickTrackings": [],
-              "_type": "Companion"
-            }],
-            "_type": "CompanionAds"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "Wrapper"
-    }]
+              "extensions": [
+              ],
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "602867",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/wrapper/impression"
+          }
+        ],
+        "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear3.xml",
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "2.0"
 }

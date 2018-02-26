@@ -33,10 +33,10 @@ export default ($ad, $impl, ad, options) => {
     ad.viewableImpression = createViewableImpression($impl.viewableImpression)
   }
   if ($impl.adVerifications != null) {
-    $impl.adVerifications.verification.forEach((verification) => {
+    $impl.adVerifications.verification.forEach(($verification) => {
       try {
-        const parsedVerification = createVerification(verification, options)
-        ad.adVerifications.push(parsedVerification)
+        const verification = createVerification($verification, options)
+        ad.verifications.push(verification)
       } catch (err) {
         options.errorHandler(err)
       }
@@ -46,10 +46,10 @@ export default ($ad, $impl, ad, options) => {
     ad.extensions.push(...$impl.extensions.extension.map(createExtension))
   }
   if ($impl.creatives != null) {
-    $impl.creatives.creative.forEach((creative) => {
+    $impl.creatives.creative.forEach(($creative) => {
       try {
-        const parsedCreative = createCreative(creative, options)
-        ad.creatives.add(parsedCreative)
+        const creative = createCreative($creative, options)
+        ad.creatives.add(creative)
       } catch (err) {
         options.errorHandler(err)
       }

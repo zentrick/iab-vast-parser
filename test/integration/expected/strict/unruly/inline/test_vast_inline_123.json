@@ -1,58 +1,74 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "adTitle": "Example Title",
-      "categories": [],
-      "description": "Example Description",
-      "surveys": [],
-      "id": "1",
-      "adSystem": {
-        "version": "1.0",
-        "name": "Test Ad Server",
-        "_type": "AdSystem"
-      },
-      "impressions": [],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [{
-        "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>",
-        "_type": "Extension"
-      }],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "nonLinears": [{
-              "width": 100,
-              "height": 100,
-              "resource": {
-                "creativeType": "image/jpeg",
-                "uri": "http://example.com/thumb.jpg",
-                "_type": "StaticResource"
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "adTitle": "Example Title",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://example.com/clickthrough.html"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 100,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://example.com/thumb.jpg"
+                    },
+                    "width": 100
+                  }
+                ]
               },
-              "clickThrough": {
-                "uri": "http://example.com/clickthrough.html",
-                "_type": "Click"
-              },
-              "clickTrackings": [],
-              "_type": "NonLinear"
-            }],
-            "_type": "NonLinearAds"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "InLine"
-    }]
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "description": "Example Description",
+        "errors": [
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>"
+          }
+        ],
+        "id": "1",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

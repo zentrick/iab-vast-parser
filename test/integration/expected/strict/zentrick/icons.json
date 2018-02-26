@@ -1,71 +1,91 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "vastAdTagURI": "https://vast.inline.url",
-      "id": "602833",
-      "adSystem": {
-        "name": "Testing",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "uri": "http://myTrackingURL/wrapper/impression",
-        "_type": "Impression"
-      }],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "mediaFiles": {
-              "mediaFiles": [],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
-            },
-            "videoClicks": {
-              "customClicks": [],
-              "clickTrackings": [{
-                "uri": "http://myTrackingURL/wrapper/click",
-                "_type": "Click"
-              }],
-              "_type": "VideoClicks"
-            },
-            "icons": [{
-              "program": "AdChoices",
-              "width": 100,
-              "height": 15,
-              "xPosition": "10",
-              "yPosition": "20",
-              "clicks": {
-                "clickThrough": {
-                  "uri": "http://example.com/more_info",
-                  "_type": "Click"
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Testing"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                  {
+                    "_type": "Icon",
+                    "clicks": {
+                      "_type": "IconClicks",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://example.com/more_info"
+                      },
+                      "clickTrackings": [
+                      ]
+                    },
+                    "height": 15,
+                    "program": "AdChoices",
+                    "viewTrackings": [
+                    ],
+                    "width": 100,
+                    "xPosition": "10",
+                    "yPosition": "20"
+                  }
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                  ]
                 },
-                "clickTrackings": [],
-                "_type": "IconClicks"
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "uri": "http://myTrackingURL/wrapper/click"
+                    }
+                  ],
+                  "customClicks": [
+                  ]
+                }
               },
-              "viewTrackings": [],
-              "_type": "Icon"
-            }],
-            "_type": "Linear"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "Wrapper"
-    }]
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "602833",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/wrapper/impression"
+          }
+        ],
+        "vastAdTagURI": "https://vast.inline.url",
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

@@ -1,27 +1,35 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "id": "55217",
-      "adSystem": {
-        "version": "1.0",
-        "name": "Test Ad Server",
-        "_type": "AdSystem"
-      },
-      "impressions": [],
-      "errors": [],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": []
-      },
-      "_type": "Wrapper"
-    }]
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "55217",
+        "impressions": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

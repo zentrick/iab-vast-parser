@@ -1,78 +1,102 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
-      "id": "1",
-      "adSystem": {
-        "version": "1.0",
-        "name": "Test Ad Server",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "uri": "http://example.com/imp?d=[CACHEBUSTER]",
-        "_type": "Impression"
-      }, {
-        "uri": "http://example.com/another-imp?d=[CACHEBUSTER]",
-        "_type": "Impression"
-      }],
-      "errors": ["http://example.com/error/ERRORCODE"],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "nonLinears": [{
-              "clickTrackings": [],
-              "_type": "NonLinear"
-            }],
-            "_type": "NonLinearAds"
-          }],
-          "_type": "Creative"
-        }, {
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "mediaFiles": {
-              "mediaFiles": [],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
-            },
-            "trackingEvents": {
-              "_type": "TrackingEvents",
-              "_value": {
-                "start": [{
-                  "uri": "http://example.com/start?d=[CACHEBUSTER]",
-                  "_type": "TrackingEvent"
-                }, {
-                  "uri": "http://example.com/start2?d=[CACHEBUSTER]",
-                  "_type": "TrackingEvent"
-                }]
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Test Ad Server",
+          "version": "1.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickTrackings": [
+                    ]
+                  }
+                ]
+              },
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
               }
             },
-            "icons": [],
-            "_type": "Linear"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "Wrapper"
-    }]
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                  ]
+                },
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start?d=[CACHEBUSTER]"
+                      },
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                      }
+                    ]
+                  }
+                }
+              },
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "errors": [
+          "http://example.com/error/ERRORCODE"
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "1",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
+          },
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
+          }
+        ],
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }

@@ -1,79 +1,95 @@
 {
-  "version": "4.0",
-  "errors": [],
-  "ads": {
-    "_type": "SortedList",
-    "_value": []
-  },
+  "_type": "VAST",
   "adPod": {
+    "_type": "AdPod",
     "ads": {
       "_type": "SortedList",
-      "_value": [{
-        "followAdditionalWrappers": false,
-        "allowMultipleAds": true,
-        "fallbackOnNoAd": false,
-        "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
-        "id": "20011",
-        "conditionalAd": "false",
-        "adSystem": {
-          "version": "4.0",
-          "name": "iabtechlab",
-          "_type": "AdSystem"
-        },
-        "impressions": [{
-          "id": "Impression-ID",
-          "uri": "http://example.com/track/impression",
-          "_type": "Impression"
-        }],
-        "errors": ["http://example.com/error"],
-        "adVerifications": [],
-        "extensions": [],
-        "creatives": {
-          "_type": "SortedList",
-          "_value": [{
-            "id": "5480",
-            "adID": "2447226",
-            "universalAdId": {
-              "idRegistry": "unknown",
-              "idValue": "unknown",
-              "_type": "UniversalAdId"
-            },
-            "extensions": [],
-            "ads": [{
-              "companions": [{
-                "id": "1232",
-                "width": 100,
-                "height": 150,
-                "assetWidth": "250",
-                "assetHeight": "200",
-                "expandedWidth": 350,
-                "expandedHeight": 250,
-                "apiFramework": "VPAID",
-                "adSlotID": "3214",
-                "pxratio": "1400",
-                "resource": {
-                  "creativeType": "image/png",
-                  "uri": "https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png",
-                  "_type": "StaticResource"
+      "_value": [
+        {
+          "_type": "Wrapper",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "iabtechlab",
+            "version": "4.0"
+          },
+          "allowMultipleAds": true,
+          "conditionalAd": "false",
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "adID": "2447226",
+                "companionAds": {
+                  "_type": "CompanionAds",
+                  "companions": [
+                    {
+                      "_type": "Companion",
+                      "adSlotID": "3214",
+                      "apiFramework": "VPAID",
+                      "assetHeight": "200",
+                      "assetWidth": "250",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "https://iabtechlab.com"
+                      },
+                      "clickTrackings": [
+                      ],
+                      "expandedHeight": 250,
+                      "expandedWidth": 350,
+                      "height": 150,
+                      "id": "1232",
+                      "pxratio": "1400",
+                      "resource": {
+                        "_type": "StaticResource",
+                        "creativeType": "image/png",
+                        "uri": "https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png"
+                      },
+                      "width": 100
+                    }
+                  ]
                 },
-                "clickThrough": {
-                  "uri": "https://iabtechlab.com",
-                  "_type": "Click"
-                },
-                "clickTrackings": [],
-                "_type": "Companion"
-              }],
-              "_type": "CompanionAds"
-            }],
-            "sequence": 1,
-            "_type": "Creative"
-          }]
-        },
-        "sequence": 1,
-        "_type": "Wrapper"
-      }]
-    },
-    "_type": "AdPod"
+                "extensions": [
+                ],
+                "id": "5480",
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "idRegistry": "unknown",
+                  "idValue": "unknown"
+                }
+              }
+            ]
+          },
+          "errors": [
+            "http://example.com/error"
+          ],
+          "extensions": [
+          ],
+          "fallbackOnNoAd": false,
+          "followAdditionalWrappers": false,
+          "id": "20011",
+          "impressions": [
+            {
+              "_type": "Impression",
+              "id": "Impression-ID",
+              "uri": "http://example.com/track/impression"
+            }
+          ],
+          "sequence": 1,
+          "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
+          "verifications": [
+          ]
+        }
+      ]
+    }
   },
-  "_type": "VAST"
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+    ]
+  },
+  "errors": [
+  ],
+  "version": "4.0"
 }

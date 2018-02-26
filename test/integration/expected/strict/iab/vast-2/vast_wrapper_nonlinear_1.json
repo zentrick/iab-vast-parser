@@ -1,86 +1,114 @@
 {
-  "version": "2.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "followAdditionalWrappers": true,
-      "allowMultipleAds": false,
-      "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear2.xml",
-      "id": "602867",
-      "adSystem": {
-        "name": "Acudeo Compatible",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "uri": "http://myTrackingURL/wrapper/impression",
-        "_type": "Impression"
-      }],
-      "errors": ["http://myErrorURL/wrapper/error"],
-      "adVerifications": [],
-      "extensions": [],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "adID": "602867",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "mediaFiles": {
-              "mediaFiles": [],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
-            },
-            "icons": [],
-            "_type": "Linear"
-          }],
-          "_type": "Creative"
-        }, {
-          "adID": "602867-NonLinearTracking",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "nonLinears": [],
-            "trackingEvents": {
-              "_type": "TrackingEvents",
-              "_value": {
-                "creativeView": [{
-                  "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView",
-                  "_type": "TrackingEvent"
-                }],
-                "expand": [{
-                  "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/expand",
-                  "_type": "TrackingEvent"
-                }],
-                "collapse": [{
-                  "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse",
-                  "_type": "TrackingEvent"
-                }],
-                "acceptInvitation": [{
-                  "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation",
-                  "_type": "TrackingEvent"
-                }],
-                "close": [{
-                  "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/close",
-                  "_type": "TrackingEvent"
-                }]
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Acudeo Compatible"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "adID": "602867",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                  ]
+                }
+              },
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
               }
             },
-            "_type": "NonLinearAds"
-          }],
-          "_type": "Creative"
-        }]
-      },
-      "_type": "Wrapper"
-    }]
+            {
+              "_type": "Creative",
+              "adID": "602867-NonLinearTracking",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "acceptInvitation": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation"
+                      }
+                    ],
+                    "close": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/close"
+                      }
+                    ],
+                    "collapse": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/collapse"
+                      }
+                    ],
+                    "creativeView": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView"
+                      }
+                    ],
+                    "expand": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/nonlinear/creativeView/expand"
+                      }
+                    ]
+                  }
+                }
+              },
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
+              }
+            }
+          ]
+        },
+        "errors": [
+          "http://myErrorURL/wrapper/error"
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "602867",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/wrapper/impression"
+          }
+        ],
+        "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear2.xml",
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "2.0"
 }

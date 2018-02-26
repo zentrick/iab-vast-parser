@@ -1,115 +1,146 @@
 {
-  "version": "3.0",
-  "errors": [],
+  "_type": "VAST",
   "ads": {
     "_type": "SortedList",
-    "_value": [{
-      "adTitle": "iabtechlab video ad",
-      "categories": [],
-      "surveys": [],
-      "id": "20001",
-      "adSystem": {
-        "version": "4.0",
-        "name": "iabtechlab",
-        "_type": "AdSystem"
-      },
-      "impressions": [{
-        "id": "Impression-ID",
-        "uri": "http://example.com/track/impression",
-        "_type": "Impression"
-      }],
-      "pricing": {
-        "model": "cpm",
-        "currency": "USD",
-        "value": 25,
-        "_type": "Pricing"
-      },
-      "errors": ["http://example.com/error"],
-      "adVerifications": [],
-      "extensions": [{
-        "type": "iab-Count",
-        "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>",
-        "_type": "Extension"
-      }],
-      "creatives": {
-        "_type": "SortedList",
-        "_value": [{
-          "id": "5480",
-          "universalAdId": {
-            "idRegistry": "unknown",
-            "idValue": "unknown",
-            "_type": "UniversalAdId"
-          },
-          "extensions": [],
-          "ads": [{
-            "duration": 16,
-            "mediaFiles": {
-              "mediaFiles": [{
-                "delivery": "progressive",
-                "type": "video/mp4",
-                "width": 400,
-                "height": 300,
-                "codec": "0",
-                "id": "5241",
-                "bitrate": 500,
-                "minBitrate": 360,
-                "maxBitrate": 1080,
-                "scalable": true,
-                "maintainAspectRatio": true,
-                "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
-                "_type": "MediaFile"
-              }],
-              "interactiveCreativeFiles": [],
-              "_type": "MediaFiles"
-            },
-            "videoClicks": {
-              "customClicks": [],
-              "clickThrough": {
-                "id": "blog",
-                "uri": "https://iabtechlab.com",
-                "_type": "Click"
-              },
-              "clickTrackings": [],
-              "_type": "VideoClicks"
-            },
-            "trackingEvents": {
-              "_type": "TrackingEvents",
-              "_value": {
-                "start": [{
-                  "uri": "http://example.com/tracking/start",
-                  "offset": {
-                    "value": 34490,
-                    "_type": "AbsoluteTimeOffset"
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "iabtechlab",
+          "version": "4.0"
+        },
+        "adTitle": "iabtechlab video ad",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "id": "5480",
+              "linear": {
+                "_type": "Linear",
+                "duration": 16,
+                "icons": [
+                ],
+                "mediaFiles": {
+                  "_type": "MediaFiles",
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 500,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 300,
+                      "id": "5241",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 1080,
+                      "minBitrate": 360,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                      "width": 400
+                    }
+                  ]
+                },
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "complete": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/complete"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/firstQuartile"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/midpoint"
+                      }
+                    ],
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "offset": {
+                          "_type": "AbsoluteTimeOffset",
+                          "value": 34490
+                        },
+                        "uri": "http://example.com/tracking/start"
+                      }
+                    ],
+                    "thirdQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/thirdQuartile"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "id": "blog",
+                    "uri": "https://iabtechlab.com"
                   },
-                  "_type": "TrackingEvent"
-                }],
-                "firstQuartile": [{
-                  "uri": "http://example.com/tracking/firstQuartile",
-                  "_type": "TrackingEvent"
-                }],
-                "midpoint": [{
-                  "uri": "http://example.com/tracking/midpoint",
-                  "_type": "TrackingEvent"
-                }],
-                "thirdQuartile": [{
-                  "uri": "http://example.com/tracking/thirdQuartile",
-                  "_type": "TrackingEvent"
-                }],
-                "complete": [{
-                  "uri": "http://example.com/tracking/complete",
-                  "_type": "TrackingEvent"
-                }]
+                  "clickTrackings": [
+                  ],
+                  "customClicks": [
+                  ]
+                }
+              },
+              "sequence": 1,
+              "universalAdId": {
+                "_type": "UniversalAdId",
+                "idRegistry": "unknown",
+                "idValue": "unknown"
               }
-            },
-            "icons": [],
-            "_type": "Linear"
-          }],
-          "sequence": 1,
-          "_type": "Creative"
-        }]
-      },
-      "_type": "InLine"
-    }]
+            }
+          ]
+        },
+        "errors": [
+          "http://example.com/error"
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "type": "iab-Count",
+            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
+          }
+        ],
+        "id": "20001",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "id": "Impression-ID",
+            "uri": "http://example.com/track/impression"
+          }
+        ],
+        "pricing": {
+          "_type": "Pricing",
+          "currency": "USD",
+          "model": "cpm",
+          "value": 25
+        },
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
   },
-  "_type": "VAST"
+  "errors": [
+  ],
+  "version": "3.0"
 }
