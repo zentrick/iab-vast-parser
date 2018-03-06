@@ -25,8 +25,8 @@ export default ($icon) => {
   if ($icon.iconViewTracking != null) {
     icon.viewTrackings.push(
       ...$icon.iconViewTracking
-      .filter(hasValue)
-      .map(createClick))
+        .filter(hasValue)
+        .map(createClick))
   }
   return icon
 }

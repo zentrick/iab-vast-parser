@@ -16,14 +16,14 @@ const mapVideoClicks = ($videoClicks, videoClicks) => {
   if ($videoClicks.clickTracking != null) {
     videoClicks.clickTrackings.push(
       ...$videoClicks.clickTracking
-      .filter(hasValue)
-      .map(createClick))
+        .filter(hasValue)
+        .map(createClick))
   }
   if ($videoClicks.customClick != null) {
     videoClicks.customClicks.push(
       ...$videoClicks.customClick
-      .filter(hasValue)
-      .map(createClick))
+        .filter(hasValue)
+        .map(createClick))
   }
 }
 

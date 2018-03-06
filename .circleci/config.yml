@@ -1,0 +1,62 @@
+version: 2
+jobs:
+  "node-6":
+    docker:
+      - image: circleci/node:6
+    steps:
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.3.2
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run: yarn
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: mkdir /tmp/test-results
+      - run:
+          command: yarn run ci
+          environment:
+            CIRCLE_TEST_REPORTS: /tmp/test-results
+      - store_test_results:
+          path: /tmp/test-results
+          when: always
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+          when: always
+  "node-8":
+    docker:
+      - image: circleci/node:8
+    steps:
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.3.2
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run: yarn
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: mkdir /tmp/test-results
+      - run:
+          command: yarn run ci
+          environment:
+            CIRCLE_TEST_REPORTS: /tmp/test-results
+      - store_test_results:
+          path: /tmp/test-results
+          when: always
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+          when: always
+workflows:
+  version: 2
+  build:
+    jobs:
+      - "node-6"
+      - "node-8"

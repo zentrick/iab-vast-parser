@@ -30,8 +30,8 @@ export default ($companion) => {
   if ($companion.companionClickTracking != null) {
     companion.clickTrackings.push(
       ...$companion.companionClickTracking
-      .filter(hasValue)
-      .map(createClick))
+        .filter(hasValue)
+        .map(createClick))
   }
   if ($companion.trackingEvents != null && isNonEmptyArray($companion.trackingEvents.tracking)) {
     companion.trackingEvents = new TrackingEvents()

@@ -1,6 +1,6 @@
 import globule from 'globule'
 import path from 'path'
-import fsp from 'fs-promise'
+import fs from 'fs-extra'
 import marshal from '../lib/marshal'
 import parse from '../../src/'
 
@@ -15,15 +15,15 @@ const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
       const expPath = path.join(expectedRoot, node[item])
       const fixtPath = path.join(fixturesRoot, node[item].replace(/\.json$/, '.xml'))
       it(item, async () => {
-        const fixture = await fsp.readFile(fixtPath, 'utf8')
-        const expected = JSON.parse(await fsp.readFile(expPath, 'utf8'))
+        const fixture = await fs.readFile(fixtPath, 'utf8')
+        const expected = JSON.parse(await fs.readFile(expPath, 'utf8'))
         const actual = marshal(parse(fixture, {strict: strict}))
         expect(actual).to.eql(expected)
         /* // Code to write the expected result to a file
         try {
           expect(actual).to.eql(expected)
         } catch (err) {
-          await fsp.writeFile(expPath + '.ref.json', JSON.stringify(actual), 'utf8')
+          await fs.writeFile(expPath + '.ref.json', JSON.stringify(actual), 'utf8')
           throw err
         }
         */

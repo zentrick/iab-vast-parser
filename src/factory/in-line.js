@@ -10,7 +10,7 @@ export default ($ad, options) => {
   inLine.adTitle = ($inLine.adTitle != null) ? $inLine.adTitle._value : null
   if ($inLine.category != null) {
     inLine.categories.push(...$inLine.category
-      .filter(c => c.authority != null)   // Ignores declarations such as <Category/>.
+      .filter(c => c.authority != null) // Ignores declarations such as <Category/>.
       .map(createCategory))
   }
   inLine.description = ($inLine.description != null) ? $inLine.description._value : null

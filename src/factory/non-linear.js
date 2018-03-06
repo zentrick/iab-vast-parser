@@ -24,8 +24,8 @@ export default ($nonLinear) => {
   if ($nonLinear.nonLinearClickTracking != null) {
     nonLinear.clickTrackings.push(
       ...$nonLinear.nonLinearClickTracking
-      .filter(hasValue)
-      .map(createClick))
+        .filter(hasValue)
+        .map(createClick))
   }
   return nonLinear
 }
