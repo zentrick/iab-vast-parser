@@ -24,10 +24,9 @@
     "build": "rimraf lib && babel src -d lib",
     "prepublish": "in-publish && yarn run build || not-in-publish",
     "lint": "standard '{src,test,scripts}/**/*.js'",
-    "test:integration": "mocha --require babel-polyfill --compilers js:babel-register 'test/lib/setup.js' 'test/integration/**/*.js'",
-    "test:cover": "cross-env NODE_ENV=test nyc yarn run test:integration",
+    "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-polyfill --compilers js:babel-register 'test/lib/setup.js' 'test/integration/**/*.js'",
     "test": "yarn run lint && yarn run test:cover",
-    "ci": "yarn run lint && MOCHA_FILE=$CIRCLE_TEST_REPORTS/junit.xml yarn run test:cover -- --reporter mocha-junit-reporter && nyc report --reporter=text-lcov | coveralls"
+    "ci": "yarn run lint && MOCHA_FILE=$CIRCLE_TEST_REPORTS/junit.xml yarn run test:cover --reporter mocha-junit-reporter && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "zentrick/iab-vast-parser",
   "bugs": "https://github.com/zentrick/iab-vast-parser/issues",
