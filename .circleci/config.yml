@@ -1,14 +1,14 @@
 defaults: &defaults
   steps:
     - run:
-      name: Install Yarn
-      command: |
-        sudo apt-get update
-        sudo apt-get install apt-transport-https
-        curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-        echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-        sudo apt-get update
-        sudo apt-get install --no-install-recommends yarn=1.5.1-1
+        name: Install Yarn
+        command: |
+          sudo apt-get update
+          sudo apt-get install apt-transport-https
+          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+          echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends yarn=1.5.1-1
     - checkout
     - restore_cache:
         keys:
