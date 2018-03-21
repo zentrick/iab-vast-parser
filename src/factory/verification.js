@@ -16,10 +16,12 @@ export default ($verification) => {
   if ($verification.viewableImpression != null) {
     verification.viewableImpression = $verification.viewableImpression._value
   }
-  // XXX <VerificationParameters> is getting introduced in VAST 4.1
-  // We're already using it in our VAST Tester via this undocumented property
+  // XXX Proposed properties subject to change
   if ($verification.verificationParameters != null) {
     verification.parameters = $verification.verificationParameters._value
+  }
+  if ($verification.adSwapDecision != null) {
+    verification.adSwapDecision = ($verification.adSwapDecision === 'true')
   }
   return verification
 }
