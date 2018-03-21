@@ -22,13 +22,10 @@
                 "_type": "Linear",
                 "icons": [
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                  ]
-                },
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {

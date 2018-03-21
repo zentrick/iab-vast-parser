@@ -30,33 +30,30 @@
                   "duration": 16,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                      {
-                        "_type": "InteractiveCreativeFile",
-                        "uri": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235"
-                      }
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 2500,
-                        "codec": "0",
-                        "delivery": "progressive",
-                        "height": 720,
-                        "id": "5241",
-                        "maintainAspectRatio": true,
-                        "maxBitrate": 2500,
-                        "minBitrate": 1800,
-                        "scalable": true,
-                        "type": "video/mp4",
-                        "uri": "http://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4",
-                        "width": 1280
-                      }
-                    ],
-                    "mezzanine": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235"
-                  },
+                  "interactiveCreativeFiles": [
+                    {
+                      "_type": "InteractiveCreativeFile",
+                      "uri": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235"
+                    }
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 2500,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 720,
+                      "id": "5241",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 2500,
+                      "minBitrate": 1800,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "http://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4",
+                      "width": 1280
+                    }
+                  ],
+                  "mezzanine": "http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235",
                   "trackingEvents": {
                     "_type": "TrackingEvents",
                     "_value": {

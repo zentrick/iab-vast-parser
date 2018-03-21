@@ -26,20 +26,17 @@
                   "duration": 1,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "height": 270,
-                        "type": "application/x-shockwave-flash",
-                        "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
-                        "width": 370
-                      }
-                    ]
-                  }
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "height": 270,
+                      "type": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
+                      "width": 370
+                    }
+                  ]
                 }
               },
               {
@@ -123,20 +120,17 @@
                   "duration": 1,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "height": 270,
-                        "type": "application/x-shockwave-flash",
-                        "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
-                        "width": 370
-                      }
-                    ]
-                  }
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "height": 270,
+                      "type": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
+                      "width": 370
+                    }
+                  ]
                 },
                 "sequence": 1000
               }

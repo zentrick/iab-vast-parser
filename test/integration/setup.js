@@ -19,14 +19,6 @@ const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
         const expected = JSON.parse(await fs.readFile(expPath, 'utf8'))
         const actual = marshal(parse(fixture, {strict: strict}))
         expect(actual).to.eql(expected)
-        /* // Code to write the expected result to a file
-        try {
-          expect(actual).to.eql(expected)
-        } catch (err) {
-          await fs.writeFile(expPath + '.ref.json', JSON.stringify(actual), 'utf8')
-          throw err
-        }
-        */
         if (!strict) {
           expect(() => parse(fixture, {strict: true})).to.throw(Error)
         }

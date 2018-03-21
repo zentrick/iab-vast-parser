@@ -24,22 +24,19 @@
                 "duration": 30,
                 "icons": [
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                    {
-                      "_type": "MediaFile",
-                      "bitrate": 496,
-                      "delivery": "progressive",
-                      "height": 396,
-                      "type": "video/x-flv",
-                      "uri": "http://media.scanscout.com/ads/partner1_a1d1fbbc-c4d4-419f-b6c8-e9db63fd4491.flv",
-                      "width": 600
-                    }
-                  ]
-                },
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "bitrate": 496,
+                    "delivery": "progressive",
+                    "height": 396,
+                    "type": "video/x-flv",
+                    "uri": "http://media.scanscout.com/ads/partner1_a1d1fbbc-c4d4-419f-b6c8-e9db63fd4491.flv",
+                    "width": 600
+                  }
+                ],
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {

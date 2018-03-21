@@ -18,13 +18,10 @@
                 "_type": "Linear",
                 "icons": [
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                  ]
-                },
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
                 "videoClicks": {
                   "_type": "VideoClicks",
                   "clickTrackings": [

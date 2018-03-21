@@ -46,28 +46,25 @@
                 "duration": 16,
                 "icons": [
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                    {
-                      "_type": "MediaFile",
-                      "bitrate": 500,
-                      "codec": "0",
-                      "delivery": "progressive",
-                      "height": 300,
-                      "id": "5241",
-                      "maintainAspectRatio": true,
-                      "maxBitrate": 1080,
-                      "minBitrate": 360,
-                      "scalable": true,
-                      "type": "video/mp4",
-                      "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
-                      "width": 400
-                    }
-                  ]
-                },
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "bitrate": 500,
+                    "codec": "0",
+                    "delivery": "progressive",
+                    "height": 300,
+                    "id": "5241",
+                    "maintainAspectRatio": true,
+                    "maxBitrate": 1080,
+                    "minBitrate": 360,
+                    "scalable": true,
+                    "type": "video/mp4",
+                    "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                    "width": 400
+                  }
+                ],
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {

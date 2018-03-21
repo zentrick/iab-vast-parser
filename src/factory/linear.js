@@ -37,15 +37,15 @@ export default ($creative, options) => {
     linear.duration = $linear.duration._value
   }
   if ($linear.mediaFiles != null) {
-    if ($linear.mediaFiles.mezzanine) {
-      linear.mediaFiles.mezzanine = $linear.mediaFiles.mezzanine._value
+    if ($linear.mediaFiles.mezzanine != null) {
+      linear.mezzanine = $linear.mediaFiles.mezzanine._value
     }
     if ($linear.mediaFiles.mediaFile != null) {
-      linear.mediaFiles.mediaFiles
+      linear.mediaFiles
         .push(...$linear.mediaFiles.mediaFile.map(createMediaFile))
     }
     if ($linear.mediaFiles.interactiveCreativeFile != null) {
-      linear.mediaFiles.interactiveCreativeFiles
+      linear.interactiveCreativeFiles
         .push(...$linear.mediaFiles.interactiveCreativeFile.map(createInteractiveMediaFile))
     }
   }

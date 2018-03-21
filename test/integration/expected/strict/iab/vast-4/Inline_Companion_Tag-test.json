@@ -72,58 +72,55 @@
                   "duration": 16,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 2000,
-                        "codec": "0",
-                        "delivery": "progressive",
-                        "height": 720,
-                        "id": "5241",
-                        "maintainAspectRatio": true,
-                        "maxBitrate": 2500,
-                        "minBitrate": 1500,
-                        "scalable": true,
-                        "type": "video/mp4",
-                        "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
-                        "width": 1280
-                      },
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 1000,
-                        "codec": "0",
-                        "delivery": "progressive",
-                        "height": 480,
-                        "id": "5244",
-                        "maintainAspectRatio": true,
-                        "maxBitrate": 1500,
-                        "minBitrate": 700,
-                        "scalable": true,
-                        "type": "video/mp4",
-                        "uri": "http://example.com/mediafile/mid_resolution.mp4",
-                        "width": 854
-                      },
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 600,
-                        "codec": "0",
-                        "delivery": "progressive",
-                        "height": 360,
-                        "id": "5246",
-                        "maintainAspectRatio": true,
-                        "maxBitrate": 700,
-                        "minBitrate": 500,
-                        "scalable": true,
-                        "type": "video/mp4",
-                        "uri": "http://example.com/mediafile/low_resolution.mp4",
-                        "width": 640
-                      }
-                    ]
-                  },
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 2000,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 720,
+                      "id": "5241",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 2500,
+                      "minBitrate": 1500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                      "width": 1280
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 1000,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 480,
+                      "id": "5244",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 1500,
+                      "minBitrate": 700,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "http://example.com/mediafile/mid_resolution.mp4",
+                      "width": 854
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 600,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 360,
+                      "id": "5246",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 700,
+                      "minBitrate": 500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "http://example.com/mediafile/low_resolution.mp4",
+                      "width": 640
+                    }
+                  ],
                   "trackingEvents": {
                     "_type": "TrackingEvents",
                     "_value": {

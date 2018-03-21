@@ -28,33 +28,30 @@
                   "duration": 52,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 1500,
-                        "delivery": "progressive",
-                        "height": 480,
-                        "id": "1",
-                        "type": "video/mp4",
-                        "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_g0vnoj5i/format/url/protocol/http/a.mp4",
-                        "width": 720
-                      },
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 356,
-                        "delivery": "progressive",
-                        "height": 260,
-                        "id": "2",
-                        "type": "video/mp4",
-                        "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_ve7wy5mt/format/url/protocol/http/a.mp4",
-                        "width": 480
-                      }
-                    ]
-                  },
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 1500,
+                      "delivery": "progressive",
+                      "height": 480,
+                      "id": "1",
+                      "type": "video/mp4",
+                      "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_g0vnoj5i/format/url/protocol/http/a.mp4",
+                      "width": 720
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 356,
+                      "delivery": "progressive",
+                      "height": 260,
+                      "id": "2",
+                      "type": "video/mp4",
+                      "uri": "http://cdnapi.kaltura.com/p/777122/sp/77712200/playManifest/entryId/0_vriq23ct/flavorId/0_ve7wy5mt/format/url/protocol/http/a.mp4",
+                      "width": 480
+                    }
+                  ],
                   "skipoffset": {
                     "_type": "RelativeTimeOffset",
                     "value": 20
@@ -356,23 +353,20 @@
                   "duration": 135,
                   "icons": [
                   ],
-                  "mediaFiles": {
-                    "_type": "MediaFiles",
-                    "interactiveCreativeFiles": [
-                    ],
-                    "mediaFiles": [
-                      {
-                        "_type": "MediaFile",
-                        "bitrate": 1500,
-                        "delivery": "progressive",
-                        "height": 480,
-                        "id": "1",
-                        "type": "video/mp4",
-                        "uri": "http://cdnbakmi.kaltura.com/p/524241/sp/52424100/serveFlavor/entryId/0_mb7d3bcg/flavorId/0_xwolbf6p/name/a.mp4",
-                        "width": 720
-                      }
-                    ]
-                  },
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 1500,
+                      "delivery": "progressive",
+                      "height": 480,
+                      "id": "1",
+                      "type": "video/mp4",
+                      "uri": "http://cdnbakmi.kaltura.com/p/524241/sp/52424100/serveFlavor/entryId/0_mb7d3bcg/flavorId/0_xwolbf6p/name/a.mp4",
+                      "width": 720
+                    }
+                  ],
                   "skipoffset": {
                     "_type": "AbsoluteTimeOffset",
                     "value": 5

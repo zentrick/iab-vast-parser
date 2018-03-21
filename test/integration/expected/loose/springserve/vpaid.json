@@ -25,22 +25,19 @@
                 "duration": 30,
                 "icons": [
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                    {
-                      "_type": "MediaFile",
-                      "apiFramework": "VPAID",
-                      "delivery": "progressive",
-                      "height": 0,
-                      "type": "application/x-shockwave-flash",
-                      "uri": "http://cdn.springserve.com/vd/vd-1.0.79.swf",
-                      "width": 0
-                    }
-                  ]
-                }
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "apiFramework": "VPAID",
+                    "delivery": "progressive",
+                    "height": 0,
+                    "type": "application/x-shockwave-flash",
+                    "uri": "http://cdn.springserve.com/vd/vd-1.0.79.swf",
+                    "width": 0
+                  }
+                ]
               },
               "sequence": 1
             },

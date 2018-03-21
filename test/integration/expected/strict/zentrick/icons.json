@@ -40,13 +40,10 @@
                     "yPosition": "20"
                   }
                 ],
-                "mediaFiles": {
-                  "_type": "MediaFiles",
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                  ]
-                },
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
                 "videoClicks": {
                   "_type": "VideoClicks",
                   "clickTrackings": [
