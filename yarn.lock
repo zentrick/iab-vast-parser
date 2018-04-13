@@ -1950,9 +1950,9 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-iab-vast-model@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/iab-vast-model/-/iab-vast-model-0.6.0.tgz#608422b8433df02591588528076592f24f60be64"
+iab-vast-model@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/iab-vast-model/-/iab-vast-model-1.0.0.tgz#0276bb0958ff8db2f1b1b70b2f97ccd43425a048"
 
 iconv-lite@^0.4.17, iconv-lite@~0.4.13:
   version "0.4.21"
