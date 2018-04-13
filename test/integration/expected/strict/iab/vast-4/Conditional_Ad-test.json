@@ -1,0 +1,191 @@
+{
+  "_type": "VAST",
+  "adPod": {
+    "_type": "AdPod",
+    "ads": {
+      "_type": "SortedList",
+      "_value": [
+        {
+          "_type": "InLine",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "iabtechlab",
+            "version": "4.0"
+          },
+          "adTitle": "iabtechlab video ad",
+          "categories": [
+            {
+              "_type": "Category",
+              "authority": "http://www.iabtechlab.com/categoryauthority",
+              "code": "AD CONTENT description category"
+            }
+          ],
+          "conditionalAd": "false",
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "adID": "2447226",
+                "apiFramework": "VAST",
+                "extensions": [
+                ],
+                "id": "5480",
+                "linear": {
+                  "_type": "Linear",
+                  "duration": 16,
+                  "icons": [
+                  ],
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 2000,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 720,
+                      "id": "5241",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 2500,
+                      "minBitrate": 1500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                      "width": 1280
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 1000,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 480,
+                      "id": "5244",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 1500,
+                      "minBitrate": 700,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "http://example.com/mediafile/mid_resolution.mp4",
+                      "width": 854
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 600,
+                      "codec": "0",
+                      "delivery": "progressive",
+                      "height": 360,
+                      "id": "5246",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 700,
+                      "minBitrate": 500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "http://example.com/mediafile/low_resolution.mp4",
+                      "width": 640
+                    }
+                  ],
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "complete": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://example.com/tracking/complete"
+                        }
+                      ],
+                      "firstQuartile": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://example.com/tracking/firstQuartile"
+                        }
+                      ],
+                      "midpoint": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://example.com/tracking/midpoint"
+                        }
+                      ],
+                      "start": [
+                        {
+                          "_type": "TrackingEvent",
+                          "offset": {
+                            "_type": "AbsoluteTimeOffset",
+                            "value": 44410
+                          },
+                          "uri": "http://example.com/tracking/start"
+                        }
+                      ],
+                      "thirdQuartile": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "http://example.com/tracking/thirdQuartile"
+                        }
+                      ]
+                    }
+                  },
+                  "videoClicks": {
+                    "_type": "VideoClicks",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "id": "blog",
+                      "uri": "https://iabtechlab.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "customClicks": [
+                    ]
+                  }
+                },
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "creativeIdentifier": "8465",
+                  "idRegistry": "Ad-ID",
+                  "idValue": "8465"
+                }
+              }
+            ]
+          },
+          "errors": [
+            "http://example.com/error"
+          ],
+          "extensions": [
+            {
+              "_type": "Extension",
+              "type": "iab-Count",
+              "xmlElement": "<Extension type=\"iab-Count\" xmlns=\"http://www.iab.com/VAST\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
+            }
+          ],
+          "id": "20002",
+          "impressions": [
+            {
+              "_type": "Impression",
+              "id": "Impression-ID",
+              "uri": "http://example.com/track/impression"
+            }
+          ],
+          "pricing": {
+            "_type": "Pricing",
+            "currency": "USD",
+            "model": "cpm",
+            "value": 25
+          },
+          "sequence": 1,
+          "surveys": [
+          ],
+          "verifications": [
+          ]
+        }
+      ]
+    }
+  },
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+    ]
+  },
+  "errors": [
+  ],
+  "version": "4.0"
+}

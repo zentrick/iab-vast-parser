@@ -11,80 +11,80 @@
           "version": "1.0"
         },
         "adTitle": "Sample title",
+        "categories": [
+        ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "extensions": [
               ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "uri": "https://example.com/banner.html"
-                  },
-                  "clickTrackings": [
-                  ],
-                  "height": 0,
-                  "resource": {
-                    "_type": "StaticResource",
-                    "content": "http://example.com/sample.jpg",
-                    "creativeType": "image/jpeg"
-                  },
-                  "width": 0
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "https://example.com/banner.html"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 0,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://example.com/sample.jpg"
+                    },
+                    "width": 0
+                  }
+                ]
               }
             },
             {
-              "_type": "Linear",
-              "adParameters": "{\"testString\":\"an ad parameter string\",\"testBoolean\":false,\"test\n                            \n                            \n                            Number\":1345680,\"testURL\":\"http://example.com\",\"testURLWithParams\":\"http\n                            \n                            \n                            %3A%2F%2Fexample.com%3Fparam1%3Dtrue%26param2%3Dfalse\",\"testArray\":[\"e\n                            \n                            \n                            lement1\",\"element2\"],\"testArrayWithObjects\":[{\"key\":\"value\"},{\"key\":\"value\"}]}",
-              "duration": 5,
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-                {
-                  "_type": "MediaFile",
-                  "delivery": "streaming",
-                  "height": 608,
-                  "type": "video/mp4",
-                  "uri": "http://example.com/video.mp4",
-                  "width": 480
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickThrough": {
-                  "_type": "Click",
-                  "uri": "http://example.com/linear-video-clickthrough"
-                },
-                "clickTrackings": [
+              "linear": {
+                "_type": "Linear",
+                "adParameters": "{\"testString\":\"an ad parameter string\",\"testBoolean\":false,\"test\n                            \n                            \n                            Number\":1345680,\"testURL\":\"http://example.com\",\"testURLWithParams\":\"http\n                            \n                            \n                            %3A%2F%2Fexample.com%3Fparam1%3Dtrue%26param2%3Dfalse\",\"testArray\":[\"e\n                            \n                            \n                            lement1\",\"element2\"],\"testArrayWithObjects\":[{\"key\":\"value\"},{\"key\":\"value\"}]}",
+                "duration": 5,
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
                   {
-                    "_type": "Click",
-                    "id": "video_click",
-                    "uri": "http://example.com/inline/linear-video-click"
-                  },
-                  {
-                    "_type": "Click",
-                    "id": "post_video_click",
-                    "uri": "http://example.com/inline/linear-post-video-click"
+                    "_type": "MediaFile",
+                    "delivery": "streaming",
+                    "height": 608,
+                    "type": "video/mp4",
+                    "uri": "http://example.com/video.mp4",
+                    "width": 480
                   }
                 ],
-                "customClicks": [
-                ]
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "uri": "http://example.com/linear-video-clickthrough"
+                  },
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "id": "video_click",
+                      "uri": "http://example.com/inline/linear-video-click"
+                    },
+                    {
+                      "_type": "Click",
+                      "id": "post_video_click",
+                      "uri": "http://example.com/inline/linear-post-video-click"
+                    }
+                  ],
+                  "customClicks": [
+                  ]
+                }
               }
             }
           ]
@@ -96,6 +96,10 @@
         ],
         "id": "1",
         "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
         ]
       }
     ]

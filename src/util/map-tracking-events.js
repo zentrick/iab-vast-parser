@@ -12,7 +12,9 @@ export default ($trackingEvents, trackingEvents, options) => {
     }
     const conf = new TrackingEvent()
     conf.uri = $tracking._value
-    if ($tracking.event === 'progress' && isNonEmptyString($tracking.offset)) {
+    // VAST 3.0: 'offset' attribute is available for 'progress' events only.
+    // VAST 4.0: 'offset' attribute is available when <Linear> is the parent.
+    if (isNonEmptyString($tracking.offset)) {
       try {
         conf.offset = createTimeOffset($tracking.offset)
       } catch (err) {

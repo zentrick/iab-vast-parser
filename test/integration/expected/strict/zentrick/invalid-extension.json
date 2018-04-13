@@ -10,59 +10,52 @@
           "name": "2.0"
         },
         "adTitle": "5773100",
+        "categories": [
+        ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Linear",
-              "duration": 1,
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-                {
-                  "_type": "MediaFile",
-                  "height": 270,
-                  "type": "application/x-shockwave-flash",
-                  "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
-                  "width": 370
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
+              "linear": {
+                "_type": "Linear",
+                "duration": 1,
+                "icons": [
                 ],
-                "customClicks": [
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "height": 270,
+                    "type": "application/x-shockwave-flash",
+                    "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
+                    "width": 370
+                  }
                 ]
               }
             },
             {
-              "_type": "CompanionAds",
-              "companions": [
-                {
-                  "_type": "Companion",
-                  "clickTrackings": [
-                  ],
-                  "height": 250,
-                  "id": "573242",
-                  "resource": {
-                    "_type": "HTMLResource",
-                    "content": "<A onClick=\"var i= new Image(1,1); i.src='http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=0&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true';\" HREF=\"http://vaseline.com\" target=\"_blank\">\n\t\t\t<IMG SRC=\"http://media.scanscout.com/ads/vaseline300x250Companion.jpg\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Click Here\">\n\t\t\t</A>\n\t\t\t<img src=\"http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=1&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true\" height=\"1\" width=\"1\">"
-                  },
-                  "trackingEvents": {
-                    "_type": "TrackingEvents",
-                    "_value": {
-                    }
-                  },
-                  "width": 300
-                }
-              ],
+              "_type": "Creative",
+              "companionAds": {
+                "_type": "CompanionAds",
+                "companions": [
+                  {
+                    "_type": "Companion",
+                    "clickTrackings": [
+                    ],
+                    "height": 250,
+                    "id": "573242",
+                    "resource": {
+                      "_type": "HTMLResource",
+                      "uri": "<A onClick=\"var i= new Image(1,1); i.src='http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=0&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true';\" HREF=\"http://vaseline.com\" target=\"_blank\">\n\t\t\t<IMG SRC=\"http://media.scanscout.com/ads/vaseline300x250Companion.jpg\" BORDER=0 WIDTH=300 HEIGHT=250 ALT=\"Click Here\">\n\t\t\t</A>\n\t\t\t<img src=\"http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=1&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true\" height=\"1\" width=\"1\">"
+                    },
+                    "width": 300
+                  }
+                ]
+              },
               "extensions": [
               ]
             }
@@ -73,13 +66,13 @@
         "extensions": [
           {
             "_type": "Extension",
-            "content": "<Extension type=\"foo\">\n          <Baz/>\n          <Baz>\n            <Quux>1</Quux>\n          </Baz>\n        </Extension>",
-            "type": "foo"
+            "type": "foo",
+            "xmlElement": "<Extension type=\"foo\">\n          <Baz/>\n          <Baz>\n            <Quux>1</Quux>\n          </Baz>\n        </Extension>"
           },
           {
             "_type": "Extension",
-            "content": "<Extension type=\"bar\">\n          Testing\n        </Extension>",
-            "type": "bar"
+            "type": "bar",
+            "xmlElement": "<Extension type=\"bar\">\n          Testing\n        </Extension>"
           }
         ],
         "id": "preroll-1",
@@ -90,7 +83,11 @@
           "currency": "USD",
           "model": "CPM",
           "value": 0.05
-        }
+        },
+        "surveys": [
+        ],
+        "verifications": [
+        ]
       }
     ]
   },

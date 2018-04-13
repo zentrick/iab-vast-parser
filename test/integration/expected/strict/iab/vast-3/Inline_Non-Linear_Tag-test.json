@@ -1,0 +1,91 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "iabtechlab",
+          "version": "4.0"
+        },
+        "adTitle": "NonLinear Image",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "id": "5480",
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://iabtechlab.com"
+                    },
+                    "clickTrackings": [
+                      {
+                        "_type": "Click",
+                        "uri": "http://example.com/trackingurl/clickTracking"
+                      }
+                    ],
+                    "height": 150,
+                    "maintainAspectRatio": true,
+                    "minSuggestedDuration": 5,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/png",
+                      "uri": "http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg"
+                    },
+                    "scalable": true,
+                    "width": 480
+                  }
+                ]
+              },
+              "sequence": 1
+            }
+          ]
+        },
+        "description": "VAST 3.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.",
+        "errors": [
+          "http://example.com/error"
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "type": "iab-Count",
+            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
+          }
+        ],
+        "id": "20005",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "id": "Impression-ID",
+            "uri": "http://example.com/track/impression"
+          }
+        ],
+        "pricing": {
+          "_type": "Pricing",
+          "currency": "USD",
+          "model": "cpm",
+          "value": 25
+        },
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

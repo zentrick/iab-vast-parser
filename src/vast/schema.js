@@ -3,6 +3,7 @@
 import TYPES from '../xml/types'
 
 const collections = {
+  AdVerifications: ['Verification'],
   Companion: ['CompanionClickTracking'],
   CompanionAds: ['Companion'],
   CreativeExtensions: ['CreativeExtension'],
@@ -11,12 +12,14 @@ const collections = {
   Icon: ['IconViewTracking'],
   IconClicks: ['IconClickTracking'],
   Icons: ['Icon'],
-  InLine: ['Impression', 'Error'],
-  MediaFiles: ['MediaFile'],
+  InLine: ['Category', 'Error', 'Impression', 'Survey'],
+  MediaFiles: ['MediaFile', 'InteractiveCreativeFile'],
   NonLinear: ['NonLinearClickTracking'],
   NonLinearAds: ['NonLinear'],
   TrackingEvents: ['Tracking'],
   VAST: ['Error', 'Ad'],
+  Verification: ['JavaScriptResource', 'FlashResource'],
+  ViewableImpression: ['Viewable', 'NotViewable', 'ViewUndetermined'],
   VideoClicks: ['ClickTracking', 'CustomClick'],
   Wrapper: ['Impression', 'Error']
 }

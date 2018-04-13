@@ -1,0 +1,98 @@
+{
+  "_type": "VAST",
+  "adPod": {
+    "_type": "AdPod",
+    "ads": {
+      "_type": "SortedList",
+      "_value": [
+        {
+          "_type": "Wrapper",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "iabtechlab",
+            "version": "4.0"
+          },
+          "allowMultipleAds": true,
+          "conditionalAd": "false",
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "adID": "2447226",
+                "extensions": [
+                ],
+                "id": "5480",
+                "linear": {
+                  "_type": "Linear",
+                  "icons": [
+                  ],
+                  "interactiveCreativeFiles": [
+                  ],
+                  "mediaFiles": [
+                  ],
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "start": [
+                        {
+                          "_type": "TrackingEvent",
+                          "offset": {
+                            "_type": "AbsoluteTimeOffset",
+                            "value": 32410
+                          },
+                          "uri": "http://example.com/tracking/start"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "sequence": 1
+              }
+            ]
+          },
+          "errors": [
+            "http://example.com/error"
+          ],
+          "extensions": [
+          ],
+          "fallbackOnNoAd": false,
+          "followAdditionalWrappers": false,
+          "id": "20010",
+          "impressions": [
+            {
+              "_type": "Impression",
+              "id": "Impression-ID",
+              "uri": "http://example.com/track/impression"
+            }
+          ],
+          "sequence": 1,
+          "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
+          "verifications": [
+          ],
+          "viewableImpression": {
+            "_type": "ViewableImpression",
+            "id": "1543",
+            "notViewables": [
+              "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
+            ],
+            "viewUndetermineds": [
+              "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
+            ],
+            "viewables": [
+              "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+    ]
+  },
+  "errors": [
+  ],
+  "version": "4.0"
+}

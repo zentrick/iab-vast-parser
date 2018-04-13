@@ -1,0 +1,139 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "iabtechlab",
+          "version": "4.0"
+        },
+        "adTitle": "iabtechlab video ad",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "id": "5480",
+              "linear": {
+                "_type": "Linear",
+                "duration": 16,
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "apiFramework": "VAST",
+                    "bitrate": 500,
+                    "codec": "0",
+                    "delivery": "progressive",
+                    "height": 300,
+                    "id": "5241",
+                    "maintainAspectRatio": true,
+                    "maxBitrate": 1080,
+                    "minBitrate": 360,
+                    "scalable": true,
+                    "type": "video/mp4",
+                    "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                    "width": 400
+                  }
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "complete": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/complete"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/firstQuartile"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/midpoint"
+                      }
+                    ],
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "offset": {
+                          "_type": "AbsoluteTimeOffset",
+                          "value": 36320
+                        },
+                        "uri": "http://example.com/tracking/start"
+                      }
+                    ],
+                    "thirdQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/thirdQuartile"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickThrough": {
+                    "_type": "Click",
+                    "id": "blog",
+                    "uri": "https://iabtechlab.com"
+                  },
+                  "clickTrackings": [
+                  ],
+                  "customClicks": [
+                  ]
+                }
+              },
+              "sequence": 1
+            }
+          ]
+        },
+        "errors": [
+          "http://example.com/error"
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "type": "iab-Count",
+            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
+          }
+        ],
+        "id": "20001",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "id": "Impression-ID",
+            "uri": "http://example.com/track/impression"
+          }
+        ],
+        "pricing": {
+          "_type": "Pricing",
+          "currency": "USD",
+          "model": "cpm",
+          "value": 25
+        },
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

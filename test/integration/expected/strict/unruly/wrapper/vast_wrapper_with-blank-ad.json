@@ -20,10 +20,11 @@
         ],
         "extensions": [
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "55217",
         "impressions": [
+        ],
+        "verifications": [
         ]
       }
     ]

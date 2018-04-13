@@ -1,0 +1,511 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750100",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-1",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D0"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-1",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750092",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-2",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D1"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-2",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750094",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-3",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D2"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-3",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750091",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-4",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D3"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-4",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5748118",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-5",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D4"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-5",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750088",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-6",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D5"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-6",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5700028",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-7",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D6"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-7",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750098",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-8",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D7"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-8",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5750097",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-9",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D8"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-9",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      },
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "2.0"
+        },
+        "adTitle": "5700030",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "apiFramework": "VPAID",
+                    "clickTrackings": [
+                    ],
+                    "height": 60,
+                    "id": "overlay-10",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "application/x-shockwave-flash",
+                      "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D9"
+                    },
+                    "width": 380
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "id": "overlay-10",
+        "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "2.0"
+}

@@ -1,0 +1,83 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Testing"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                  {
+                    "_type": "Icon",
+                    "clicks": {
+                      "_type": "IconClicks",
+                      "clickThrough": {
+                        "_type": "Click",
+                        "uri": "http://example.com/more_info"
+                      },
+                      "clickTrackings": [
+                      ]
+                    },
+                    "height": 15,
+                    "program": "AdChoices",
+                    "viewTrackings": [
+                    ],
+                    "width": 100,
+                    "xPosition": "right",
+                    "yPosition": "bottom"
+                  }
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "uri": "http://myTrackingURL/wrapper/click"
+                    }
+                  ],
+                  "customClicks": [
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "errors": [
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "602833",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/wrapper/impression"
+          }
+        ],
+        "vastAdTagURI": "https://vast.inline.url",
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

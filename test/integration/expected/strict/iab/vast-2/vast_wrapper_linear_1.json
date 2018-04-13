@@ -1,0 +1,162 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "Acudeo Compatible"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "adID": "602833",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "complete": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/complete"
+                      }
+                    ],
+                    "creativeView": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/creativeView"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/firstQuartile"
+                      }
+                    ],
+                    "fullscreen": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/fullscreen"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/midpoint"
+                      }
+                    ],
+                    "mute": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/mute"
+                      }
+                    ],
+                    "pause": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/pause"
+                      }
+                    ],
+                    "resume": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/resume"
+                      }
+                    ],
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/start"
+                      }
+                    ],
+                    "thirdQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/thirdQuartile"
+                      }
+                    ],
+                    "unmute": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://myTrackingURL/wrapper/unmute"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "uri": "http://myTrackingURL/wrapper/click"
+                    }
+                  ],
+                  "customClicks": [
+                  ]
+                }
+              }
+            },
+            {
+              "_type": "Creative",
+              "adID": "602833-NonLinearTracking",
+              "extensions": [
+              ],
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                ]
+              }
+            }
+          ]
+        },
+        "errors": [
+          "http://myErrorURL/wrapper/error"
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "602833",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://myTrackingURL/wrapper/impression"
+          }
+        ],
+        "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_linear.xml",
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "2.0"
+}

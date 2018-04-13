@@ -11,35 +11,35 @@
           "version": "1.0"
         },
         "adTitle": "Example Title",
+        "categories": [
+        ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "extensions": [
               ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "uri": "http://example.com/clickthrough.html"
-                  },
-                  "clickTrackings": [
-                  ],
-                  "height": 100,
-                  "resource": {
-                    "_type": "StaticResource",
-                    "content": "http://example.com/thumb.jpg",
-                    "creativeType": "image/jpeg"
-                  },
-                  "width": 100
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "http://example.com/clickthrough.html"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 100,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://example.com/thumb.jpg"
+                    },
+                    "width": 100
+                  }
+                ]
               }
             }
           ]
@@ -50,11 +50,15 @@
         "extensions": [
           {
             "_type": "Extension",
-            "content": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>"
+            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/share]]>\n                    </SharingUrl>\n                    <CustomTrackingEvents>\n                        <CustomTracking event=\"viewableImpression\">\n                            <![CDATA[http://example.com/inline-viewimp?d=[CACHEBUSTER]]]>\n                        </CustomTracking>\n                    </CustomTrackingEvents>\n                </Extension>"
           }
         ],
         "id": "1",
         "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
         ]
       }
     ]

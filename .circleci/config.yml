@@ -1,0 +1,55 @@
+defaults: &defaults
+  steps:
+    - run:
+        name: Install Yarn
+        command: |
+          sudo apt-get update
+          sudo apt-get install apt-transport-https
+          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+          echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends yarn=1.5.1-1
+    - checkout
+    - restore_cache:
+        keys:
+        - v1-dependencies-{{ checksum "yarn.lock" }}
+        - v1-dependencies-
+    - run:
+        name: Install dependencies
+        command: yarn
+    - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "yarn.lock" }}
+    - run:
+        name: Create test result directory
+        command: mkdir -p /tmp/test-results
+    - run:
+        name: Run tests
+        command: yarn run ci
+        environment:
+          CIRCLE_TEST_REPORTS: /tmp/test-results
+    - store_test_results:
+        path: /tmp/test-results
+        when: always
+    - store_artifacts:
+        path: /tmp/test-results
+        destination: test-results
+        when: always
+
+version: 2
+jobs:
+  "node-6":
+    <<: *defaults
+    docker:
+      - image: circleci/node:6
+  "node-8":
+    <<: *defaults
+    docker:
+      - image: circleci/node:8
+workflows:
+  version: 2
+  build:
+    jobs:
+      - "node-6"
+      - "node-8"

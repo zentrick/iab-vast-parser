@@ -15,58 +15,63 @@
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Linear",
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "complete": [
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "complete": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/complete?d=[CACHEBUSTER]"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/q2?d=[CACHEBUSTER]"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/q3?d=[CACHEBUSTER]"
+                      }
+                    ],
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start?d=[CACHEBUSTER]"
+                      }
+                    ],
+                    "thirdQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/q4?d=[CACHEBUSTER]"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
                     {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/complete?d=[CACHEBUSTER]"
+                      "_type": "Click",
+                      "uri": "http://example.com/click?d=[CACHEBUSTER]"
                     }
                   ],
-                  "firstQuartile": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/q2?d=[CACHEBUSTER]"
-                    }
-                  ],
-                  "midpoint": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/q3?d=[CACHEBUSTER]"
-                    }
-                  ],
-                  "start": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/start?d=[CACHEBUSTER]"
-                    }
-                  ],
-                  "thirdQuartile": [
-                    {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/q4?d=[CACHEBUSTER]"
-                    }
+                  "customClicks": [
                   ]
                 }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
-                  {
-                    "_type": "Click",
-                    "uri": "http://example.com/click?d=[CACHEBUSTER]"
-                  }
-                ],
-                "customClicks": [
-                ]
               }
             }
           ]
@@ -75,8 +80,7 @@
         ],
         "extensions": [
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "55217",
         "impressions": [
           {
@@ -84,7 +88,9 @@
             "uri": "http://example.com/imp?d=[CACHEBUSTER]"
           }
         ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml"
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml",
+        "verifications": [
+        ]
       }
     ]
   },

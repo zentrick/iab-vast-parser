@@ -1,41 +1,59 @@
-import {AdSystem} from 'iab-vast-model'
+import createAdSystem from '../factory/ad-system'
 import createCreative from '../factory/creative'
 import createExtension from '../factory/extension'
 import createImpression from '../factory/impression'
+import createPricing from '../factory/pricing'
+import createViewableImpression from '../factory/viewable-impression'
+import createVerification from '../factory/verification'
 import isNonEmptyString from '../util/is-non-empty-string'
 
 const hasValue = ($node) => ($node != null && isNonEmptyString($node._value))
 
 export default ($ad, $impl, ad, options) => {
   ad.id = $ad.id
+  ad.conditionalAd = $ad.conditionalAd
   ad.sequence = $ad.sequence
   if ($impl.adSystem != null) {
-    ad.adSystem = new AdSystem()
-    ad.adSystem.name = $impl.adSystem._value
-    ad.adSystem.version = $impl.adSystem.version
+    ad.adSystem = createAdSystem($impl.adSystem)
   }
   if ($impl.impression != null) {
     ad.impressions.push(...$impl.impression
       .filter(hasValue)
       .map(createImpression))
   }
+  if ($impl.pricing != null) {
+    ad.pricing = createPricing($impl.pricing)
+  }
   if ($impl.error != null) {
     ad.errors.push(...$impl.error
       .filter(hasValue)
       .map($err => $err._value))
   }
-  if ($impl.creatives != null && Array.isArray($impl.creatives.creative)) {
-    $impl.creatives.creative.forEach((creative) => {
+  if ($impl.viewableImpression != null) {
+    ad.viewableImpression = createViewableImpression($impl.viewableImpression)
+  }
+  if ($impl.adVerifications != null) {
+    $impl.adVerifications.verification.forEach(($verification) => {
       try {
-        const parsedCreative = createCreative(creative, options)
-        ad.creatives.add(parsedCreative)
+        const verification = createVerification($verification, options)
+        ad.verifications.push(verification)
       } catch (err) {
         options.errorHandler(err)
       }
     })
   }
-  if ($impl.extensions != null && Array.isArray($impl.extensions.extension)) {
+  if ($impl.extensions != null) {
     ad.extensions.push(...$impl.extensions.extension.map(createExtension))
+  }
+  if ($impl.creatives != null) {
+    $impl.creatives.creative.forEach(($creative) => {
+      try {
+        const creative = createCreative($creative, options)
+        ad.creatives.add(creative)
+      } catch (err) {
+        options.errorHandler(err)
+      }
+    })
   }
   return ad
 }

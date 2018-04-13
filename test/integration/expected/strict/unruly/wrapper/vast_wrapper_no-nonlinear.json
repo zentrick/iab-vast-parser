@@ -10,58 +10,54 @@
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Linear",
+              "_type": "Creative",
               "adID": "111",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
+              "linear": {
+                "_type": "Linear",
+                "icons": [
                 ],
-                "customClicks": [
-                ]
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
+                  ],
+                  "customClicks": [
+                  ]
+                }
               }
             },
             {
-              "_type": "CompanionAds",
+              "_type": "Creative",
               "adID": "111",
-              "companions": [
-                {
-                  "_type": "Companion",
-                  "clickTrackings": [
-                  ],
-                  "height": 0,
-                  "trackingEvents": {
-                    "_type": "TrackingEvents",
-                    "_value": {
-                    }
-                  },
-                  "width": 0
-                }
-              ],
+              "companionAds": {
+                "_type": "CompanionAds",
+                "companions": [
+                  {
+                    "_type": "Companion",
+                    "clickTrackings": [
+                    ],
+                    "height": 0,
+                    "width": 0
+                  }
+                ]
+              },
               "extensions": [
               ]
             },
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "adID": "111",
               "extensions": [
               ],
-              "nonLinears": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                ]
               }
             }
           ]
@@ -71,8 +67,7 @@
         ],
         "extensions": [
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "2057602",
         "impressions": [
           {
@@ -84,7 +79,9 @@
             "uri": "https://pixel"
           }
         ],
-        "vastAdTagURI": "http://ads"
+        "vastAdTagURI": "http://ads",
+        "verifications": [
+        ]
       }
     ]
   },

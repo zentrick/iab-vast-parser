@@ -1,6 +1,6 @@
-import {TrackingEvents, SortedList} from 'iab-vast-model'
-import {XMLSerializer} from 'xmldom'
-import normalizeNewline from 'normalize-newline'
+const {TrackingEvents, SortedList} = require('iab-vast-model')
+const {XMLSerializer} = require('xmldom')
+const normalizeNewline = require('normalize-newline')
 
 const getPropertyNames = (proto) => {
   const props = Object.create(null)
@@ -48,19 +48,17 @@ const marshalTrackingEvents = (trackingEvents) => {
   return result
 }
 
-const marshalElement = (elem) => {
-  return normalizeNewline(new XMLSerializer().serializeToString(elem))
-}
+const marshalElement = (elem) =>
+  normalizeNewline(new XMLSerializer().serializeToString(elem))
 
-const marshalAny = (obj) => {
-  return (obj == null) ? null
+const marshalAny = (obj) =>
+  (obj == null) ? null
     : (typeof obj === 'string') ? normalizeNewline(obj)
-    : (typeof obj !== 'object') ? obj
-    : (obj instanceof SortedList) ? marshalSortedList(obj)
-    : (obj instanceof TrackingEvents) ? marshalTrackingEvents(obj)
-    : (obj.nodeName != null) ? marshalElement(obj)
-    : Array.isArray(obj) ? obj.map(marshalAny)
-    : marshalObject(obj)
-}
+      : (typeof obj !== 'object') ? obj
+        : (obj instanceof SortedList) ? marshalSortedList(obj)
+          : (obj instanceof TrackingEvents) ? marshalTrackingEvents(obj)
+            : (obj.nodeName != null) ? marshalElement(obj)
+              : Array.isArray(obj) ? obj.map(marshalAny)
+                : marshalObject(obj)
 
-export default marshalAny
+module.exports = marshalAny

@@ -15,40 +15,45 @@
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Linear",
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "start": [
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
                     {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/start"
+                      "_type": "Click",
+                      "id": "video_click",
+                      "uri": "http://example.com/linear-video-click"
+                    },
+                    {
+                      "_type": "Click",
+                      "id": "post_video_click",
+                      "uri": "http://example.com/linear-post-video-click"
                     }
+                  ],
+                  "customClicks": [
                   ]
                 }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
-                  {
-                    "_type": "Click",
-                    "id": "video_click",
-                    "uri": "http://example.com/linear-video-click"
-                  },
-                  {
-                    "_type": "Click",
-                    "id": "post_video_click",
-                    "uri": "http://example.com/linear-post-video-click"
-                  }
-                ],
-                "customClicks": [
-                ]
               }
             }
           ]
@@ -58,8 +63,7 @@
         ],
         "extensions": [
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "1",
         "impressions": [
           {
@@ -71,7 +75,9 @@
             "uri": "http://example.com/another-imp"
           }
         ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml"
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
+        "verifications": [
+        ]
       }
     ]
   },

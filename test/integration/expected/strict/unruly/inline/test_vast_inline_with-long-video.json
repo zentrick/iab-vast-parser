@@ -11,64 +11,57 @@
           "version": "1.0"
         },
         "adTitle": "Sample title",
+        "categories": [
+        ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "extensions": [
               ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "uri": "https://example.com/article"
-                  },
-                  "clickTrackings": [
-                  ],
-                  "height": 0,
-                  "resource": {
-                    "_type": "StaticResource",
-                    "content": "http://example.com/sample.jpg",
-                    "creativeType": "image/jpeg"
-                  },
-                  "width": 0
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "https://example.com/article"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "height": 0,
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/jpeg",
+                      "uri": "http://example.com/sample.jpg"
+                    },
+                    "width": 0
+                  }
+                ]
               }
             },
             {
-              "_type": "Linear",
-              "duration": 40,
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-                {
-                  "_type": "MediaFile",
-                  "delivery": "streaming",
-                  "height": 608,
-                  "type": "video/mp4",
-                  "uri": "http://example.com/videos/sample.mp4",
-                  "width": 480
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
+              "linear": {
+                "_type": "Linear",
+                "duration": 40,
+                "icons": [
                 ],
-                "customClicks": [
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "delivery": "streaming",
+                    "height": 608,
+                    "type": "video/mp4",
+                    "uri": "http://example.com/videos/sample.mp4",
+                    "width": 480
+                  }
                 ]
               }
             }
@@ -80,11 +73,15 @@
         "extensions": [
           {
             "_type": "Extension",
-            "content": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                </Extension>"
+            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                </Extension>"
           }
         ],
         "id": "1",
         "impressions": [
+        ],
+        "surveys": [
+        ],
+        "verifications": [
         ]
       }
     ]

@@ -15,59 +15,62 @@
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "extensions": [
               ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickTrackings": [
-                  ]
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickTrackings": [
+                    ]
+                  }
+                ]
               }
             },
             {
-              "_type": "Linear",
+              "_type": "Creative",
               "extensions": [
               ],
-              "icons": [
-              ],
-              "mediaFiles": [
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                  "start": [
+              "linear": {
+                "_type": "Linear",
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start?d=[CACHEBUSTER]"
+                      },
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
                     {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/start?d=[CACHEBUSTER]"
+                      "_type": "Click",
+                      "uri": "http://example.com/linear-click"
                     },
                     {
-                      "_type": "TrackingEvent",
-                      "uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                      "_type": "Click",
+                      "uri": "http://example.com/linear-click2"
                     }
+                  ],
+                  "customClicks": [
                   ]
                 }
-              },
-              "videoClicks": {
-                "_type": "VideoClicks",
-                "clickTrackings": [
-                  {
-                    "_type": "Click",
-                    "uri": "http://example.com/linear-click"
-                  },
-                  {
-                    "_type": "Click",
-                    "uri": "http://example.com/linear-click2"
-                  }
-                ],
-                "customClicks": [
-                ]
               }
             }
           ]
@@ -77,8 +80,7 @@
         ],
         "extensions": [
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "1",
         "impressions": [
           {
@@ -90,7 +92,9 @@
             "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
           }
         ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml"
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
+        "verifications": [
+        ]
       }
     ]
   },

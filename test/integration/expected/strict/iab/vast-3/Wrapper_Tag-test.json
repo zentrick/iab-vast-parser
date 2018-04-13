@@ -1,0 +1,74 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "Wrapper",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "iabtechlab",
+          "version": "4.0"
+        },
+        "allowMultipleAds": false,
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "companionAds": {
+                "_type": "CompanionAds",
+                "companions": [
+                  {
+                    "_type": "Companion",
+                    "assetHeight": "200",
+                    "assetWidth": "250",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "https://iabtechlab.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "expandedHeight": 250,
+                    "expandedWidth": 350,
+                    "height": 150,
+                    "id": "1232",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/png",
+                      "uri": "https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png"
+                    },
+                    "width": 100
+                  }
+                ]
+              },
+              "extensions": [
+              ],
+              "id": "5480",
+              "sequence": 1
+            }
+          ]
+        },
+        "errors": [
+          "http://example.com/error"
+        ],
+        "extensions": [
+        ],
+        "followAdditionalWrappers": true,
+        "id": "20011",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "uri": "http://example.com/track/impression"
+          }
+        ],
+        "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml",
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}

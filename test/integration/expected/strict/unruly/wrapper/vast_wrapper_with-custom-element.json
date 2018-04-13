@@ -15,24 +15,22 @@
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "NonLinearAds",
+              "_type": "Creative",
               "extensions": [
               ],
-              "nonLinears": [
-                {
-                  "_type": "NonLinear",
-                  "clickTrackings": [
-                    {
-                      "_type": "Click",
-                      "uri": "http://example.com/click"
-                    }
-                  ]
-                }
-              ],
-              "trackingEvents": {
-                "_type": "TrackingEvents",
-                "_value": {
-                }
+              "nonLinearAds": {
+                "_type": "NonLinearAds",
+                "nonLinears": [
+                  {
+                    "_type": "NonLinear",
+                    "clickTrackings": [
+                      {
+                        "_type": "Click",
+                        "uri": "http://example.com/click"
+                      }
+                    ]
+                  }
+                ]
               }
             }
           ]
@@ -43,11 +41,10 @@
         "extensions": [
           {
             "_type": "Extension",
-            "content": "<Extension>\n                    <CustomElement id=\"uuid\">customThing</CustomElement>\n                    <CustomArray>\n                        <CustomElement customId=\"stuff\">\n                            <![CDATA[customData]]>\n                        </CustomElement>\n                        <CustomElement customId=\"things\">\n                            <![CDATA[moreCustomData]]>\n                        </CustomElement>\n                    </CustomArray>\n                </Extension>"
+            "xmlElement": "<Extension>\n                    <CustomElement id=\"uuid\">customThing</CustomElement>\n                    <CustomArray>\n                        <CustomElement customId=\"stuff\">\n                            <![CDATA[customData]]>\n                        </CustomElement>\n                        <CustomElement customId=\"things\">\n                            <![CDATA[moreCustomData]]>\n                        </CustomElement>\n                    </CustomArray>\n                </Extension>"
           }
         ],
-        "fallbackOnNoAd": false,
-        "followAdditionalWrappers": false,
+        "followAdditionalWrappers": true,
         "id": "1",
         "impressions": [
           {
@@ -59,7 +56,9 @@
             "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
           }
         ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_123.xml"
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_123.xml",
+        "verifications": [
+        ]
       }
     ]
   },

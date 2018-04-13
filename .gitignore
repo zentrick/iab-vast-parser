@@ -1,7 +1,9 @@
 [Tt]humbs.db
 .DS_Store
 npm-debug.log
+yarn-error.log
 
 /node_modules/
 /lib/
 /coverage/
+/.nyc_output/

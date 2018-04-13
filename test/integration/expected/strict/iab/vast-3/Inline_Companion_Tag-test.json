@@ -1,0 +1,172 @@
+{
+  "_type": "VAST",
+  "ads": {
+    "_type": "SortedList",
+    "_value": [
+      {
+        "_type": "InLine",
+        "adSystem": {
+          "_type": "AdSystem",
+          "name": "iabtechlab",
+          "version": "4.0"
+        },
+        "adTitle": "VAST 4.0 Pilot - Scenario 5",
+        "categories": [
+        ],
+        "creatives": {
+          "_type": "SortedList",
+          "_value": [
+            {
+              "_type": "Creative",
+              "companionAds": {
+                "_type": "CompanionAds",
+                "companions": [
+                  {
+                    "_type": "Companion",
+                    "assetHeight": "200",
+                    "assetWidth": "250",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "uri": "https://iabtechlab.com"
+                    },
+                    "clickTrackings": [
+                    ],
+                    "expandedHeight": 250,
+                    "expandedWidth": 350,
+                    "height": 250,
+                    "id": "1232",
+                    "resource": {
+                      "_type": "StaticResource",
+                      "creativeType": "image/png",
+                      "uri": "https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png"
+                    },
+                    "width": 300
+                  }
+                ]
+              },
+              "extensions": [
+              ],
+              "id": "5480",
+              "sequence": 1
+            },
+            {
+              "_type": "Creative",
+              "extensions": [
+              ],
+              "id": "5480",
+              "linear": {
+                "_type": "Linear",
+                "duration": 16,
+                "icons": [
+                ],
+                "interactiveCreativeFiles": [
+                ],
+                "mediaFiles": [
+                  {
+                    "_type": "MediaFile",
+                    "bitrate": 500,
+                    "codec": "0",
+                    "delivery": "progressive",
+                    "height": 300,
+                    "id": "5241",
+                    "maintainAspectRatio": true,
+                    "maxBitrate": 1080,
+                    "minBitrate": 360,
+                    "scalable": true,
+                    "type": "video/mp4",
+                    "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
+                    "width": 400
+                  }
+                ],
+                "trackingEvents": {
+                  "_type": "TrackingEvents",
+                  "_value": {
+                    "complete": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/complete"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/firstQuartile"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/midpoint"
+                      }
+                    ],
+                    "start": [
+                      {
+                        "_type": "TrackingEvent",
+                        "offset": {
+                          "_type": "AbsoluteTimeOffset",
+                          "value": 33323
+                        },
+                        "uri": "http://example.com/tracking/start"
+                      }
+                    ],
+                    "thirdQuartile": [
+                      {
+                        "_type": "TrackingEvent",
+                        "uri": "http://example.com/tracking/thirdQuartile"
+                      }
+                    ]
+                  }
+                },
+                "videoClicks": {
+                  "_type": "VideoClicks",
+                  "clickTrackings": [
+                    {
+                      "_type": "Click",
+                      "id": "blog",
+                      "uri": "https://iabtechlab.com"
+                    }
+                  ],
+                  "customClicks": [
+                  ]
+                }
+              },
+              "sequence": 1
+            }
+          ]
+        },
+        "description": "This is sample companion ad tag with Linear ad tag. This tag while showing video ad on the player, will show a companion ad beside the player where it can be fitted. At most 3 companion ads can be placed. Modify accordingly to see your own content.",
+        "errors": [
+          "http://example.com/error"
+        ],
+        "extensions": [
+          {
+            "_type": "Extension",
+            "type": "iab-Count",
+            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
+          }
+        ],
+        "id": "20004",
+        "impressions": [
+          {
+            "_type": "Impression",
+            "id": "Impression-ID",
+            "uri": "http://example.com/track/impression"
+          }
+        ],
+        "pricing": {
+          "_type": "Pricing",
+          "currency": "USD",
+          "model": "cpm",
+          "value": 25
+        },
+        "surveys": [
+        ],
+        "verifications": [
+        ]
+      }
+    ]
+  },
+  "errors": [
+  ],
+  "version": "3.0"
+}
