@@ -36,8 +36,8 @@
                     "viewTrackings": [
                     ],
                     "width": 100,
-                    "xPosition": 10,
-                    "yPosition": 20
+                    "xPosition": "right",
+                    "yPosition": "bottom"
                   }
                 ],
                 "interactiveCreativeFiles": [

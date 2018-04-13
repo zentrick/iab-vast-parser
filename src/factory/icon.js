@@ -5,13 +5,17 @@ import createIconClicks from './icon-clicks'
 import hasValue from '../util/has-value'
 import isNonEmptyArray from '../util/is-non-empty-array'
 
+const parsePosition = (str, allowed) => (str == null) ? str
+  : (allowed.indexOf(str) < 0) ? parseInt(str, 0)
+    : str
+
 export default ($icon) => {
   const icon = new Icon()
   icon.program = $icon.program
   icon.width = $icon.width
   icon.height = $icon.height
-  icon.xPosition = $icon.xPosition
-  icon.yPosition = $icon.yPosition
+  icon.xPosition = parsePosition($icon.xPosition, ['left', 'right'])
+  icon.yPosition = parsePosition($icon.yPosition, ['top', 'bottom'])
   icon.duration = $icon.duration
   icon.offset = $icon.offset
   icon.apiFramework = $icon.apiFramework
