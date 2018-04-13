@@ -28,10 +28,10 @@ Currently, one `option` is supported: you can pass in a `DOMParser` instance
 via the `domParser` key. If you don't do so, a new `DOMParser` will be created
 on the fly.
 
-## Maintainer
+## Maintainers
 
-[Tim De Pauw](https://github.com/timdp)
-[Christophe Bonello](https://github.com/cbonello)
+- [Tim De Pauw](https://github.com/timdp)
+- [Christophe Bonello](https://github.com/cbonello)
 
 ## License
 
