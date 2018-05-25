@@ -20,8 +20,5 @@ export default ($verification) => {
   if ($verification.verificationParameters != null) {
     verification.parameters = $verification.verificationParameters._value
   }
-  if ($verification.adSwapDecision != null) {
-    verification.adSwapDecision = ($verification.adSwapDecision === 'true')
-  }
   return verification
 }
