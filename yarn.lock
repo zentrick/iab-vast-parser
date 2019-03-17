@@ -1834,9 +1834,10 @@ har-validator@~5.0.3:
     ajv "^5.1.0"
     har-schema "^2.0.0"
 
-hard-rejection@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hard-rejection/-/hard-rejection-1.0.0.tgz#8f3b476c8e2f221bed73c64640fe217d717dac36"
+hard-rejection@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hard-rejection/-/hard-rejection-2.0.0.tgz#3831e0e6cd26280b261c0686ca3181af575fca1f"
+  integrity sha512-3u5up+jmoSJjmudS3Z3AuqD0pH586torAxsqRFbWT5Zx4fKv3LQj5aWdNJkkSX+VVdSIkf01NJhz+CAF5JtBMw==
 
 has-ansi@^2.0.0:
   version "2.0.0"
