@@ -51,7 +51,7 @@
     "hard-rejection": "^1.0.0",
     "in-publish": "^2.0.0",
     "json-stable-stringify": "^1.0.1",
-    "mocha": "^5.0.2",
+    "mocha": "^6.2.0",
     "mocha-junit-reporter": "^1.17.0",
     "normalize-newline": "^3.0.0",
     "nyc": "^11.4.1",
