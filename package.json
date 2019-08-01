@@ -18,7 +18,8 @@
   "files": [
     "src/",
     "lib/",
-    "index.js"
+    "index.js",
+    "browser.js"
   ],
   "scripts": {
     "build": "rimraf lib && babel src -d lib",
