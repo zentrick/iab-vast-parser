@@ -3,8 +3,7 @@
   "version": "1.0.3",
   "description": "Parses IAB VAST tags into iab-vast-model objects.",
   "main": "index.js",
-  "jsnext:main": "src/parse.js",
-  "browser": "browser.js",
+  "browser": "src/parse.js",
   "author": "Zentrick nv (https://www.zentrick.com/)",
   "contributors": [
     "Tim De Pauw <tim.depauw@zentrick.com>",
