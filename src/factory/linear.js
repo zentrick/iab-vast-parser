@@ -1,4 +1,4 @@
-import {Linear, VideoClicks, TrackingEvents} from 'iab-vast-model'
+import { Linear, VideoClicks, TrackingEvents } from 'iab-vast-model'
 import createMediaFile from './media-file'
 import createInteractiveMediaFile from './interactive-creative-file'
 import createIcon from './icon'

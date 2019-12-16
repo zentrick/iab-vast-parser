@@ -1,4 +1,4 @@
-import {CompanionAds} from 'iab-vast-model'
+import { CompanionAds } from 'iab-vast-model'
 import createCompanion from './companion'
 
 export default ($creative) => {

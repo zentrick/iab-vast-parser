@@ -1,4 +1,4 @@
-import {Companion, TrackingEvents} from 'iab-vast-model'
+import { Companion, TrackingEvents } from 'iab-vast-model'
 import createClick from './click'
 import createResource from './resource'
 import mapTrackingEvents from '../util/map-tracking-events'

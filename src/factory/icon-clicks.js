@@ -1,4 +1,4 @@
-import {IconClicks} from 'iab-vast-model'
+import { IconClicks } from 'iab-vast-model'
 import createClick from './click'
 import hasValue from '../util/has-value'
 

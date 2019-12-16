@@ -1,4 +1,4 @@
-import {Impression} from 'iab-vast-model'
+import { Impression } from 'iab-vast-model'
 
 export default ($impression) => {
   const impression = new Impression()

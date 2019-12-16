@@ -1,4 +1,4 @@
-import {getText, getChildren, isElement} from './dom'
+import { getText, getChildren, isElement } from './dom'
 import convertors from './convertors'
 
 const toProperty = (() => {
@@ -12,7 +12,7 @@ const hasPair = (map, parentName, childName) =>
   (map[parentName] != null && ~map[parentName].indexOf(childName))
 
 export default class Unmarshaler {
-  constructor ({collections, freeforms, types}) {
+  constructor ({ collections, freeforms, types }) {
     this._collections = collections
     this._freeforms = freeforms
     this._types = types

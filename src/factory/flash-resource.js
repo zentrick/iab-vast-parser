@@ -1,4 +1,4 @@
-import {FlashResource} from 'iab-vast-model'
+import { FlashResource } from 'iab-vast-model'
 
 export default ($flashResource) => {
   const res = new FlashResource()

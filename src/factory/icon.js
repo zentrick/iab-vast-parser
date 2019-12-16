@@ -1,4 +1,4 @@
-import {Icon} from 'iab-vast-model'
+import { Icon } from 'iab-vast-model'
 import createResource from './resource'
 import createClick from './click'
 import createIconClicks from './icon-clicks'

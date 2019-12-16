@@ -1,4 +1,4 @@
-import {AbsoluteTimeOffset, RelativeTimeOffset} from 'iab-vast-model'
+import { AbsoluteTimeOffset, RelativeTimeOffset } from 'iab-vast-model'
 import parseTime from '../util/parse-time'
 
 export default (offsetStr, options, err) => {

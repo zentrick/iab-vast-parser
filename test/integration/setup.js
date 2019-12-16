@@ -17,10 +17,10 @@ const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
       it(item, async () => {
         const fixture = await fs.readFile(fixtPath, 'utf8')
         const expected = JSON.parse(await fs.readFile(expPath, 'utf8'))
-        const actual = marshal(parse(fixture, {strict: strict}))
+        const actual = marshal(parse(fixture, { strict: strict }))
         expect(actual).to.eql(expected)
         if (!strict) {
-          expect(() => parse(fixture, {strict: true})).to.throw(Error)
+          expect(() => parse(fixture, { strict: true })).to.throw(Error)
         }
       })
     } else {
@@ -33,7 +33,7 @@ const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
 
 const createTree = dir => {
   const root = Object.create(null)
-  for (const expFile of globule.find({cwd: dir, src: '**/*.json'})) {
+  for (const expFile of globule.find({ cwd: dir, src: '**/*.json' })) {
     const dirs = expFile.split('/')
     const file = dirs.pop()
     const id = path.basename(file, '.json')

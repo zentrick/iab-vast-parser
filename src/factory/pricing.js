@@ -1,4 +1,4 @@
-import {Pricing} from 'iab-vast-model'
+import { Pricing } from 'iab-vast-model'
 
 export default ($pricing) => {
   const pricing = new Pricing()

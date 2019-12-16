@@ -1,4 +1,4 @@
-import {CreativeExtension} from 'iab-vast-model'
+import { CreativeExtension } from 'iab-vast-model'
 
 export default ($creativeExtension) => {
   const creativeExtension = new CreativeExtension()

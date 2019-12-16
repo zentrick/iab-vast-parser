@@ -1,4 +1,4 @@
-import {IFrameResource} from 'iab-vast-model'
+import { IFrameResource } from 'iab-vast-model'
 
 export default ($iFrameResource) => {
   const res = new IFrameResource()

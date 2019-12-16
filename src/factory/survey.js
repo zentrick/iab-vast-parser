@@ -1,4 +1,4 @@
-import {Survey} from 'iab-vast-model'
+import { Survey } from 'iab-vast-model'
 
 export default ($survey) => {
   const survey = new Survey()

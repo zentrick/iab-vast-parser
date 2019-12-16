@@ -1,4 +1,4 @@
-import {Wrapper} from 'iab-vast-model'
+import { Wrapper } from 'iab-vast-model'
 import inheritAd from '../inherit/ad'
 
 export default ($ad, options) => {

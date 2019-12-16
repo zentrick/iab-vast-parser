@@ -1,4 +1,4 @@
-import {JavaScriptResource} from 'iab-vast-model'
+import { JavaScriptResource } from 'iab-vast-model'
 
 export default ($javascriptResource) => {
   const res = new JavaScriptResource()

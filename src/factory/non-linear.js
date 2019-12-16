@@ -1,4 +1,4 @@
-import {NonLinear} from 'iab-vast-model'
+import { NonLinear } from 'iab-vast-model'
 import createResource from './resource'
 import createClick from './click'
 import hasValue from '../util/has-value'

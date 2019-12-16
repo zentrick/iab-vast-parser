@@ -1,4 +1,4 @@
-import {DOMParser} from 'xmldom'
+import { DOMParser } from 'xmldom'
 import parse from './parse'
 
 export default (xml, options = {}) => {

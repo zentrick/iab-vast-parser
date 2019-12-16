@@ -1,4 +1,4 @@
-import {InLine} from 'iab-vast-model'
+import { InLine } from 'iab-vast-model'
 import inheritAd from '../inherit/ad'
 import createCategory from './category'
 import createSurvey from './survey'

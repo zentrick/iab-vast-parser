@@ -1,4 +1,4 @@
-import {ViewableImpression} from 'iab-vast-model'
+import { ViewableImpression } from 'iab-vast-model'
 
 export default ($viewableImpression) => {
   const viewableImpression = new ViewableImpression()

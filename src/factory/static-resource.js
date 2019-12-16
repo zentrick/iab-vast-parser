@@ -1,4 +1,4 @@
-import {StaticResource} from 'iab-vast-model'
+import { StaticResource } from 'iab-vast-model'
 
 export default ($staticResource) => {
   const res = new StaticResource()

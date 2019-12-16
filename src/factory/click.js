@@ -1,4 +1,4 @@
-import {Click} from 'iab-vast-model'
+import { Click } from 'iab-vast-model'
 
 export default ($click) => {
   const click = new Click()

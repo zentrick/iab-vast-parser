@@ -1,4 +1,4 @@
-import {TrackingEvent} from 'iab-vast-model'
+import { TrackingEvent } from 'iab-vast-model'
 import createTimeOffset from '../factory/time-offset'
 import isNonEmptyString from './is-non-empty-string'
 

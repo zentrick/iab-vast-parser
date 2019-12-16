@@ -1,4 +1,4 @@
-import {Creative} from 'iab-vast-model'
+import { Creative } from 'iab-vast-model'
 import createUniversalAdId from '../factory/universal-ad-id'
 import createCreativeExtension from '../factory/creative-extension'
 import createLinear from './linear'

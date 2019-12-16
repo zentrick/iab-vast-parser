@@ -1,4 +1,4 @@
-import {NonLinearAds, TrackingEvents} from 'iab-vast-model'
+import { NonLinearAds, TrackingEvents } from 'iab-vast-model'
 import createNonLinear from './non-linear'
 import mapTrackingEvents from '../util/map-tracking-events'
 import isNonEmptyArray from '../util/is-non-empty-array'

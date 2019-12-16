@@ -1,4 +1,4 @@
-import {MediaFile} from 'iab-vast-model'
+import { MediaFile } from 'iab-vast-model'
 
 export default ($mediaFile) => {
   const mediaFile = new MediaFile()

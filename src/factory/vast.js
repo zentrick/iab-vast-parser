@@ -1,4 +1,4 @@
-import {VAST, AdPod} from 'iab-vast-model'
+import { VAST, AdPod } from 'iab-vast-model'
 import createAd from './ad'
 
 const triageAds = ($$ads) => {

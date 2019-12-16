@@ -1,4 +1,4 @@
-import {Category} from 'iab-vast-model'
+import { Category } from 'iab-vast-model'
 
 export default ($category) => {
   const category = new Category()

@@ -1,4 +1,4 @@
-import {Verification} from 'iab-vast-model'
+import { Verification } from 'iab-vast-model'
 import createJavaScriptResource from './javascript-resource'
 import createFlashResource from './flash-resource'
 

@@ -1,4 +1,4 @@
-import {InteractiveCreativeFile} from 'iab-vast-model'
+import { InteractiveCreativeFile } from 'iab-vast-model'
 
 export default ($interactiveCreativeFile) => {
   const interactiveCreativeFile = new InteractiveCreativeFile()

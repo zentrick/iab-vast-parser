@@ -1,4 +1,4 @@
-import {HTMLResource} from 'iab-vast-model'
+import { HTMLResource } from 'iab-vast-model'
 
 export default ($htmlResource) => {
   const res = new HTMLResource()

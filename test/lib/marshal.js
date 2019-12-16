@@ -1,5 +1,5 @@
-const {TrackingEvents, SortedList} = require('iab-vast-model')
-const {XMLSerializer} = require('xmldom')
+const { TrackingEvents, SortedList } = require('iab-vast-model')
+const { XMLSerializer } = require('xmldom')
 const normalizeNewline = require('normalize-newline')
 
 const getPropertyNames = (proto) => {

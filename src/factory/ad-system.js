@@ -1,4 +1,4 @@
-import {AdSystem} from 'iab-vast-model'
+import { AdSystem } from 'iab-vast-model'
 
 export default ($adSystem) => {
   const adSystem = new AdSystem()
