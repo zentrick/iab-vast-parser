@@ -1,6 +1,6 @@
 {
   "name": "iab-vast-parser",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Parses IAB VAST tags into iab-vast-model objects.",
   "main": "index.js",
   "browser": "src/parse.js",
