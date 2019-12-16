@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="preroll-2">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5773100</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration/>
+            <MediaFiles>
+              <MediaFile height="270" width="370" type="application/x-shockwave-flash"><![CDATA[http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
