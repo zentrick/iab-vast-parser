@@ -10,7 +10,7 @@
     "Christophe Bonello <christophe.bonello@zentrick.com>"
   ],
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "yarn": "*"
   },
   "license": "MIT",

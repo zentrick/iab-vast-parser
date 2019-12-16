@@ -9,7 +9,7 @@ defaults: &defaults
           curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
           echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
           sudo apt-get update
-          sudo apt-get install --no-install-recommends yarn=1.5.1-1
+          sudo apt-get install --no-install-recommends yarn=1.21.1-1
     - checkout
     - restore_cache:
         keys:
@@ -40,17 +40,17 @@ defaults: &defaults
 
 version: 2
 jobs:
-  "node-6":
-    <<: *defaults
-    docker:
-      - image: circleci/node:6
-  "node-8":
+  node-8:
     <<: *defaults
     docker:
       - image: circleci/node:8
+  node-10:
+    <<: *defaults
+    docker:
+      - image: circleci/node:10
 workflows:
   version: 2
   build:
     jobs:
-      - "node-6"
-      - "node-8"
+      - node-8
+      - node-10
