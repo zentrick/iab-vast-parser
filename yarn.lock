@@ -4253,9 +4253,10 @@ xml@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
 
-xmldom@^0.1.22:
-  version "0.1.27"
-  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
+xmldom@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.2.0.tgz#db4673b823ad924015be97fe9f8f98ded342e711"
+  integrity sha512-05/9Fz/ZJadHvDy8HVqdoeljUgjtt5xCUy86mCjFHfbnhUqPfY5ufPwsXfcOadElBOSXfV3SiGLTHtkZxyoiEQ==
 
 xtend@^4.0.1:
   version "4.0.1"
