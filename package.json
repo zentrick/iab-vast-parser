@@ -33,7 +33,7 @@
     "iab-vast-model": "^1.0.1"
   },
   "optionalDependencies": {
-    "xmldom": "^0.1.22"
+    "xmldom": "^0.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
