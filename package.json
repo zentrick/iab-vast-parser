@@ -50,7 +50,7 @@
     "hard-rejection": "^2.1.0",
     "in-publish": "^2.0.0",
     "json-stable-stringify": "^1.0.1",
-    "mocha": "^5.0.2",
+    "mocha": "^7.0.1",
     "mocha-junit-reporter": "^1.23.1",
     "normalize-newline": "^3.0.0",
     "nyc": "^11.4.1",
