@@ -10,12 +10,11 @@
           "adSystem": {
             "_type": "AdSystem",
             "name": "iabtechlab",
-            "version": "4.0"
+            "version": "1"
           },
           "adTitle": "VAST 4.0 Pilot - Scenario 5",
           "categories": [
           ],
-          "conditionalAd": "false",
           "creatives": {
             "_type": "SortedList",
             "_value": [
@@ -32,19 +31,21 @@
                       "_type": "NonLinear",
                       "clickThrough": {
                         "_type": "Click",
-                        "uri": "http://iabtechlab.com"
+                        "uri": "https://iabtechlab.com"
                       },
                       "clickTrackings": [
                         {
                           "_type": "Click",
-                          "uri": "http://example.com/trackingurl/clickTracking"
+                          "uri": "https://example.com/tracking/clickTracking"
                         }
                       ],
+                      "height" : 350,
                       "resource": {
                         "_type": "StaticResource",
                         "creativeType": "image/png",
-                        "uri": "http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg"
-                      }
+                        "uri": "https://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg"
+                      },
+                      "width": 350
                     }
                   ]
                 },
@@ -53,14 +54,14 @@
                   "_type": "UniversalAdId",
                   "creativeIdentifier": "8465",
                   "idRegistry": "Ad-ID",
-                  "idValue": "8465"
+                  "idValue" : "unknown"
                 }
               }
             ]
           },
           "description": "VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.",
           "errors": [
-            "http://example.com/error"
+            "https://example.com/error"
           ],
           "extensions": [
             {
@@ -74,7 +75,7 @@
             {
               "_type": "Impression",
               "id": "Impression-ID",
-              "uri": "http://example.com/track/impression"
+              "uri": "https://example.com/track/impression"
             }
           ],
           "pricing": {
@@ -99,5 +100,5 @@
   },
   "errors": [
   ],
-  "version": "4.0"
+  "version": "4.2"
 }
