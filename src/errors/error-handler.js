@@ -1,10 +1,8 @@
 import VASTParserError from './vast-parser-error'
 
-const _strictMode = Symbol('strictMode')
-
 export default class ErrorHandler {
   constructor (strict) {
-    this[_strictMode] = strict
+    this._strictMode = strict
   }
 
   fail (error, errorCode = 101) {
@@ -15,7 +13,7 @@ export default class ErrorHandler {
   }
 
   tryRecover (error, errorCode = 101) {
-    if (this[_strictMode]) {
+    if (this._strictMode) {
       this.fail(error, errorCode)
     }
   }
