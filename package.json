@@ -30,7 +30,8 @@
   "repository": "zentrick/iab-vast-parser",
   "bugs": "https://github.com/zentrick/iab-vast-parser/issues",
   "dependencies": {
-    "iab-vast-model": "^1.0.1"
+    "iab-vast-model": "^1.0.1",
+    "es6-error": "4.1.1"
   },
   "optionalDependencies": {
     "xmldom": "^0.1.22"

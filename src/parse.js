@@ -1,8 +1,7 @@
 import Unmarshaler from './xml/unmarshaler'
 import schema from './vast/schema'
 import createVAST from './factory/vast'
-import strictHandler from './errors/strict'
-import looseHandler from './errors/loose'
+import ErrorHandler from './errors/error-handler'
 
 const DEFAULT_OPTIONS = {
   strict: false,
@@ -17,14 +16,21 @@ const toElement = (xml, options) => {
   if (xml.documentElement != null) {
     xml = xml.documentElement
   }
+  if (xml.getElementsByTagName('parsererror').length > 0) {
+    options.errorHandler.fail('XML parsing error', 100)
+  }
   return xml
 }
 
 export default (xml, options = {}) => {
   options = Object.assign({}, DEFAULT_OPTIONS, options)
-  options.errorHandler = options.strict ? strictHandler : looseHandler
-  const elem = toElement(xml, options)
+  options.errorHandler = new ErrorHandler(options.strict)
+  const element = toElement(xml, options)
   const unmarshaler = new Unmarshaler(schema)
-  const root = unmarshaler.unmarshal(elem)
-  return createVAST(root, options)
+  try {
+    const root = unmarshaler.unmarshal(element)
+    return createVAST(root, options)
+  } catch (error) {
+    options.errorHandler.fail(error)
+  }
 }

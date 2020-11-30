@@ -17,8 +17,8 @@ export default ($trackingEvents, trackingEvents, options) => {
     if (isNonEmptyString($tracking.offset)) {
       try {
         conf.offset = createTimeOffset($tracking.offset)
-      } catch (err) {
-        options.errorHandler(err)
+      } catch (error) {
+        options.errorHandler.tryRecover(error)
       }
     }
     trackingEvents.add($tracking.event, conf)
