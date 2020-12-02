@@ -11,8 +11,8 @@ export default (offsetStr, options, err) => {
     const offset = new AbsoluteTimeOffset()
     try {
       offset.value = parseTime(offsetStr)
-    } catch (err) {
-      options.errorHandler(err)
+    } catch (error) {
+      options.errorHandler.tryRecover(error)
     }
     return offset
   }

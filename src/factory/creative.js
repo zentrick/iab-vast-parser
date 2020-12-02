@@ -29,7 +29,7 @@ export default ($creative, options) => {
   }
   if (creative.linear == null && creative.nonLinearAds == null &&
       creative.companionAds == null) {
-    options.errorHandler(new Error('Creative has no ads'))
+    options.errorHandler.tryRecover('Creative has no ads')
   }
   return creative
 }

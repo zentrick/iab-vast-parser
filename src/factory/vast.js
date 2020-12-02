@@ -15,7 +15,7 @@ const triageAds = ($$ads) => {
   return [$$adsWithSequence, $$adsWithoutSequence]
 }
 
-const createVAST = ($vast, options) => {
+export default ($vast, options) => {
   const vast = new VAST()
   vast.version = $vast.version
   vast.errors.push(...$vast.error
@@ -37,12 +37,4 @@ const createVAST = ($vast, options) => {
     vast.ads.add(createAd($$adsWithoutSequence[i], options))
   }
   return vast
-}
-
-export default ($vast, options) => {
-  try {
-    return createVAST($vast, options)
-  } catch (err) {
-    options.errorHandler(err)
-  }
 }

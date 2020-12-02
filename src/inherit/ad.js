@@ -37,8 +37,8 @@ export default ($ad, $impl, ad, options) => {
       try {
         const verification = createVerification($verification, options)
         ad.verifications.push(verification)
-      } catch (err) {
-        options.errorHandler(err)
+      } catch (error) {
+        options.errorHandler.tryRecover(error)
       }
     })
   }
@@ -50,8 +50,8 @@ export default ($ad, $impl, ad, options) => {
       try {
         const creative = createCreative($creative, options)
         ad.creatives.add(creative)
-      } catch (err) {
-        options.errorHandler(err)
+      } catch (error) {
+        options.errorHandler.tryRecover(error)
       }
     })
   }

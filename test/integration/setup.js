@@ -3,6 +3,7 @@ import path from 'path'
 import fs from 'fs-extra'
 import marshal from '../lib/marshal'
 import parse from '../../src/'
+import VASTParserError from '../../src/errors/vast-parser-error'
 
 const strictFixturesRoot = path.resolve(__dirname, '../fixtures/strict')
 const strictExpectedRoot = path.resolve(__dirname, 'expected/strict')
@@ -20,7 +21,7 @@ const describeTree = (node, expectedRoot, fixturesRoot, strict) => {
         const actual = marshal(parse(fixture, { strict: strict }))
         expect(actual).to.eql(expected)
         if (!strict) {
-          expect(() => parse(fixture, { strict: true })).to.throw(Error)
+          expect(() => parse(fixture, { strict: true })).to.throw(VASTParserError)
         }
       })
     } else {
