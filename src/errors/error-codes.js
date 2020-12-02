@@ -1,0 +1,4 @@
+export default {
+  XML_PARSING_ERROR: 100,
+  VAST_SCHEMA_VALIDATION_ERROR: 101
+}

@@ -1,6 +1,7 @@
 import Unmarshaler from './xml/unmarshaler'
 import schema from './vast/schema'
 import createVAST from './factory/vast'
+import Errors from './errors/error-codes'
 import ErrorHandler from './errors/error-handler'
 
 const DEFAULT_OPTIONS = {
@@ -17,7 +18,7 @@ const toElement = (xml, options) => {
     xml = xml.documentElement
   }
   if (xml.getElementsByTagName('parsererror').length > 0) {
-    options.errorHandler.fail('XML parsing error', 100)
+    options.errorHandler.failWithErrorCode('XML parsing error', Errors.XML_PARSING_ERROR)
   }
   return xml
 }
