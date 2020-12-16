@@ -1,0 +1,179 @@
+{
+  "_type": "VAST",
+  "adPod": {
+    "_type": "AdPod",
+    "ads": {
+      "_type": "SortedList",
+      "_value": [
+        {
+          "_type": "InLine",
+          "adSystem": {
+            "_type": "AdSystem",
+            "name": "iabtechlab",
+            "version": "1"
+          },
+          "adTitle": "iabtechlab video ad",
+          "categories": [],
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "_type": "Creative",
+                "adID": "2447226",
+                "extensions": [],
+                "id": "5480",
+                "linear": {
+                  "_type": "Linear",
+                  "duration": 16,
+                  "icons": [
+                    {
+                      "_type": "Icon",
+                      "viewTrackings": []
+                    }
+                  ],
+                  "interactiveCreativeFiles": [],
+                  "mediaFiles": [
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 2000,
+                      "codec": "H.264",
+                      "delivery": "progressive",
+                      "height": 720,
+                      "id": "5241",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 2500,
+                      "minBitrate": 1500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4",
+                      "width": 1280
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 1000,
+                      "codec": "H.264",
+                      "delivery": "progressive",
+                      "height": 480,
+                      "id": "5244",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 1500,
+                      "minBitrate": 700,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-mid-resolution.mp4",
+                      "width": 854
+                    },
+                    {
+                      "_type": "MediaFile",
+                      "bitrate": 600,
+                      "codec": "H.264",
+                      "delivery": "progressive",
+                      "height": 360,
+                      "id": "5246",
+                      "maintainAspectRatio": true,
+                      "maxBitrate": 700,
+                      "minBitrate": 500,
+                      "scalable": true,
+                      "type": "video/mp4",
+                      "uri": "https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-low-resolution.mp4",
+                      "width": 640
+                    }
+                  ],
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "complete": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "https://example.com/tracking/complete"
+                        }
+                      ],
+                      "firstQuartile": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "https://example.com/tracking/firstQuartile"
+                        }
+                      ],
+                      "midpoint": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "https://example.com/tracking/midpoint"
+                        }
+                      ],
+                      "progress": [
+                        {
+                          "_type": "TrackingEvent",
+                          "offset": {
+                            "_type": "AbsoluteTimeOffset",
+                            "value": 10
+                          },
+                          "uri": "http://example.com/tracking/progress-10"
+                        }
+                      ],
+                      "start": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "https://example.com/tracking/start"
+                        }
+                      ],
+                      "thirdQuartile": [
+                        {
+                          "_type": "TrackingEvent",
+                          "uri": "https://example.com/tracking/thirdQuartile"
+                        }
+                      ]
+                    }
+                  },
+                  "videoClicks": {
+                    "_type": "VideoClicks",
+                    "clickThrough": {
+                      "_type": "Click",
+                      "id": "blog",
+                      "uri": "https://iabtechlab.com"
+                    },
+                    "clickTrackings": [],
+                    "customClicks": []
+                  }
+                },
+                "sequence": 1,
+                "universalAdId": {
+                  "_type": "UniversalAdId",
+                  "creativeIdentifier": "8465",
+                  "idRegistry": "Ad-ID",
+                  "idValue": "unknown"
+                }
+              }
+            ]
+          },
+          "errors": [
+            "https://example.com/error"
+          ],
+          "extensions": [],
+          "id": "20001",
+          "impressions": [
+            {
+              "_type": "Impression",
+              "id": "Impression-ID",
+              "uri": "https://example.com/track/impression"
+            }
+          ],
+          "pricing": {
+            "_type": "Pricing",
+            "currency": "USD",
+            "model": "cpm",
+            "value": 25
+          },
+          "sequence": 1,
+          "surveys": [],
+          "verifications": []
+        }
+      ]
+    }
+  },
+  "ads": {
+    "_type": "SortedList",
+    "_value": []
+  },
+  "errors": [],
+  "version": "4.2"
+}

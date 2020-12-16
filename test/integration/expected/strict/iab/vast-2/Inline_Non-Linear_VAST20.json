@@ -1,0 +1,65 @@
+{
+  "_type": "VAST",
+    "ads": {
+        "_type": "SortedList",
+        "_value": [
+          {
+            "_type": "InLine",
+            "adSystem": {
+              "_type": "AdSystem",
+              "name": "2.0"
+            },
+            "adTitle": "5750100",
+            "categories": [],
+            "creatives": {
+              "_type": "SortedList",
+              "_value": [
+                {
+                  "_type": "Creative",
+                  "extensions": [],
+                  "nonLinearAds": {
+                    "_type": "NonLinearAds",
+                    "nonLinears": [
+                      {
+                        "_type": "NonLinear",
+                        "clickThrough": {
+                          "_type": "Click",
+                          "uri": "http://iabtechlab.com"
+                        },
+                        "clickTrackings": [],
+                        "height": 150,
+                        "maintainAspectRatio": true,
+                        "minSuggestedDuration": 5,
+                        "resource": {
+                          "_type": "StaticResource",
+                          "creativeType": "image/png",
+                          "uri": "http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg"
+                        },
+                        "scalable": true,
+                        "width": 480
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "errors": [
+              "myErrorUrl.com"
+            ],
+            "extensions": [],
+            "id": "overlay-1",
+            "impressions": [
+              {
+                "_type": "Impression",
+                "uri": "http://example.com/trackingurl/impression"
+              }
+            ],
+            "surveys": [],
+            "verifications": []
+          }
+        ]
+      },
+  "errors": [
+  ],
+  "version": "2.0"
+}
