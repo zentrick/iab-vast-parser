@@ -29,6 +29,10 @@ const freeforms = {
   Extensions: ['Extension']
 }
 
+const hybrids = [
+  'CompanionAds'
+]
+
 const types = {
   Ad: {
     sequence: TYPES.int
@@ -87,5 +91,6 @@ const types = {
 export default {
   collections,
   freeforms,
+  hybrids,
   types
 }

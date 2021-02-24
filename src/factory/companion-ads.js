@@ -8,5 +8,6 @@ export default ($creative) => {
   if ($companionAds.companion != null) {
     companionAds.companions.push(...$companionAds.companion.map(createCompanion))
   }
+  companionAds.xmlElement = $companionAds._value
   return companionAds
 }
