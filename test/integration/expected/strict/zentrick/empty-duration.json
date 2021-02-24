@@ -1,58 +1,48 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "2.0"
-        },
         "adTitle": "5773100",
-        "categories": [
-        ],
+        "categories": [],
+        "surveys": [],
+        "id": "preroll-2",
+        "adSystem": {
+          "name": "2.0",
+          "_type": "AdSystem"
+        },
+        "impressions": [],
+        "errors": [],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
                 "mediaFiles": [
                   {
-                    "_type": "MediaFile",
-                    "height": 270,
                     "type": "application/x-shockwave-flash",
+                    "width": 370,
+                    "height": 270,
                     "uri": "http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|7496075541100999745%26AI%3D0",
-                    "width": 370
+                    "_type": "MediaFile"
                   }
-                ]
-              }
+                ],
+                "interactiveCreativeFiles": [],
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-        ],
-        "extensions": [
-        ],
-        "id": "preroll-2",
-        "impressions": [
-        ],
-        "surveys": [
-        ],
-        "verifications": [
-        ]
+        "_type": "InLine"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

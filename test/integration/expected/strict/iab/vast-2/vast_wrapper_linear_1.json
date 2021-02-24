@@ -1,162 +1,148 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "Wrapper",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Acudeo Compatible"
-        },
+        "followAdditionalWrappers": true,
         "allowMultipleAds": false,
+        "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_linear.xml",
+        "id": "602833",
+        "adSystem": {
+          "name": "Acudeo Compatible",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "uri": "http://myTrackingURL/wrapper/impression",
+            "_type": "Impression"
+          }
+        ],
+        "errors": [
+          "http://myErrorURL/wrapper/error"
+        ],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
               "adID": "602833",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
-                    "complete": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/complete"
-                      }
-                    ],
                     "creativeView": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/creativeView"
-                      }
-                    ],
-                    "firstQuartile": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/firstQuartile"
-                      }
-                    ],
-                    "fullscreen": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/fullscreen"
-                      }
-                    ],
-                    "midpoint": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/midpoint"
-                      }
-                    ],
-                    "mute": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/mute"
-                      }
-                    ],
-                    "pause": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/pause"
-                      }
-                    ],
-                    "resume": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/resume"
+                        "uri": "http://myTrackingURL/wrapper/creativeView",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/start"
+                        "uri": "http://myTrackingURL/wrapper/start",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/midpoint",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/firstQuartile",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "thirdQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/thirdQuartile"
+                        "uri": "http://myTrackingURL/wrapper/thirdQuartile",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "complete": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/complete",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "mute": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/mute",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "unmute": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/wrapper/unmute"
+                        "uri": "http://myTrackingURL/wrapper/unmute",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "pause": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/pause",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "resume": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/resume",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "fullscreen": [
+                      {
+                        "uri": "http://myTrackingURL/wrapper/fullscreen",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
-                }
-              }
+                },
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
                 "videoClicks": {
-                  "_type": "VideoClicks",
+                  "customClicks": [],
                   "clickTrackings": [
                     {
-                      "_type": "Click",
-                      "uri": "http://myTrackingURL/wrapper/click"
+                      "uri": "http://myTrackingURL/wrapper/click",
+                      "_type": "Click"
                     }
                   ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                  "_type": "VideoClicks"
+                },
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
               "adID": "602833-NonLinearTracking",
-              "extensions": [
-              ],
+              "extensions": [],
               "nonLinearAds": {
-                "_type": "NonLinearAds",
-                "nonLinears": [
-                ]
-              }
+                "nonLinears": [],
+                "_type": "NonLinearAds"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-          "http://myErrorURL/wrapper/error"
-        ],
-        "extensions": [
-        ],
-        "followAdditionalWrappers": true,
-        "id": "602833",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://myTrackingURL/wrapper/impression"
-          }
-        ],
-        "vastAdTagURI": "http://demo.tremormedia.com/proddev/vast/vast_inline_linear.xml",
-        "verifications": [
-        ]
+        "_type": "Wrapper"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

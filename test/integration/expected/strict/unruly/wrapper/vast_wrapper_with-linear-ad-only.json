@@ -1,87 +1,79 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "Wrapper",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Test Ad Server",
-          "version": "1.0"
-        },
+        "followAdditionalWrappers": true,
         "allowMultipleAds": false,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
+        "id": "1",
+        "adSystem": {
+          "version": "1.0",
+          "name": "Test Ad Server",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "uri": "http://example.com/imp",
+            "_type": "Impression"
+          },
+          {
+            "uri": "http://example.com/another-imp",
+            "_type": "Impression"
+          }
+        ],
+        "errors": [
+          "http://example.com/error/ERRORCODE"
+        ],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
+                "videoClicks": {
+                  "customClicks": [],
+                  "clickTrackings": [
+                    {
+                      "id": "video_click",
+                      "uri": "http://example.com/linear-video-click",
+                      "_type": "Click"
+                    },
+                    {
+                      "id": "post_video_click",
+                      "uri": "http://example.com/linear-post-video-click",
+                      "_type": "Click"
+                    }
+                  ],
+                  "_type": "VideoClicks"
+                },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
                     "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/start"
+                        "uri": "http://example.com/start",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
                 },
-                "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickTrackings": [
-                    {
-                      "_type": "Click",
-                      "id": "video_click",
-                      "uri": "http://example.com/linear-video-click"
-                    },
-                    {
-                      "_type": "Click",
-                      "id": "post_video_click",
-                      "uri": "http://example.com/linear-post-video-click"
-                    }
-                  ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-          "http://example.com/error/ERRORCODE"
-        ],
-        "extensions": [
-        ],
-        "followAdditionalWrappers": true,
-        "id": "1",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://example.com/imp"
-          },
-          {
-            "_type": "Impression",
-            "uri": "http://example.com/another-imp"
-          }
-        ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
-        "verifications": [
-        ]
+        "_type": "Wrapper"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

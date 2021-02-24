@@ -1,180 +1,169 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Acudeo Compatible"
-        },
         "adTitle": "VAST 2.0 Instream Test 1",
-        "categories": [
+        "categories": [],
+        "description": "VAST 2.0 Instream Test 1",
+        "surveys": [],
+        "id": "601364",
+        "adSystem": {
+          "name": "Acudeo Compatible",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "uri": "http://myTrackingURL/impression",
+            "_type": "Impression"
+          }
         ],
+        "errors": [
+          "http://myErrorURL/error"
+        ],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
               "adID": "601364",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
                 "duration": 30,
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
                 "mediaFiles": [
                   {
-                    "_type": "MediaFile",
-                    "bitrate": 500,
                     "delivery": "progressive",
-                    "height": 300,
-                    "maintainAspectRatio": true,
-                    "scalable": true,
                     "type": "video/x-flv",
+                    "width": 400,
+                    "height": 300,
+                    "bitrate": 500,
+                    "scalable": true,
+                    "maintainAspectRatio": true,
                     "uri": "http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv",
-                    "width": 400
+                    "_type": "MediaFile"
                   }
                 ],
+                "interactiveCreativeFiles": [],
+                "videoClicks": {
+                  "customClicks": [],
+                  "clickThrough": {
+                    "uri": "http://www.tremormedia.com",
+                    "_type": "Click"
+                  },
+                  "clickTrackings": [
+                    {
+                      "uri": "http://myTrackingURL/click",
+                      "_type": "Click"
+                    }
+                  ],
+                  "_type": "VideoClicks"
+                },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
-                    "complete": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/complete"
-                      }
-                    ],
                     "creativeView": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/creativeView"
-                      }
-                    ],
-                    "firstQuartile": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/firstQuartile"
-                      }
-                    ],
-                    "midpoint": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/midpoint"
+                        "uri": "http://myTrackingURL/creativeView",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/start"
+                        "uri": "http://myTrackingURL/start",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "midpoint": [
+                      {
+                        "uri": "http://myTrackingURL/midpoint",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "firstQuartile": [
+                      {
+                        "uri": "http://myTrackingURL/firstQuartile",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "thirdQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://myTrackingURL/thirdQuartile"
+                        "uri": "http://myTrackingURL/thirdQuartile",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "complete": [
+                      {
+                        "uri": "http://myTrackingURL/complete",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
                 },
-                "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "uri": "http://www.tremormedia.com"
-                  },
-                  "clickTrackings": [
-                    {
-                      "_type": "Click",
-                      "uri": "http://myTrackingURL/click"
-                    }
-                  ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
               "adID": "601364-Companion",
+              "extensions": [],
               "companionAds": {
-                "_type": "CompanionAds",
                 "companions": [
                   {
-                    "_type": "Companion",
-                    "clickThrough": {
-                      "_type": "Click",
-                      "uri": "http://www.tremormedia.com"
-                    },
-                    "clickTrackings": [
-                    ],
+                    "width": 300,
                     "height": 250,
                     "resource": {
-                      "_type": "StaticResource",
                       "creativeType": "image/jpeg",
-                      "uri": "http://demo.tremormedia.com/proddev/vast/Blistex1.jpg"
+                      "uri": "http://demo.tremormedia.com/proddev/vast/Blistex1.jpg",
+                      "_type": "StaticResource"
                     },
+                    "clickThrough": {
+                      "uri": "http://www.tremormedia.com",
+                      "_type": "Click"
+                    },
+                    "clickTrackings": [],
                     "trackingEvents": {
                       "_type": "TrackingEvents",
                       "_value": {
                         "creativeView": [
                           {
-                            "_type": "TrackingEvent",
-                            "uri": "http://myTrackingURL/firstCompanionCreativeView"
+                            "uri": "http://myTrackingURL/firstCompanionCreativeView",
+                            "_type": "TrackingEvent"
                           }
                         ]
                       }
                     },
-                    "width": 300
+                    "_type": "Companion"
                   },
                   {
-                    "_type": "Companion",
-                    "clickThrough": {
-                      "_type": "Click",
-                      "uri": "http://www.tremormedia.com"
-                    },
-                    "clickTrackings": [
-                    ],
+                    "width": 728,
                     "height": 90,
                     "resource": {
-                      "_type": "StaticResource",
                       "creativeType": "image/jpeg",
-                      "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg"
+                      "uri": "http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg",
+                      "_type": "StaticResource"
                     },
-                    "width": 728
+                    "clickThrough": {
+                      "uri": "http://www.tremormedia.com",
+                      "_type": "Click"
+                    },
+                    "clickTrackings": [],
+                    "_type": "Companion"
                   }
-                ]
+                ],
+                "xmlElement": "<CompanionAds>\n            <Companion width=\"300\" height=\"250\">\n              <StaticResource creativeType=\"image/jpeg\">http://demo.tremormedia.com/proddev/vast/Blistex1.jpg</StaticResource>\n              <TrackingEvents>\n                <Tracking event=\"creativeView\">http://myTrackingURL/firstCompanionCreativeView</Tracking>\n              </TrackingEvents>\n\n              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>\n            </Companion>\n            <Companion width=\"728\" height=\"90\">\n              <StaticResource creativeType=\"image/jpeg\">http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg</StaticResource>\n              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>\n            </Companion>\n          </CompanionAds>",
+                "_type": "CompanionAds"
               },
-              "extensions": [
-              ]
+              "_type": "Creative"
             }
           ]
         },
-        "description": "VAST 2.0 Instream Test 1",
-        "errors": [
-          "http://myErrorURL/error"
-        ],
-        "extensions": [
-        ],
-        "id": "601364",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://myTrackingURL/impression"
-          }
-        ],
-        "surveys": [
-        ],
-        "verifications": [
-        ]
+        "_type": "InLine"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

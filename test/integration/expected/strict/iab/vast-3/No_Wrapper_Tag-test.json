@@ -1,138 +1,129 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "iabtechlab",
-          "version": "4.0"
-        },
         "adTitle": "iabtechlab video ad",
-        "categories": [
+        "categories": [],
+        "surveys": [],
+        "id": "20001",
+        "adSystem": {
+          "version": "4.0",
+          "name": "iabtechlab",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "id": "Impression-ID",
+            "uri": "http://example.com/track/impression",
+            "_type": "Impression"
+          }
+        ],
+        "pricing": {
+          "model": "cpm",
+          "currency": "USD",
+          "value": 25,
+          "_type": "Pricing"
+        },
+        "errors": [
+          "http://example.com/error"
+        ],
+        "verifications": [],
+        "extensions": [
+          {
+            "type": "iab-Count",
+            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>",
+            "_type": "Extension"
+          }
         ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
               "id": "5480",
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
                 "duration": 16,
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
                 "mediaFiles": [
                   {
-                    "_type": "MediaFile",
-                    "bitrate": 500,
-                    "codec": "0",
                     "delivery": "progressive",
-                    "height": 300,
-                    "id": "5241",
-                    "maintainAspectRatio": true,
-                    "maxBitrate": 1080,
-                    "minBitrate": 360,
-                    "scalable": true,
                     "type": "video/mp4",
+                    "width": 400,
+                    "height": 300,
+                    "codec": "0",
+                    "id": "5241",
+                    "bitrate": 500,
+                    "minBitrate": 360,
+                    "maxBitrate": 1080,
+                    "scalable": true,
+                    "maintainAspectRatio": true,
                     "uri": "https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4",
-                    "width": 400
+                    "_type": "MediaFile"
                   }
                 ],
+                "interactiveCreativeFiles": [],
+                "videoClicks": {
+                  "customClicks": [],
+                  "clickThrough": {
+                    "id": "blog",
+                    "uri": "https://iabtechlab.com",
+                    "_type": "Click"
+                  },
+                  "clickTrackings": [],
+                  "_type": "VideoClicks"
+                },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
-                    "complete": [
+                    "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/tracking/complete"
+                        "uri": "http://example.com/tracking/start",
+                        "offset": {
+                          "value": 34490,
+                          "_type": "AbsoluteTimeOffset"
+                        },
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "firstQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/tracking/firstQuartile"
+                        "uri": "http://example.com/tracking/firstQuartile",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "midpoint": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/tracking/midpoint"
-                      }
-                    ],
-                    "start": [
-                      {
-                        "_type": "TrackingEvent",
-                        "offset": {
-                          "_type": "AbsoluteTimeOffset",
-                          "value": 34490
-                        },
-                        "uri": "http://example.com/tracking/start"
+                        "uri": "http://example.com/tracking/midpoint",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "thirdQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/tracking/thirdQuartile"
+                        "uri": "http://example.com/tracking/thirdQuartile",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "complete": [
+                      {
+                        "uri": "http://example.com/tracking/complete",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
                 },
-                "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickThrough": {
-                    "_type": "Click",
-                    "id": "blog",
-                    "uri": "https://iabtechlab.com"
-                  },
-                  "clickTrackings": [
-                  ],
-                  "customClicks": [
-                  ]
-                }
+                "icons": [],
+                "_type": "Linear"
               },
-              "sequence": 1
+              "sequence": 1,
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-          "http://example.com/error"
-        ],
-        "extensions": [
-          {
-            "_type": "Extension",
-            "type": "iab-Count",
-            "xmlElement": "<Extension type=\"iab-Count\">\n                    <total_available>\n                        <![CDATA[ 2 ]]>\n                    </total_available>\n                </Extension>"
-          }
-        ],
-        "id": "20001",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "id": "Impression-ID",
-            "uri": "http://example.com/track/impression"
-          }
-        ],
-        "pricing": {
-          "_type": "Pricing",
-          "currency": "USD",
-          "model": "cpm",
-          "value": 25
-        },
-        "surveys": [
-        ],
-        "verifications": [
-        ]
+        "_type": "InLine"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

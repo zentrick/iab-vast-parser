@@ -1,113 +1,101 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "InLine",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Test Ad Server",
-          "version": "1.0"
-        },
         "adTitle": "Sample title",
-        "categories": [
+        "categories": [],
+        "description": "Test description #hashtag",
+        "surveys": [],
+        "id": "1",
+        "adSystem": {
+          "version": "1.0",
+          "name": "Test Ad Server",
+          "_type": "AdSystem"
+        },
+        "impressions": [],
+        "errors": [],
+        "verifications": [],
+        "extensions": [
+          {
+            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/partner]]>\n                    </SharingUrl>\n                </Extension>",
+            "_type": "Extension"
+          }
         ],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "nonLinearAds": {
-                "_type": "NonLinearAds",
                 "nonLinears": [
                   {
-                    "_type": "NonLinear",
-                    "clickThrough": {
-                      "_type": "Click",
-                      "uri": "https://example.com/banner.html"
-                    },
-                    "clickTrackings": [
-                    ],
+                    "width": 0,
                     "height": 0,
                     "resource": {
-                      "_type": "StaticResource",
                       "creativeType": "image/jpeg",
-                      "uri": "http://example.com/sample.jpg"
+                      "uri": "http://example.com/sample.jpg",
+                      "_type": "StaticResource"
                     },
-                    "width": 0
+                    "clickThrough": {
+                      "uri": "https://example.com/banner.html",
+                      "_type": "Click"
+                    },
+                    "clickTrackings": [],
+                    "_type": "NonLinear"
                   }
-                ]
-              }
+                ],
+                "_type": "NonLinearAds"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
                 "duration": 5,
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
                 "mediaFiles": [
                   {
-                    "_type": "MediaFile",
                     "delivery": "streaming",
-                    "height": 608,
                     "type": "video/mp4",
+                    "width": 480,
+                    "height": 608,
                     "uri": "http://example.com/movie-short.mp4",
-                    "width": 480
+                    "_type": "MediaFile"
                   }
                 ],
+                "interactiveCreativeFiles": [],
                 "videoClicks": {
-                  "_type": "VideoClicks",
+                  "customClicks": [],
                   "clickThrough": {
-                    "_type": "Click",
-                    "uri": "http://example.com/linear-video-clickthrough"
+                    "uri": "http://example.com/linear-video-clickthrough",
+                    "_type": "Click"
                   },
                   "clickTrackings": [
                     {
-                      "_type": "Click",
                       "id": "video_click",
-                      "uri": "http://example.com/inline/linear-video-click"
+                      "uri": "http://example.com/inline/linear-video-click",
+                      "_type": "Click"
                     },
                     {
-                      "_type": "Click",
                       "id": "post_video_click",
-                      "uri": "http://example.com/inline/linear-post-video-click"
+                      "uri": "http://example.com/inline/linear-post-video-click",
+                      "_type": "Click"
                     }
                   ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                  "_type": "VideoClicks"
+                },
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "description": "Test description #hashtag",
-        "errors": [
-        ],
-        "extensions": [
-          {
-            "_type": "Extension",
-            "xmlElement": "<Extension>\n                    <DisclosureMessage>\n                        <![CDATA[Promoted video]]>\n                    </DisclosureMessage>\n                    <SharingUrl>\n                        <![CDATA[http://example.com/partner]]>\n                    </SharingUrl>\n                </Extension>"
-          }
-        ],
-        "id": "1",
-        "impressions": [
-        ],
-        "surveys": [
-        ],
-        "verifications": [
-        ]
+        "_type": "InLine"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

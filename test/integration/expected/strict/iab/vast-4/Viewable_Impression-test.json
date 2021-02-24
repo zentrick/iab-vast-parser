@@ -1,98 +1,90 @@
 {
-  "_type": "VAST",
+  "version": "4.0",
+  "errors": [],
+  "ads": {
+    "_type": "SortedList",
+    "_value": []
+  },
   "adPod": {
-    "_type": "AdPod",
     "ads": {
       "_type": "SortedList",
       "_value": [
         {
-          "_type": "Wrapper",
-          "adSystem": {
-            "_type": "AdSystem",
-            "name": "iabtechlab",
-            "version": "4.0"
-          },
+          "followAdditionalWrappers": false,
           "allowMultipleAds": true,
+          "fallbackOnNoAd": false,
+          "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
+          "id": "20010",
           "conditionalAd": "false",
-          "creatives": {
-            "_type": "SortedList",
-            "_value": [
-              {
-                "_type": "Creative",
-                "adID": "2447226",
-                "extensions": [
-                ],
-                "id": "5480",
-                "linear": {
-                  "_type": "Linear",
-                  "icons": [
-                  ],
-                  "interactiveCreativeFiles": [
-                  ],
-                  "mediaFiles": [
-                  ],
-                  "trackingEvents": {
-                    "_type": "TrackingEvents",
-                    "_value": {
-                      "start": [
-                        {
-                          "_type": "TrackingEvent",
-                          "offset": {
-                            "_type": "AbsoluteTimeOffset",
-                            "value": 32410
-                          },
-                          "uri": "http://example.com/tracking/start"
-                        }
-                      ]
-                    }
-                  }
-                },
-                "sequence": 1
-              }
-            ]
+          "adSystem": {
+            "version": "4.0",
+            "name": "iabtechlab",
+            "_type": "AdSystem"
           },
+          "impressions": [
+            {
+              "id": "Impression-ID",
+              "uri": "http://example.com/track/impression",
+              "_type": "Impression"
+            }
+          ],
           "errors": [
             "http://example.com/error"
           ],
-          "extensions": [
-          ],
-          "fallbackOnNoAd": false,
-          "followAdditionalWrappers": false,
-          "id": "20010",
-          "impressions": [
-            {
-              "_type": "Impression",
-              "id": "Impression-ID",
-              "uri": "http://example.com/track/impression"
-            }
-          ],
-          "sequence": 1,
-          "vastAdTagURI": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml",
-          "verifications": [
-          ],
           "viewableImpression": {
-            "_type": "ViewableImpression",
             "id": "1543",
+            "viewables": [
+              "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
+            ],
             "notViewables": [
               "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
             ],
             "viewUndetermineds": [
               "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
             ],
-            "viewables": [
-              "http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243"
+            "_type": "ViewableImpression"
+          },
+          "verifications": [],
+          "extensions": [],
+          "creatives": {
+            "_type": "SortedList",
+            "_value": [
+              {
+                "id": "5480",
+                "adID": "2447226",
+                "extensions": [],
+                "linear": {
+                  "mediaFiles": [],
+                  "interactiveCreativeFiles": [],
+                  "trackingEvents": {
+                    "_type": "TrackingEvents",
+                    "_value": {
+                      "start": [
+                        {
+                          "uri": "http://example.com/tracking/start",
+                          "offset": {
+                            "value": 32410,
+                            "_type": "AbsoluteTimeOffset"
+                          },
+                          "_type": "TrackingEvent"
+                        }
+                      ]
+                    }
+                  },
+                  "icons": [],
+                  "_type": "Linear"
+                },
+                "sequence": 1,
+                "_type": "Creative"
+              }
             ]
-          }
+          },
+          "sequence": 1,
+          "_type": "Wrapper"
         }
       ]
-    }
+    },
+    "_type": "AdPod"
   },
-  "ads": {
-    "_type": "SortedList",
-    "_value": [
-    ]
-  },
-  "errors": [
-  ],
-  "version": "4.0"
+  "_type": "VAST"
 }

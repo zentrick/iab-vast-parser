@@ -1,12 +1,11 @@
 {
-  "_type": "VAST",
-  "ads": {
-    "_type": "SortedList",
-    "_value": [
-    ]
-  },
+  "version": "2.0",
   "errors": [
     "http://example.com/error"
   ],
-  "version": "2.0"
+  "ads": {
+    "_type": "SortedList",
+    "_value": []
+  },
+  "_type": "VAST"
 }
