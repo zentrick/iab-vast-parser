@@ -1,91 +1,79 @@
 {
-  "_type": "VAST",
+  "version": "2.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "Wrapper",
+        "followAdditionalWrappers": true,
         "allowMultipleAds": false,
+        "vastAdTagURI": "http://ads",
+        "id": "2057602",
+        "impressions": [
+          {
+            "uri": "https://tags",
+            "_type": "Impression"
+          },
+          {
+            "uri": "https://pixel",
+            "_type": "Impression"
+          }
+        ],
+        "errors": [
+          "https://pixel"
+        ],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
               "adID": "111",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
                 "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickTrackings": [
-                  ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                  "customClicks": [],
+                  "clickTrackings": [],
+                  "_type": "VideoClicks"
+                },
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
               "adID": "111",
+              "extensions": [],
               "companionAds": {
-                "_type": "CompanionAds",
                 "companions": [
                   {
-                    "_type": "Companion",
-                    "clickTrackings": [
-                    ],
+                    "width": 0,
                     "height": 0,
-                    "width": 0
+                    "clickTrackings": [],
+                    "_type": "Companion"
                   }
-                ]
+                ],
+                "xmlElement": "<CompanionAds>\n                        <Companion height=\"0\" width=\"0\">\n                        </Companion>\n                    </CompanionAds>",
+                "_type": "CompanionAds"
               },
-              "extensions": [
-              ]
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
               "adID": "111",
-              "extensions": [
-              ],
+              "extensions": [],
               "nonLinearAds": {
-                "_type": "NonLinearAds",
-                "nonLinears": [
-                ]
-              }
+                "nonLinears": [],
+                "_type": "NonLinearAds"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-          "https://pixel"
-        ],
-        "extensions": [
-        ],
-        "followAdditionalWrappers": true,
-        "id": "2057602",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "https://tags"
-          },
-          {
-            "_type": "Impression",
-            "uri": "https://pixel"
-          }
-        ],
-        "vastAdTagURI": "http://ads",
-        "verifications": [
-        ]
+        "_type": "Wrapper"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "2.0"
+  "_type": "VAST"
 }

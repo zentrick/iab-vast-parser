@@ -1,149 +1,140 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "Wrapper",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Test Ad Server",
-          "version": "1.0"
-        },
+        "followAdditionalWrappers": true,
         "allowMultipleAds": false,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
+        "id": "1",
+        "adSystem": {
+          "version": "1.0",
+          "name": "Test Ad Server",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]",
+            "_type": "Impression"
+          },
+          {
+            "uri": "http://example.com/another-imp?d=[CACHEBUSTER]",
+            "_type": "Impression"
+          }
+        ],
+        "errors": [
+          "http://example.com/error/ERRORCODE"
+        ],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "nonLinearAds": {
-                "_type": "NonLinearAds",
                 "nonLinears": [
                   {
-                    "_type": "NonLinear",
                     "clickTrackings": [
                       {
-                        "_type": "Click",
-                        "uri": "http://example.com/click"
+                        "uri": "http://example.com/click",
+                        "_type": "Click"
                       }
-                    ]
+                    ],
+                    "_type": "NonLinear"
                   }
-                ]
-              }
+                ],
+                "_type": "NonLinearAds"
+              },
+              "_type": "Creative"
             },
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
+                "videoClicks": {
+                  "customClicks": [],
+                  "clickTrackings": [
+                    {
+                      "id": "video_click",
+                      "uri": "http://example.com/linear-video-click",
+                      "_type": "Click"
+                    },
+                    {
+                      "id": "video_click",
+                      "uri": "http://example.com/linear-video-click2",
+                      "_type": "Click"
+                    },
+                    {
+                      "id": "video_click",
+                      "uri": "http://example.com/linear-video-click3",
+                      "_type": "Click"
+                    },
+                    {
+                      "id": "post_video_click",
+                      "uri": "http://example.com/linear-post-video-click",
+                      "_type": "Click"
+                    },
+                    {
+                      "id": "post_video_click",
+                      "uri": "http://example.com/linear-post-video-click2",
+                      "_type": "Click"
+                    }
+                  ],
+                  "_type": "VideoClicks"
+                },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
-                    "complete": [
+                    "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/complete?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/start?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
+                      },
+                      {
+                        "uri": "http://example.com/start2?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "firstQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q2?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q2?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "midpoint": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q3?d=[CACHEBUSTER]"
-                      }
-                    ],
-                    "start": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/start?d=[CACHEBUSTER]"
-                      },
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/start2?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q3?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "thirdQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q4?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q4?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "complete": [
+                      {
+                        "uri": "http://example.com/complete?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
                 },
-                "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickTrackings": [
-                    {
-                      "_type": "Click",
-                      "id": "video_click",
-                      "uri": "http://example.com/linear-video-click"
-                    },
-                    {
-                      "_type": "Click",
-                      "id": "video_click",
-                      "uri": "http://example.com/linear-video-click2"
-                    },
-                    {
-                      "_type": "Click",
-                      "id": "video_click",
-                      "uri": "http://example.com/linear-video-click3"
-                    },
-                    {
-                      "_type": "Click",
-                      "id": "post_video_click",
-                      "uri": "http://example.com/linear-post-video-click"
-                    },
-                    {
-                      "_type": "Click",
-                      "id": "post_video_click",
-                      "uri": "http://example.com/linear-post-video-click2"
-                    }
-                  ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-          "http://example.com/error/ERRORCODE"
-        ],
-        "extensions": [
-        ],
-        "followAdditionalWrappers": true,
-        "id": "1",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
-          },
-          {
-            "_type": "Impression",
-            "uri": "http://example.com/another-imp?d=[CACHEBUSTER]"
-          }
-        ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-linear-ad.xml",
-        "verifications": [
-        ]
+        "_type": "Wrapper"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }

@@ -12,9 +12,10 @@ const hasPair = (map, parentName, childName) =>
   (map[parentName] != null && ~map[parentName].indexOf(childName))
 
 export default class Unmarshaler {
-  constructor ({ collections, freeforms, types }) {
+  constructor ({ collections, freeforms, hybrids, types }) {
     this._collections = collections
     this._freeforms = freeforms
+    this._hybrids = hybrids
     this._types = types
   }
 
@@ -24,7 +25,9 @@ export default class Unmarshaler {
 
   _createNode (xml) {
     const node = Object.create(null)
-    node._value = this._convertPropertyValue(getText(xml), xml.nodeName, '_value')
+    node._value = this._isHybrid(xml.nodeName)
+      ? xml
+      : this._convertPropertyValue(getText(xml), xml.nodeName, '_value')
     this._copyAttributes(node, xml)
     this._createCollections(node, xml)
     this._createChildren(node, xml)
@@ -102,5 +105,9 @@ export default class Unmarshaler {
 
   _isFreeformChild (parentName, childName) {
     return hasPair(this._freeforms, parentName, childName)
+  }
+
+  _isHybrid (name) {
+    return this._hybrids.indexOf(name) >= 0
   }
 }

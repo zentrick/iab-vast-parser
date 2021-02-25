@@ -2056,10 +2056,10 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-iab-vast-model@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/iab-vast-model/-/iab-vast-model-1.0.1.tgz#29bda5f10feaa497cf2e27a020d629a486c0b111"
-  integrity sha512-PDDskwSTTSUnY/U2Tc0retUmrYUAxRVuwTxO663qpzfPBXOUY/ExXII/ILxzEOK6b+QIV9osyRkBvNh6y/UGUQ==
+iab-vast-model@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/iab-vast-model/-/iab-vast-model-1.0.2.tgz#566cf42e6a43d9f1764cc21f34ea867a5b10ebcc"
+  integrity sha512-1xzIT0SM3fnRnGjmkQAoFCiF0IZCbsEOBpqUJmQD/KAK9Cwt1Vhg4v+C73J3te23OVp//Le9xFF5NKt9YA1Jyw==
 
 iconv-lite@^0.4.24:
   version "0.4.24"

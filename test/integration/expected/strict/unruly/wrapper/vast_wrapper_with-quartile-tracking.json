@@ -1,100 +1,91 @@
 {
-  "_type": "VAST",
+  "version": "3.0",
+  "errors": [],
   "ads": {
     "_type": "SortedList",
     "_value": [
       {
-        "_type": "Wrapper",
-        "adSystem": {
-          "_type": "AdSystem",
-          "name": "Test Ad Server",
-          "version": "1.0"
-        },
+        "followAdditionalWrappers": true,
         "allowMultipleAds": false,
+        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml",
+        "id": "55217",
+        "adSystem": {
+          "version": "1.0",
+          "name": "Test Ad Server",
+          "_type": "AdSystem"
+        },
+        "impressions": [
+          {
+            "uri": "http://example.com/imp?d=[CACHEBUSTER]",
+            "_type": "Impression"
+          }
+        ],
+        "errors": [],
+        "verifications": [],
+        "extensions": [],
         "creatives": {
           "_type": "SortedList",
           "_value": [
             {
-              "_type": "Creative",
-              "extensions": [
-              ],
+              "extensions": [],
               "linear": {
-                "_type": "Linear",
-                "icons": [
-                ],
-                "interactiveCreativeFiles": [
-                ],
-                "mediaFiles": [
-                ],
+                "mediaFiles": [],
+                "interactiveCreativeFiles": [],
+                "videoClicks": {
+                  "customClicks": [],
+                  "clickTrackings": [
+                    {
+                      "uri": "http://example.com/click?d=[CACHEBUSTER]",
+                      "_type": "Click"
+                    }
+                  ],
+                  "_type": "VideoClicks"
+                },
                 "trackingEvents": {
                   "_type": "TrackingEvents",
                   "_value": {
-                    "complete": [
+                    "start": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/complete?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/start?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "firstQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q2?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q2?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "midpoint": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q3?d=[CACHEBUSTER]"
-                      }
-                    ],
-                    "start": [
-                      {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/start?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q3?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ],
                     "thirdQuartile": [
                       {
-                        "_type": "TrackingEvent",
-                        "uri": "http://example.com/q4?d=[CACHEBUSTER]"
+                        "uri": "http://example.com/q4?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
+                      }
+                    ],
+                    "complete": [
+                      {
+                        "uri": "http://example.com/complete?d=[CACHEBUSTER]",
+                        "_type": "TrackingEvent"
                       }
                     ]
                   }
                 },
-                "videoClicks": {
-                  "_type": "VideoClicks",
-                  "clickTrackings": [
-                    {
-                      "_type": "Click",
-                      "uri": "http://example.com/click?d=[CACHEBUSTER]"
-                    }
-                  ],
-                  "customClicks": [
-                  ]
-                }
-              }
+                "icons": [],
+                "_type": "Linear"
+              },
+              "_type": "Creative"
             }
           ]
         },
-        "errors": [
-        ],
-        "extensions": [
-        ],
-        "followAdditionalWrappers": true,
-        "id": "55217",
-        "impressions": [
-          {
-            "_type": "Impression",
-            "uri": "http://example.com/imp?d=[CACHEBUSTER]"
-          }
-        ],
-        "vastAdTagURI": "http://localhost/test/resources/vast/inlines/test_vast_inline_with-long-video.xml",
-        "verifications": [
-        ]
+        "_type": "Wrapper"
       }
     ]
   },
-  "errors": [
-  ],
-  "version": "3.0"
+  "_type": "VAST"
 }
