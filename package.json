@@ -1,6 +1,6 @@
 {
   "name": "iab-vast-parser",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Parses IAB VAST tags into iab-vast-model objects.",
   "main": "index.js",
   "browser": "src/parse.js",
@@ -30,8 +30,8 @@
   "repository": "zentrick/iab-vast-parser",
   "bugs": "https://github.com/zentrick/iab-vast-parser/issues",
   "dependencies": {
-    "iab-vast-model": "^1.0.2",
-    "es6-error": "4.1.1"
+    "es6-error": "4.1.1",
+    "iab-vast-model": "^1.0.2"
   },
   "optionalDependencies": {
     "xmldom": "^0.1.22"
